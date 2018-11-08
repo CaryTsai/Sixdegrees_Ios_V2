@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4A2F6FE82194AA8C006F3509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */; };
-		4A2F6FEA2194AA8C006F3509 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FE92194AA8C006F3509 /* ViewController.swift */; };
-		4A2F6FED2194AA8C006F3509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FEB2194AA8C006F3509 /* Main.storyboard */; };
+		4A2F6FEA2194AA8C006F3509 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FE92194AA8C006F3509 /* SplashVC.swift */; };
+		4A2F6FED2194AA8C006F3509 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FEB2194AA8C006F3509 /* Splash.storyboard */; };
 		4A2F6FEF2194AA8D006F3509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FEE2194AA8D006F3509 /* Assets.xcassets */; };
 		4A2F6FF22194AA8D006F3509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FF02194AA8D006F3509 /* LaunchScreen.storyboard */; };
+		4A2F6FFA2194D21F006F3509 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FF92194D21F006F3509 /* LocalData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A2F6FE42194AA8C006F3509 /* Sixdegrees_Ios_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sixdegrees_Ios_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A2F6FE92194AA8C006F3509 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4A2F6FEC2194AA8C006F3509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A2F6FE92194AA8C006F3509 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		4A2F6FEC2194AA8C006F3509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
 		4A2F6FEE2194AA8D006F3509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2F6FF12194AA8D006F3509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2F6FF32194AA8D006F3509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A2F6FF92194D21F006F3509 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */,
-				4A2F6FE92194AA8C006F3509 /* ViewController.swift */,
-				4A2F6FEB2194AA8C006F3509 /* Main.storyboard */,
+				4A2F6FE92194AA8C006F3509 /* SplashVC.swift */,
+				4A2F6FEB2194AA8C006F3509 /* Splash.storyboard */,
 				4A2F6FEE2194AA8D006F3509 /* Assets.xcassets */,
 				4A2F6FF02194AA8D006F3509 /* LaunchScreen.storyboard */,
 				4A2F6FF32194AA8D006F3509 /* Info.plist */,
+				4A2F6FF92194D21F006F3509 /* LocalData.swift */,
 			);
 			path = Sixdegrees_Ios_V2;
 			sourceTree = "<group>";
@@ -124,7 +127,7 @@
 			files = (
 				4A2F6FF22194AA8D006F3509 /* LaunchScreen.storyboard in Resources */,
 				4A2F6FEF2194AA8D006F3509 /* Assets.xcassets in Resources */,
-				4A2F6FED2194AA8C006F3509 /* Main.storyboard in Resources */,
+				4A2F6FED2194AA8C006F3509 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A2F6FEA2194AA8C006F3509 /* ViewController.swift in Sources */,
+				4A2F6FFA2194D21F006F3509 /* LocalData.swift in Sources */,
+				4A2F6FEA2194AA8C006F3509 /* SplashVC.swift in Sources */,
 				4A2F6FE82194AA8C006F3509 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,12 +147,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4A2F6FEB2194AA8C006F3509 /* Main.storyboard */ = {
+		4A2F6FEB2194AA8C006F3509 /* Splash.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4A2F6FEC2194AA8C006F3509 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Splash.storyboard;
 			sourceTree = "<group>";
 		};
 		4A2F6FF02194AA8D006F3509 /* LaunchScreen.storyboard */ = {
@@ -282,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Sixdegrees_Ios_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,6 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Sixdegrees_Ios_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
