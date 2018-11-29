@@ -1,0 +1,460 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginVC"
+provides-nominal:
+- "17Sixdegrees_Ios_V27LoginVCC"
+provides-member:
+- ["17Sixdegrees_Ios_V27LoginVCC", ""]
+provides-dynamic-lookup:
+- "JoinLaterButton"
+- "LoginButton"
+- "RegisterButton"
+- "viewDidLoad"
+depends-top-level:
+- "BaseUiViewController"
+- !private "BooleanLiteralType"
+- !private "LocalData"
+- !private "LoginEvent"
+- "LoginVC"
+- !private "SwiftEventBus"
+- "UIButton"
+depends-member:
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "JoinLaterButton"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "LocalData"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "LoginButton"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "LoginEvent"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "RegisterButton"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "StoryBoardInstantiate"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "SwiftEventBus"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "UIButton"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", ""]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "deinit"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "init"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "init"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "present"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "setButtonStyle"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "storyboard"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "viewDidLoad"]
+- !private ["s7CVarArgP", "JoinLaterButton"]
+- !private ["s7CVarArgP", "LocalData"]
+- !private ["s7CVarArgP", "LoginButton"]
+- !private ["s7CVarArgP", "LoginEvent"]
+- !private ["s7CVarArgP", "RegisterButton"]
+- !private ["s7CVarArgP", "StoryBoardInstantiate"]
+- !private ["s7CVarArgP", "SwiftEventBus"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "instantiateViewController"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "setButtonStyle"]
+- !private ["s7CVarArgP", "storyboard"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "JoinLaterButton"]
+- !private ["s28CustomDebugStringConvertibleP", "LocalData"]
+- !private ["s28CustomDebugStringConvertibleP", "LoginButton"]
+- !private ["s28CustomDebugStringConvertibleP", "LoginEvent"]
+- !private ["s28CustomDebugStringConvertibleP", "RegisterButton"]
+- !private ["s28CustomDebugStringConvertibleP", "StoryBoardInstantiate"]
+- !private ["s28CustomDebugStringConvertibleP", "SwiftEventBus"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "setButtonStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "storyboard"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "JoinLaterButton"]
+- !private ["s23CustomStringConvertibleP", "LocalData"]
+- !private ["s23CustomStringConvertibleP", "LoginButton"]
+- !private ["s23CustomStringConvertibleP", "LoginEvent"]
+- !private ["s23CustomStringConvertibleP", "RegisterButton"]
+- !private ["s23CustomStringConvertibleP", "StoryBoardInstantiate"]
+- !private ["s23CustomStringConvertibleP", "SwiftEventBus"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "instantiateViewController"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "setButtonStyle"]
+- !private ["s23CustomStringConvertibleP", "storyboard"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["SQ", "JoinLaterButton"]
+- !private ["SQ", "LocalData"]
+- !private ["SQ", "LoginButton"]
+- !private ["SQ", "LoginEvent"]
+- !private ["SQ", "RegisterButton"]
+- !private ["SQ", "StoryBoardInstantiate"]
+- !private ["SQ", "SwiftEventBus"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "instantiateViewController"]
+- !private ["SQ", "present"]
+- !private ["SQ", "setButtonStyle"]
+- !private ["SQ", "storyboard"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SH", "JoinLaterButton"]
+- !private ["SH", "LocalData"]
+- !private ["SH", "LoginButton"]
+- !private ["SH", "LoginEvent"]
+- !private ["SH", "RegisterButton"]
+- !private ["SH", "StoryBoardInstantiate"]
+- !private ["SH", "SwiftEventBus"]
+- ["SH", ""]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "instantiateViewController"]
+- !private ["SH", "present"]
+- !private ["SH", "setButtonStyle"]
+- !private ["SH", "storyboard"]
+- !private ["SH", "viewDidLoad"]
+- !private ["17Sixdegrees_Ios_V29LocalDataV", "LOADING_VC"]
+- !private ["17Sixdegrees_Ios_V29LocalDataV", "LOCAL_LOGIN_VC"]
+- !private ["17Sixdegrees_Ios_V29LocalDataV", "NO_USER_LOGIN"]
+- !private ["17Sixdegrees_Ios_V29LocalDataV", "REGISTER_VC"]
+- ["17Sixdegrees_Ios_V27LoginVCC", "JoinLaterButton"]
+- !private ["17Sixdegrees_Ios_V27LoginVCC", "LocalData"]
+- ["17Sixdegrees_Ios_V27LoginVCC", "LoginButton"]
+- !private ["17Sixdegrees_Ios_V27LoginVCC", "LoginEvent"]
+- ["17Sixdegrees_Ios_V27LoginVCC", "RegisterButton"]
+- !private ["17Sixdegrees_Ios_V27LoginVCC", "StoryBoardInstantiate"]
+- !private ["17Sixdegrees_Ios_V27LoginVCC", "SwiftEventBus"]
+- ["17Sixdegrees_Ios_V27LoginVCC", "UIButton"]
+- ["17Sixdegrees_Ios_V27LoginVCC", "init"]
+- !private ["17Sixdegrees_Ios_V27LoginVCC", "present"]
+- !private ["17Sixdegrees_Ios_V27LoginVCC", "setButtonStyle"]
+- !private ["17Sixdegrees_Ios_V27LoginVCC", "storyboard"]
+- ["17Sixdegrees_Ios_V27LoginVCC", "viewDidLoad"]
+- !private ["So8NSCodingP", "JoinLaterButton"]
+- !private ["So8NSCodingP", "LocalData"]
+- !private ["So8NSCodingP", "LoginButton"]
+- !private ["So8NSCodingP", "LoginEvent"]
+- !private ["So8NSCodingP", "RegisterButton"]
+- !private ["So8NSCodingP", "StoryBoardInstantiate"]
+- !private ["So8NSCodingP", "SwiftEventBus"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "setButtonStyle"]
+- !private ["So8NSCodingP", "storyboard"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "JoinLaterButton"]
+- !private ["So26NSExtensionRequestHandlingP", "LocalData"]
+- !private ["So26NSExtensionRequestHandlingP", "LoginButton"]
+- !private ["So26NSExtensionRequestHandlingP", "LoginEvent"]
+- !private ["So26NSExtensionRequestHandlingP", "RegisterButton"]
+- !private ["So26NSExtensionRequestHandlingP", "StoryBoardInstantiate"]
+- !private ["So26NSExtensionRequestHandlingP", "SwiftEventBus"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "setButtonStyle"]
+- !private ["So26NSExtensionRequestHandlingP", "storyboard"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- ["So8NSObjectC", "JoinLaterButton"]
+- !private ["So8NSObjectC", "LocalData"]
+- ["So8NSObjectC", "LoginButton"]
+- !private ["So8NSObjectC", "LoginEvent"]
+- ["So8NSObjectC", "RegisterButton"]
+- !private ["So8NSObjectC", "StoryBoardInstantiate"]
+- !private ["So8NSObjectC", "SwiftEventBus"]
+- ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "instantiateViewController"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "setButtonStyle"]
+- !private ["So8NSObjectC", "storyboard"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "JoinLaterButton"]
+- !private ["So8NSObjectP", "LocalData"]
+- !private ["So8NSObjectP", "LoginButton"]
+- !private ["So8NSObjectP", "LoginEvent"]
+- !private ["So8NSObjectP", "RegisterButton"]
+- !private ["So8NSObjectP", "StoryBoardInstantiate"]
+- !private ["So8NSObjectP", "SwiftEventBus"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "instantiateViewController"]
+- !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "setButtonStyle"]
+- !private ["So8NSObjectP", "storyboard"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "JoinLaterButton"]
+- !private ["So21UIAppearanceContainerP", "LocalData"]
+- !private ["So21UIAppearanceContainerP", "LoginButton"]
+- !private ["So21UIAppearanceContainerP", "LoginEvent"]
+- !private ["So21UIAppearanceContainerP", "RegisterButton"]
+- !private ["So21UIAppearanceContainerP", "StoryBoardInstantiate"]
+- !private ["So21UIAppearanceContainerP", "SwiftEventBus"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "setButtonStyle"]
+- !private ["So21UIAppearanceContainerP", "storyboard"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "JoinLaterButton"]
+- !private ["So18UIContentContainerP", "LocalData"]
+- !private ["So18UIContentContainerP", "LoginButton"]
+- !private ["So18UIContentContainerP", "LoginEvent"]
+- !private ["So18UIContentContainerP", "RegisterButton"]
+- !private ["So18UIContentContainerP", "StoryBoardInstantiate"]
+- !private ["So18UIContentContainerP", "SwiftEventBus"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "setButtonStyle"]
+- !private ["So18UIContentContainerP", "storyboard"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "JoinLaterButton"]
+- !private ["So18UIFocusEnvironmentP", "LocalData"]
+- !private ["So18UIFocusEnvironmentP", "LoginButton"]
+- !private ["So18UIFocusEnvironmentP", "LoginEvent"]
+- !private ["So18UIFocusEnvironmentP", "RegisterButton"]
+- !private ["So18UIFocusEnvironmentP", "StoryBoardInstantiate"]
+- !private ["So18UIFocusEnvironmentP", "SwiftEventBus"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "setButtonStyle"]
+- !private ["So18UIFocusEnvironmentP", "storyboard"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "JoinLaterButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "LocalData"]
+- !private ["So30UIPasteConfigurationSupportingP", "LoginButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "LoginEvent"]
+- !private ["So30UIPasteConfigurationSupportingP", "RegisterButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "StoryBoardInstantiate"]
+- !private ["So30UIPasteConfigurationSupportingP", "SwiftEventBus"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "setButtonStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "JoinLaterButton"]
+- !private ["So11UIResponderC", "LocalData"]
+- ["So11UIResponderC", "LoginButton"]
+- !private ["So11UIResponderC", "LoginEvent"]
+- ["So11UIResponderC", "RegisterButton"]
+- !private ["So11UIResponderC", "StoryBoardInstantiate"]
+- !private ["So11UIResponderC", "SwiftEventBus"]
+- ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "setButtonStyle"]
+- !private ["So11UIResponderC", "storyboard"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "JoinLaterButton"]
+- !private ["So30UIResponderStandardEditActionsP", "LocalData"]
+- !private ["So30UIResponderStandardEditActionsP", "LoginButton"]
+- !private ["So30UIResponderStandardEditActionsP", "LoginEvent"]
+- !private ["So30UIResponderStandardEditActionsP", "RegisterButton"]
+- !private ["So30UIResponderStandardEditActionsP", "StoryBoardInstantiate"]
+- !private ["So30UIResponderStandardEditActionsP", "SwiftEventBus"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "setButtonStyle"]
+- !private ["So30UIResponderStandardEditActionsP", "storyboard"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "JoinLaterButton"]
+- !private ["So16UIStateRestoringP", "LocalData"]
+- !private ["So16UIStateRestoringP", "LoginButton"]
+- !private ["So16UIStateRestoringP", "LoginEvent"]
+- !private ["So16UIStateRestoringP", "RegisterButton"]
+- !private ["So16UIStateRestoringP", "StoryBoardInstantiate"]
+- !private ["So16UIStateRestoringP", "SwiftEventBus"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "setButtonStyle"]
+- !private ["So16UIStateRestoringP", "storyboard"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So12UIStoryboardC", "instantiateViewController"]
+- !private ["So18UITraitEnvironmentP", "JoinLaterButton"]
+- !private ["So18UITraitEnvironmentP", "LocalData"]
+- !private ["So18UITraitEnvironmentP", "LoginButton"]
+- !private ["So18UITraitEnvironmentP", "LoginEvent"]
+- !private ["So18UITraitEnvironmentP", "RegisterButton"]
+- !private ["So18UITraitEnvironmentP", "StoryBoardInstantiate"]
+- !private ["So18UITraitEnvironmentP", "SwiftEventBus"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "setButtonStyle"]
+- !private ["So18UITraitEnvironmentP", "storyboard"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "JoinLaterButton"]
+- !private ["So23UIUserActivityRestoringP", "LocalData"]
+- !private ["So23UIUserActivityRestoringP", "LoginButton"]
+- !private ["So23UIUserActivityRestoringP", "LoginEvent"]
+- !private ["So23UIUserActivityRestoringP", "RegisterButton"]
+- !private ["So23UIUserActivityRestoringP", "StoryBoardInstantiate"]
+- !private ["So23UIUserActivityRestoringP", "SwiftEventBus"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "setButtonStyle"]
+- !private ["So23UIUserActivityRestoringP", "storyboard"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- ["So16UIViewControllerC", "JoinLaterButton"]
+- !private ["So16UIViewControllerC", "LocalData"]
+- ["So16UIViewControllerC", "LoginButton"]
+- !private ["So16UIViewControllerC", "LoginEvent"]
+- ["So16UIViewControllerC", "RegisterButton"]
+- !private ["So16UIViewControllerC", "StoryBoardInstantiate"]
+- !private ["So16UIViewControllerC", "SwiftEventBus"]
+- ["So16UIViewControllerC", "UIButton"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "setButtonStyle"]
+- !private ["So16UIViewControllerC", "storyboard"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "JoinLaterButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LocalData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginEvent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "RegisterButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "StoryBoardInstantiate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SwiftEventBus"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setButtonStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+depends-nominal:
+- "17Sixdegrees_Ios_V220BaseUiViewControllerC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- "SH"
+- !private "17Sixdegrees_Ios_V29LocalDataV"
+- "17Sixdegrees_Ios_V27LoginVCC"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- !private "So12UIStoryboardC"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRVideoMetaData.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRSearchTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRCollectionTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRUserTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRListTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRAPIErrorCode.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRJSONConvertible.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineType.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TwitterCore.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRSessionStore.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineDelegate.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetViewDelegate.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRVideoPlaybackState.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMediaEntitySize.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRAuthConfig.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTROAuthSigning.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRCoreOAuthSigning.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetTableViewCell.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRSession.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRAuthSession.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRGuestSession.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMoPubAdConfiguration.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRLogInButton.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineViewController.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRComposerViewController.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRUser.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRComposer.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineFilter.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTwitter.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineCursor.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRDefines.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRConstants.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRNotificationConstants.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweet.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRKit.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRAPIClient.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMoPubNativeAdContainerView.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetView.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetCashtagEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetHashtagEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetUrlEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetUserMentionEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Modules/module.modulemap"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Modules/module.modulemap"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Modules/module.private.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "67b0d70d58bd2fd85bd8a6f602abc38f"

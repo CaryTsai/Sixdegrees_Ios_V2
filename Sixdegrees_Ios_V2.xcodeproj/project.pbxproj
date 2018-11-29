@@ -7,23 +7,127 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1873FD25B13337C5216AE9C0 /* Pods_Sixdegrees_Ios_V2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09419AFDF826EB3A700B0A27 /* Pods_Sixdegrees_Ios_V2.framework */; };
+		1F00B1A821A3F43A0004FEC7 /* ArticleDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B19721A3F4390004FEC7 /* ArticleDatasource.swift */; };
+		1F00B1A921A3F43A0004FEC7 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B19821A3F4390004FEC7 /* Pagination.swift */; };
+		1F00B1AA21A3F43A0004FEC7 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B19921A3F4390004FEC7 /* Article.swift */; };
+		1F00B1AB21A3F43A0004FEC7 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B19A21A3F4390004FEC7 /* ErrorMessage.swift */; };
+		1F00B1AC21A3F43A0004FEC7 /* LikeCounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B19B21A3F4390004FEC7 /* LikeCounts.swift */; };
+		1F00B1AD21A3F43A0004FEC7 /* CommentAndArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B19C21A3F4390004FEC7 /* CommentAndArticle.swift */; };
+		1F00B1AE21A3F43A0004FEC7 /* MediaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B19D21A3F4390004FEC7 /* MediaImage.swift */; };
+		1F00B1AF21A3F43A0004FEC7 /* MyCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B19E21A3F4390004FEC7 /* MyCategories.swift */; };
+		1F00B1B021A3F43A0004FEC7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B19F21A3F43A0004FEC7 /* User.swift */; };
+		1F00B1B121A3F43A0004FEC7 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1A021A3F43A0004FEC7 /* Member.swift */; };
+		1F00B1B221A3F43A0004FEC7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1A121A3F43A0004FEC7 /* Category.swift */; };
+		1F00B1B321A3F43A0004FEC7 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1A221A3F43A0004FEC7 /* Token.swift */; };
+		1F00B1B521A3F43A0004FEC7 /* DonateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1A421A3F43A0004FEC7 /* DonateDetail.swift */; };
+		1F00B1B621A3F43A0004FEC7 /* ArticleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1A521A3F43A0004FEC7 /* ArticleDetail.swift */; };
+		1F00B1B721A3F43A0004FEC7 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1A621A3F43A0004FEC7 /* Comment.swift */; };
+		1F00B1B821A3F43A0004FEC7 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1A721A3F43A0004FEC7 /* ServerResponse.swift */; };
+		1F00B1BA21A3F4D70004FEC7 /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1B921A3F4D70004FEC7 /* Callback.swift */; };
+		1F06654021A6B0CC00773324 /* ModelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F06653F21A6B0CC00773324 /* ModelConfig.swift */; };
+		1F4A1F92219ADBE900A642F2 /* ForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A1F91219ADBE900A642F2 /* ForgetPassword.swift */; };
+		1F4A1F94219AFDEA00A642F2 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A1F93219AFDEA00A642F2 /* RegisterVC.swift */; };
+		1F5DDFEF2195494400E7221A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5DDFEE2195494300E7221A /* LoginVC.swift */; };
+		1F5DDFF121955ED400E7221A /* BaseUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5DDFF021955ED400E7221A /* BaseUiViewController.swift */; };
+		1F6A402E21A7F7E500E95624 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A402D21A7F7E500E95624 /* GoogleService-Info.plist */; };
+		1F8A6D2821A3FF10000F6D0B /* GetCommentAndArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D1921A3FF10000F6D0B /* GetCommentAndArticle.swift */; };
+		1F8A6D2921A3FF10000F6D0B /* GetDatasourceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D1A21A3FF10000F6D0B /* GetDatasourceList.swift */; };
+		1F8A6D2A21A3FF10000F6D0B /* GetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D1B21A3FF10000F6D0B /* GetStatus.swift */; };
+		1F8A6D2B21A3FF10000F6D0B /* GetMyCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D1C21A3FF10000F6D0B /* GetMyCategory.swift */; };
+		1F8A6D2C21A3FF10000F6D0B /* GetDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D1D21A3FF10000F6D0B /* GetDatasource.swift */; };
+		1F8A6D2D21A3FF10000F6D0B /* GetCategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D1E21A3FF10000F6D0B /* GetCategoryList.swift */; };
+		1F8A6D2E21A3FF10000F6D0B /* GetDonateDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D1F21A3FF10000F6D0B /* GetDonateDetail.swift */; };
+		1F8A6D2F21A3FF10000F6D0B /* GetAddStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D2021A3FF10000F6D0B /* GetAddStatus.swift */; };
+		1F8A6D3021A3FF10000F6D0B /* GetComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D2121A3FF10000F6D0B /* GetComments.swift */; };
+		1F8A6D3121A3FF10000F6D0B /* GetMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D2221A3FF10000F6D0B /* GetMember.swift */; };
+		1F8A6D3221A3FF10000F6D0B /* GetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D2321A3FF10000F6D0B /* GetError.swift */; };
+		1F8A6D3321A3FF10000F6D0B /* GetArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D2421A3FF10000F6D0B /* GetArticle.swift */; };
+		1F8A6D3421A3FF10000F6D0B /* GetCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D2521A3FF10000F6D0B /* GetCategory.swift */; };
+		1F8A6D3521A3FF10000F6D0B /* GetArticleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D2621A3FF10000F6D0B /* GetArticleList.swift */; };
+		1F8A6D3621A3FF10000F6D0B /* GetToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D2721A3FF10000F6D0B /* GetToken.swift */; };
+		1F8A6D3821A40264000F6D0B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D3721A40264000F6D0B /* ApiService.swift */; };
+		1FCB2EF421ABF09C00C2CC69 /* RecommendTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB2EF321ABF09C00C2CC69 /* RecommendTableView.swift */; };
+		1FCB2EF621ABF0EB00C2CC69 /* RecommendHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB2EF521ABF0EB00C2CC69 /* RecommendHeaderCell.swift */; };
+		1FD9577021A58D8D00AC9B3C /* LoginEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9576F21A58D8D00AC9B3C /* LoginEvent.swift */; };
+		1FE5D29F21ABCA8700765A09 /* LoginAfter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE5D29E21ABCA8700765A09 /* LoginAfter.storyboard */; };
+		1FE5D2A121ABD53600765A09 /* MyTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE5D2A021ABD53600765A09 /* MyTabLayout.swift */; };
+		1FF5F61821AE9F3C00BA681A /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5F61721AE9F3C00BA681A /* RecommendCell.swift */; };
+		1FF5F61A21AEBFA500BA681A /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5F61921AEBFA500BA681A /* PopularTableViewController.swift */; };
+		1FF7EB242195B4F600777A1F /* LocalLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF7EB232195B4F600777A1F /* LocalLoginVC.swift */; };
+		1FFEE0B221A50076001CEC25 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEE0B121A50076001CEC25 /* LoadingVC.swift */; };
 		4A2F6FE82194AA8C006F3509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */; };
-		4A2F6FEA2194AA8C006F3509 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FE92194AA8C006F3509 /* SplashVC.swift */; };
-		4A2F6FED2194AA8C006F3509 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FEB2194AA8C006F3509 /* Splash.storyboard */; };
+		4A2F6FEA2194AA8C006F3509 /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FE92194AA8C006F3509 /* LanguageVC.swift */; };
+		4A2F6FED2194AA8C006F3509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FEB2194AA8C006F3509 /* Main.storyboard */; };
 		4A2F6FEF2194AA8D006F3509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FEE2194AA8D006F3509 /* Assets.xcassets */; };
 		4A2F6FF22194AA8D006F3509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FF02194AA8D006F3509 /* LaunchScreen.storyboard */; };
 		4A2F6FFA2194D21F006F3509 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FF92194D21F006F3509 /* LocalData.swift */; };
+		4A2FA6BA21A0A5AB002701C0 /* ConfigUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2FA6B921A0A5AB002701C0 /* ConfigUserDefaults.swift */; };
+		4ADFDAF021A0E22500181839 /* ConfigColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADFDAEF21A0E22500181839 /* ConfigColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09419AFDF826EB3A700B0A27 /* Pods_Sixdegrees_Ios_V2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sixdegrees_Ios_V2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F00B19721A3F4390004FEC7 /* ArticleDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDatasource.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/ArticleDatasource.swift; sourceTree = "<group>"; };
+		1F00B19821A3F4390004FEC7 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pagination.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/Pagination.swift; sourceTree = "<group>"; };
+		1F00B19921A3F4390004FEC7 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/Article.swift; sourceTree = "<group>"; };
+		1F00B19A21A3F4390004FEC7 /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ErrorMessage.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/ErrorMessage.swift; sourceTree = "<group>"; };
+		1F00B19B21A3F4390004FEC7 /* LikeCounts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikeCounts.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/LikeCounts.swift; sourceTree = "<group>"; };
+		1F00B19C21A3F4390004FEC7 /* CommentAndArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentAndArticle.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/CommentAndArticle.swift; sourceTree = "<group>"; };
+		1F00B19D21A3F4390004FEC7 /* MediaImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaImage.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/MediaImage.swift; sourceTree = "<group>"; };
+		1F00B19E21A3F4390004FEC7 /* MyCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCategories.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/MyCategories.swift; sourceTree = "<group>"; };
+		1F00B19F21A3F43A0004FEC7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/User.swift; sourceTree = "<group>"; };
+		1F00B1A021A3F43A0004FEC7 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Member.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/Member.swift; sourceTree = "<group>"; };
+		1F00B1A121A3F43A0004FEC7 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/Category.swift; sourceTree = "<group>"; };
+		1F00B1A221A3F43A0004FEC7 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Token.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/Token.swift; sourceTree = "<group>"; };
+		1F00B1A421A3F43A0004FEC7 /* DonateDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DonateDetail.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/DonateDetail.swift; sourceTree = "<group>"; };
+		1F00B1A521A3F43A0004FEC7 /* ArticleDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleDetail.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/ArticleDetail.swift; sourceTree = "<group>"; };
+		1F00B1A621A3F43A0004FEC7 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/Comment.swift; sourceTree = "<group>"; };
+		1F00B1A721A3F43A0004FEC7 /* ServerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerResponse.swift; path = ../../../sixdegrees_Ios_V2.0/app/Model/Model/ServerResponse.swift; sourceTree = "<group>"; };
+		1F00B1B921A3F4D70004FEC7 /* Callback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callback.swift; sourceTree = "<group>"; };
+		1F06653F21A6B0CC00773324 /* ModelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConfig.swift; sourceTree = "<group>"; };
+		1F4A1F91219ADBE900A642F2 /* ForgetPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPassword.swift; sourceTree = "<group>"; };
+		1F4A1F93219AFDEA00A642F2 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		1F5DDFEE2195494300E7221A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		1F5DDFF021955ED400E7221A /* BaseUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUiViewController.swift; sourceTree = "<group>"; };
+		1F6A402D21A7F7E500E95624 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F8A6D1921A3FF10000F6D0B /* GetCommentAndArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetCommentAndArticle.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetCommentAndArticle.swift; sourceTree = "<group>"; };
+		1F8A6D1A21A3FF10000F6D0B /* GetDatasourceList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetDatasourceList.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetDatasourceList.swift; sourceTree = "<group>"; };
+		1F8A6D1B21A3FF10000F6D0B /* GetStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetStatus.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetStatus.swift; sourceTree = "<group>"; };
+		1F8A6D1C21A3FF10000F6D0B /* GetMyCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetMyCategory.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetMyCategory.swift; sourceTree = "<group>"; };
+		1F8A6D1D21A3FF10000F6D0B /* GetDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetDatasource.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetDatasource.swift; sourceTree = "<group>"; };
+		1F8A6D1E21A3FF10000F6D0B /* GetCategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetCategoryList.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetCategoryList.swift; sourceTree = "<group>"; };
+		1F8A6D1F21A3FF10000F6D0B /* GetDonateDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetDonateDetail.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetDonateDetail.swift; sourceTree = "<group>"; };
+		1F8A6D2021A3FF10000F6D0B /* GetAddStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetAddStatus.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetAddStatus.swift; sourceTree = "<group>"; };
+		1F8A6D2121A3FF10000F6D0B /* GetComments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetComments.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetComments.swift; sourceTree = "<group>"; };
+		1F8A6D2221A3FF10000F6D0B /* GetMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetMember.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetMember.swift; sourceTree = "<group>"; };
+		1F8A6D2321A3FF10000F6D0B /* GetError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetError.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetError.swift; sourceTree = "<group>"; };
+		1F8A6D2421A3FF10000F6D0B /* GetArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetArticle.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetArticle.swift; sourceTree = "<group>"; };
+		1F8A6D2521A3FF10000F6D0B /* GetCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetCategory.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetCategory.swift; sourceTree = "<group>"; };
+		1F8A6D2621A3FF10000F6D0B /* GetArticleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetArticleList.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetArticleList.swift; sourceTree = "<group>"; };
+		1F8A6D2721A3FF10000F6D0B /* GetToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetToken.swift; path = ../../../../sixdegrees_Ios_V2.0/app/Model/Model/GetInfo/GetToken.swift; sourceTree = "<group>"; };
+		1F8A6D3721A40264000F6D0B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		1FCB2EF321ABF09C00C2CC69 /* RecommendTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableView.swift; sourceTree = "<group>"; };
+		1FCB2EF521ABF0EB00C2CC69 /* RecommendHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendHeaderCell.swift; sourceTree = "<group>"; };
+		1FD9576F21A58D8D00AC9B3C /* LoginEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEvent.swift; sourceTree = "<group>"; };
+		1FE5D29E21ABCA8700765A09 /* LoginAfter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginAfter.storyboard; sourceTree = "<group>"; };
+		1FE5D2A021ABD53600765A09 /* MyTabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabLayout.swift; sourceTree = "<group>"; };
+		1FF5F61721AE9F3C00BA681A /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
+		1FF5F61921AEBFA500BA681A /* PopularTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
+		1FF7EB232195B4F600777A1F /* LocalLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLoginVC.swift; sourceTree = "<group>"; };
+		1FFEE0B121A50076001CEC25 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		4A2F6FE42194AA8C006F3509 /* Sixdegrees_Ios_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sixdegrees_Ios_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A2F6FE92194AA8C006F3509 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
-		4A2F6FEC2194AA8C006F3509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
+		4A2F6FE92194AA8C006F3509 /* LanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVC.swift; sourceTree = "<group>"; };
+		4A2F6FEC2194AA8C006F3509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A2F6FEE2194AA8D006F3509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2F6FF12194AA8D006F3509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2F6FF32194AA8D006F3509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A2F6FF92194D21F006F3509 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		4A2FA6B921A0A5AB002701C0 /* ConfigUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUserDefaults.swift; sourceTree = "<group>"; };
+		4ADFDAEF21A0E22500181839 /* ConfigColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigColor.swift; sourceTree = "<group>"; };
+		BCC73D56185C4FB19AA9C823 /* Pods-Sixdegrees_Ios_V2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixdegrees_Ios_V2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sixdegrees_Ios_V2/Pods-Sixdegrees_Ios_V2.release.xcconfig"; sourceTree = "<group>"; };
+		DCBB64E3F2C38FCF9AC3FF41 /* Pods-Sixdegrees_Ios_V2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sixdegrees_Ios_V2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sixdegrees_Ios_V2/Pods-Sixdegrees_Ios_V2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +135,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1873FD25B13337C5216AE9C0 /* Pods_Sixdegrees_Ios_V2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F00B19421A3F3C00004FEC7 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				1F00B1B921A3F4D70004FEC7 /* Callback.swift */,
+				1F8A6D3721A40264000F6D0B /* ApiService.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		1F00B19621A3F40B0004FEC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A6D1821A3FEF9000F6D0B /* GetInfo */,
+				1F00B19921A3F4390004FEC7 /* Article.swift */,
+				1F00B19721A3F4390004FEC7 /* ArticleDatasource.swift */,
+				1F00B1A521A3F43A0004FEC7 /* ArticleDetail.swift */,
+				1F00B1A121A3F43A0004FEC7 /* Category.swift */,
+				1F00B1A621A3F43A0004FEC7 /* Comment.swift */,
+				1F00B19C21A3F4390004FEC7 /* CommentAndArticle.swift */,
+				1F00B1A421A3F43A0004FEC7 /* DonateDetail.swift */,
+				1F00B19A21A3F4390004FEC7 /* ErrorMessage.swift */,
+				1F00B19B21A3F4390004FEC7 /* LikeCounts.swift */,
+				1F00B19D21A3F4390004FEC7 /* MediaImage.swift */,
+				1F00B1A021A3F43A0004FEC7 /* Member.swift */,
+				1F00B19E21A3F4390004FEC7 /* MyCategories.swift */,
+				1F00B19821A3F4390004FEC7 /* Pagination.swift */,
+				1F00B1A721A3F43A0004FEC7 /* ServerResponse.swift */,
+				1F00B1A221A3F43A0004FEC7 /* Token.swift */,
+				1F00B19F21A3F43A0004FEC7 /* User.swift */,
+				1F06653F21A6B0CC00773324 /* ModelConfig.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F8A6D1821A3FEF9000F6D0B /* GetInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F8A6D2021A3FF10000F6D0B /* GetAddStatus.swift */,
+				1F8A6D2421A3FF10000F6D0B /* GetArticle.swift */,
+				1F8A6D2621A3FF10000F6D0B /* GetArticleList.swift */,
+				1F8A6D2521A3FF10000F6D0B /* GetCategory.swift */,
+				1F8A6D1E21A3FF10000F6D0B /* GetCategoryList.swift */,
+				1F8A6D1921A3FF10000F6D0B /* GetCommentAndArticle.swift */,
+				1F8A6D2121A3FF10000F6D0B /* GetComments.swift */,
+				1F8A6D1D21A3FF10000F6D0B /* GetDatasource.swift */,
+				1F8A6D1A21A3FF10000F6D0B /* GetDatasourceList.swift */,
+				1F8A6D1F21A3FF10000F6D0B /* GetDonateDetail.swift */,
+				1F8A6D2321A3FF10000F6D0B /* GetError.swift */,
+				1F8A6D2221A3FF10000F6D0B /* GetMember.swift */,
+				1F8A6D1C21A3FF10000F6D0B /* GetMyCategory.swift */,
+				1F8A6D1B21A3FF10000F6D0B /* GetStatus.swift */,
+				1F8A6D2721A3FF10000F6D0B /* GetToken.swift */,
+			);
+			path = GetInfo;
+			sourceTree = "<group>";
+		};
+		1FD9576E21A58D6000AC9B3C /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9576F21A58D8D00AC9B3C /* LoginEvent.swift */,
+			);
+			path = EventBus;
+			sourceTree = "<group>";
+		};
+		46772C3FBF2AAA4C624351EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09419AFDF826EB3A700B0A27 /* Pods_Sixdegrees_Ios_V2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A2F6FDB2194AA8C006F3509 = {
 			isa = PBXGroup;
 			children = (
 				4A2F6FE62194AA8C006F3509 /* Sixdegrees_Ios_V2 */,
 				4A2F6FE52194AA8C006F3509 /* Products */,
+				CF14FF7D7E36345266363685 /* Pods */,
+				46772C3FBF2AAA4C624351EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +235,58 @@
 		4A2F6FE62194AA8C006F3509 /* Sixdegrees_Ios_V2 */ = {
 			isa = PBXGroup;
 			children = (
+				1F6A402D21A7F7E500E95624 /* GoogleService-Info.plist */,
+				1FD9576E21A58D6000AC9B3C /* EventBus */,
+				1F00B19621A3F40B0004FEC7 /* Model */,
+				1F00B19421A3F3C00004FEC7 /* Api */,
+				4ADFDAF121A0E23600181839 /* ViewController */,
+				4ADFDAEE21A0E1ED00181839 /* Util */,
 				4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */,
-				4A2F6FE92194AA8C006F3509 /* SplashVC.swift */,
-				4A2F6FEB2194AA8C006F3509 /* Splash.storyboard */,
+				4A2F6FF32194AA8D006F3509 /* Info.plist */,
 				4A2F6FEE2194AA8D006F3509 /* Assets.xcassets */,
 				4A2F6FF02194AA8D006F3509 /* LaunchScreen.storyboard */,
-				4A2F6FF32194AA8D006F3509 /* Info.plist */,
-				4A2F6FF92194D21F006F3509 /* LocalData.swift */,
+				4A2F6FEB2194AA8C006F3509 /* Main.storyboard */,
+				1FE5D29E21ABCA8700765A09 /* LoginAfter.storyboard */,
 			);
 			path = Sixdegrees_Ios_V2;
+			sourceTree = "<group>";
+		};
+		4ADFDAEE21A0E1ED00181839 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				4ADFDAEF21A0E22500181839 /* ConfigColor.swift */,
+				4A2FA6B921A0A5AB002701C0 /* ConfigUserDefaults.swift */,
+				4A2F6FF92194D21F006F3509 /* LocalData.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4ADFDAF121A0E23600181839 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FE5D2A021ABD53600765A09 /* MyTabLayout.swift */,
+				1FCB2EF321ABF09C00C2CC69 /* RecommendTableView.swift */,
+				1FF5F61921AEBFA500BA681A /* PopularTableViewController.swift */,
+				1FCB2EF521ABF0EB00C2CC69 /* RecommendHeaderCell.swift */,
+				1FF5F61721AE9F3C00BA681A /* RecommendCell.swift */,
+				1F5DDFF021955ED400E7221A /* BaseUiViewController.swift */,
+				1F5DDFEE2195494300E7221A /* LoginVC.swift */,
+				4A2F6FE92194AA8C006F3509 /* LanguageVC.swift */,
+				1FF7EB232195B4F600777A1F /* LocalLoginVC.swift */,
+				1F4A1F91219ADBE900A642F2 /* ForgetPassword.swift */,
+				1F4A1F93219AFDEA00A642F2 /* RegisterVC.swift */,
+				1FFEE0B121A50076001CEC25 /* LoadingVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CF14FF7D7E36345266363685 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCBB64E3F2C38FCF9AC3FF41 /* Pods-Sixdegrees_Ios_V2.debug.xcconfig */,
+				BCC73D56185C4FB19AA9C823 /* Pods-Sixdegrees_Ios_V2.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A2F6FF62194AA8D006F3509 /* Build configuration list for PBXNativeTarget "Sixdegrees_Ios_V2" */;
 			buildPhases = (
+				A8BF7D29A07E8FF276ED6303 /* [CP] Check Pods Manifest.lock */,
 				4A2F6FE02194AA8C006F3509 /* Sources */,
 				4A2F6FE12194AA8C006F3509 /* Frameworks */,
 				4A2F6FE22194AA8C006F3509 /* Resources */,
+				2F34B1EEEAA3CC53328242BE /* [CP] Embed Pods Frameworks */,
+				86A6598EBE5FEF8E11D6CF1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,34 +350,193 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE5D29F21ABCA8700765A09 /* LoginAfter.storyboard in Resources */,
 				4A2F6FF22194AA8D006F3509 /* LaunchScreen.storyboard in Resources */,
+				1F6A402E21A7F7E500E95624 /* GoogleService-Info.plist in Resources */,
 				4A2F6FEF2194AA8D006F3509 /* Assets.xcassets in Resources */,
-				4A2F6FED2194AA8C006F3509 /* Splash.storyboard in Resources */,
+				4A2F6FED2194AA8C006F3509 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F34B1EEEAA3CC53328242BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sixdegrees_Ios_V2/Pods-Sixdegrees_Ios_V2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftEventBus/SwiftEventBus.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEventBus.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sixdegrees_Ios_V2/Pods-Sixdegrees_Ios_V2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86A6598EBE5FEF8E11D6CF1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sixdegrees_Ios_V2/Pods-Sixdegrees_Ios_V2-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sixdegrees_Ios_V2/Pods-Sixdegrees_Ios_V2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8BF7D29A07E8FF276ED6303 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sixdegrees_Ios_V2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A2F6FE02194AA8C006F3509 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCB2EF421ABF09C00C2CC69 /* RecommendTableView.swift in Sources */,
+				1F00B1AA21A3F43A0004FEC7 /* Article.swift in Sources */,
 				4A2F6FFA2194D21F006F3509 /* LocalData.swift in Sources */,
-				4A2F6FEA2194AA8C006F3509 /* SplashVC.swift in Sources */,
+				4ADFDAF021A0E22500181839 /* ConfigColor.swift in Sources */,
+				1FCB2EF621ABF0EB00C2CC69 /* RecommendHeaderCell.swift in Sources */,
+				1F4A1F94219AFDEA00A642F2 /* RegisterVC.swift in Sources */,
+				1F00B1B821A3F43A0004FEC7 /* ServerResponse.swift in Sources */,
+				1F8A6D2B21A3FF10000F6D0B /* GetMyCategory.swift in Sources */,
+				4A2F6FEA2194AA8C006F3509 /* LanguageVC.swift in Sources */,
+				1F00B1AD21A3F43A0004FEC7 /* CommentAndArticle.swift in Sources */,
+				1FF7EB242195B4F600777A1F /* LocalLoginVC.swift in Sources */,
+				1F8A6D2921A3FF10000F6D0B /* GetDatasourceList.swift in Sources */,
+				1F8A6D3421A3FF10000F6D0B /* GetCategory.swift in Sources */,
+				1F5DDFF121955ED400E7221A /* BaseUiViewController.swift in Sources */,
+				1F00B1B021A3F43A0004FEC7 /* User.swift in Sources */,
+				1F8A6D2F21A3FF10000F6D0B /* GetAddStatus.swift in Sources */,
+				1FD9577021A58D8D00AC9B3C /* LoginEvent.swift in Sources */,
+				1F00B1AE21A3F43A0004FEC7 /* MediaImage.swift in Sources */,
+				1F8A6D2A21A3FF10000F6D0B /* GetStatus.swift in Sources */,
+				1F00B1AB21A3F43A0004FEC7 /* ErrorMessage.swift in Sources */,
+				1F4A1F92219ADBE900A642F2 /* ForgetPassword.swift in Sources */,
+				1F8A6D3321A3FF10000F6D0B /* GetArticle.swift in Sources */,
+				1FF5F61821AE9F3C00BA681A /* RecommendCell.swift in Sources */,
+				4A2FA6BA21A0A5AB002701C0 /* ConfigUserDefaults.swift in Sources */,
+				1F8A6D2D21A3FF10000F6D0B /* GetCategoryList.swift in Sources */,
+				1FE5D2A121ABD53600765A09 /* MyTabLayout.swift in Sources */,
+				1FFEE0B221A50076001CEC25 /* LoadingVC.swift in Sources */,
+				1F8A6D2E21A3FF10000F6D0B /* GetDonateDetail.swift in Sources */,
+				1F00B1B621A3F43A0004FEC7 /* ArticleDetail.swift in Sources */,
+				1F8A6D3221A3FF10000F6D0B /* GetError.swift in Sources */,
+				1F00B1AF21A3F43A0004FEC7 /* MyCategories.swift in Sources */,
+				1F00B1A821A3F43A0004FEC7 /* ArticleDatasource.swift in Sources */,
+				1F8A6D3621A3FF10000F6D0B /* GetToken.swift in Sources */,
+				1F00B1AC21A3F43A0004FEC7 /* LikeCounts.swift in Sources */,
+				1F5DDFEF2195494400E7221A /* LoginVC.swift in Sources */,
 				4A2F6FE82194AA8C006F3509 /* AppDelegate.swift in Sources */,
+				1F8A6D3021A3FF10000F6D0B /* GetComments.swift in Sources */,
+				1F8A6D3521A3FF10000F6D0B /* GetArticleList.swift in Sources */,
+				1F00B1B521A3F43A0004FEC7 /* DonateDetail.swift in Sources */,
+				1F06654021A6B0CC00773324 /* ModelConfig.swift in Sources */,
+				1F00B1B721A3F43A0004FEC7 /* Comment.swift in Sources */,
+				1F8A6D2C21A3FF10000F6D0B /* GetDatasource.swift in Sources */,
+				1F00B1B321A3F43A0004FEC7 /* Token.swift in Sources */,
+				1F00B1B121A3F43A0004FEC7 /* Member.swift in Sources */,
+				1F00B1A921A3F43A0004FEC7 /* Pagination.swift in Sources */,
+				1F00B1BA21A3F4D70004FEC7 /* Callback.swift in Sources */,
+				1F8A6D3121A3FF10000F6D0B /* GetMember.swift in Sources */,
+				1FF5F61A21AEBFA500BA681A /* PopularTableViewController.swift in Sources */,
+				1F00B1B221A3F43A0004FEC7 /* Category.swift in Sources */,
+				1F8A6D2821A3FF10000F6D0B /* GetCommentAndArticle.swift in Sources */,
+				1F8A6D3821A40264000F6D0B /* ApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4A2F6FEB2194AA8C006F3509 /* Splash.storyboard */ = {
+		4A2F6FEB2194AA8C006F3509 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4A2F6FEC2194AA8C006F3509 /* Base */,
 			);
-			name = Splash.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		4A2F6FF02194AA8D006F3509 /* LaunchScreen.storyboard */ = {
@@ -284,16 +668,18 @@
 		};
 		4A2F6FF72194AA8D006F3509 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBB64E3F2C38FCF9AC3FF41 /* Pods-Sixdegrees_Ios_V2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZF35WG685;
 				INFOPLIST_FILE = Sixdegrees_Ios_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "test.Sixdegrees-Ios-V2";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sixdegrees.appk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,16 +688,18 @@
 		};
 		4A2F6FF82194AA8D006F3509 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC73D56185C4FB19AA9C823 /* Pods-Sixdegrees_Ios_V2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YZF35WG685;
 				INFOPLIST_FILE = Sixdegrees_Ios_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "test.Sixdegrees-Ios-V2";
+				PRODUCT_BUNDLE_IDENTIFIER = io.sixdegrees.appk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

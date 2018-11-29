@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>26B62515-7CCB-49FC-BB08-8A3291FA8965</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>26B62515-7CCB-49FC-BB08-8A3291FA8965.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Sixdegrees_Ios_V2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Sixdegrees_Ios_V2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Sixdegrees_Ios_V2</string>
+			<key>timeStartedRecording</key>
+			<real>564648409.85065997</real>
+			<key>timeStoppedRecording</key>
+			<real>564648410.934057</real>
+			<key>title</key>
+			<string>Build Sixdegrees_Ios_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>26B62515-7CCB-49FC-BB08-8A3291FA8965</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

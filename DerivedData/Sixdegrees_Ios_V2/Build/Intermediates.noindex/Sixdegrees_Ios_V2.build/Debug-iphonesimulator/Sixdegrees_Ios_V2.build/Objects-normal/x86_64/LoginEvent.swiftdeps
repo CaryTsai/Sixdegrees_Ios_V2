@@ -1,0 +1,185 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoginEvent"
+provides-nominal:
+- "17Sixdegrees_Ios_V210LoginEventC"
+provides-member:
+- ["17Sixdegrees_Ios_V210LoginEventC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Bool"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "LoginEvent"
+- "NSObject"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "mIsType"]
+- !private ["s7CVarArgP", "mIsload"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "mIsType"]
+- !private ["s28CustomDebugStringConvertibleP", "mIsload"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "mIsType"]
+- !private ["s23CustomStringConvertibleP", "mIsload"]
+- ["SQ", ""]
+- !private ["SQ", "init"]
+- !private ["SQ", "mIsType"]
+- !private ["SQ", "mIsload"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", ""]
+- !private ["SH", "init"]
+- !private ["SH", "mIsType"]
+- !private ["SH", "mIsload"]
+- ["17Sixdegrees_Ios_V210LoginEventC", "Bool"]
+- ["17Sixdegrees_Ios_V210LoginEventC", "String"]
+- ["17Sixdegrees_Ios_V210LoginEventC", "init"]
+- ["17Sixdegrees_Ios_V210LoginEventC", "mIsType"]
+- ["17Sixdegrees_Ios_V210LoginEventC", "mIsload"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "mIsType"]
+- ["So8NSObjectC", "mIsload"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "mIsType"]
+- !private ["So8NSObjectP", "mIsload"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mIsType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mIsload"]
+depends-nominal:
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "SQ"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- "17Sixdegrees_Ios_V210LoginEventC"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "s12StaticStringV"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRVideoMetaData.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRSearchTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRCollectionTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRUserTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRListTimelineDataSource.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRAPIErrorCode.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRJSONConvertible.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineType.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TwitterCore.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRSessionStore.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineDelegate.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetViewDelegate.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRVideoPlaybackState.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMediaEntitySize.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRAuthConfig.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTROAuthSigning.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRCoreOAuthSigning.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetTableViewCell.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRSession.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRAuthSession.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRGuestSession.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMoPubAdConfiguration.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRLogInButton.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineViewController.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRComposerViewController.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRUser.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRComposer.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineFilter.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTwitter.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineCursor.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRDefines.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRConstants.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRNotificationConstants.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweet.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRKit.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRAPIClient.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMoPubNativeAdContainerView.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetView.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetCashtagEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetHashtagEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetUrlEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetUserMentionEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetEntity.h"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Modules/module.modulemap"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Modules/module.modulemap"
+- "/Users/carytsai/iCloud \u96F2\u789F\uFF08\u5C01\u5B58\u6A94\uFF09/Desktop/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Modules/module.private.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "bedc699c5e11147ea54c08e83979ce9b"

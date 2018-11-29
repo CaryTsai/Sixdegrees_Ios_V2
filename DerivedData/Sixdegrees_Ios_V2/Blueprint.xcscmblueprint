@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "318000115CB67C4559C6DADB8943757A0D3D62FC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9A05E1858939563FE9082673ACA2AA77BE49880B" : 0,
+    "318000115CB67C4559C6DADB8943757A0D3D62FC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "46887FD8-E536-474D-AA0A-347BA15103E2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9A05E1858939563FE9082673ACA2AA77BE49880B" : "sixdegrees_Ios_V2.0\/",
+    "318000115CB67C4559C6DADB8943757A0D3D62FC" : "Sixdegrees_Ios_V2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Sixdegrees_Ios_V2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Sixdegrees_Ios_V2.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CaryTsai1015\/Sixdegrees_Ios_V2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "318000115CB67C4559C6DADB8943757A0D3D62FC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mj18rd\/sixdegrees_Ios_V2.0.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9A05E1858939563FE9082673ACA2AA77BE49880B"
+    }
+  ]
+}
