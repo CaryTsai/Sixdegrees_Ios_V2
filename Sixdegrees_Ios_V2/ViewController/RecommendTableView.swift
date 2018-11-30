@@ -16,12 +16,18 @@ class RecommendTableView: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nibHeader = UINib(nibName: "NewsHeaderTableViewCell", bundle: nil)
+        tableView.register(nibHeader, forCellReuseIdentifier: "NewsHeaderTableViewCell")
+        tableView.tableFooterView = UIView()
+        
+        let nib = UINib(nibName: "NewsTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "NewsTableViewCell")
+        tableView.tableFooterView = UIView()
+        tableView.separatorColor = UIColor.clear
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+
     }
 
     // MARK: - Table view data source
@@ -39,7 +45,9 @@ class RecommendTableView: UITableViewController {
 
             if(indexPath.item % 4 == 0){
                 
-                let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendHeaderCell", for: indexPath) as! RecommendHeaderCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "NewsHeaderTableViewCell", for: indexPath) as! NewsHeaderTableViewCell
+                
+//                let cell = Bundle.main.loadNibNamed("NewsHeaderTableViewCell", owner: self, options: nil)?.first as! RecommendHeaderCell
                 
                 if (Time <= 0) {
                     cell.mRecommendCellTimeButton.setTitle("剛剛", for: .normal)
@@ -63,7 +71,9 @@ class RecommendTableView: UITableViewController {
 
             }else{
                 
-                let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendCell", for: indexPath) as! RecommendCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as! NewsTableViewCell
+//                let cell = Bundle.main.loadNibNamed("RecommendCell", owner: self, options: nil)?.first as! RecommendCell
+
                 if (Time <= 0) {
                     cell.mRecommendCellTime.setTitle("剛剛", for: .normal)
                 } else {

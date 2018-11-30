@@ -88,7 +88,7 @@ class LoadingVC:BaseUiViewController{
     func getRecommendArticleList(){
         
         
-        Callback.mSharedInstance.fetchRecommendArticleList(accesstoken: mToken,page:1,limit:10) { (Article,code,error) in
+        Callback.mSharedInstance.fetchRecommendArticleList(accesstoken: mToken,page:1,limit:100) { (Article,code,error) in
             
             if let error = error{
                 print("網路連線不良",error)
@@ -119,10 +119,10 @@ class LoadingVC:BaseUiViewController{
     
     func getPopularArticleList(){
         
-        let timeType:String = "12h"
+        let timeType:String = "24h"
 
         
-        Callback.mSharedInstance.fetchPopularArticleList(accesstoken: mToken,page:1,limit:10,timetype:timeType) { (Article,code,error) in
+        Callback.mSharedInstance.fetchPopularArticleList(accesstoken: mToken,page:1,limit:100,timetype:timeType) { (Article,code,error) in
             
             if let error = error{
                 print("網路連線不良",error)

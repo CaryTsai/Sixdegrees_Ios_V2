@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="JTg-Wi-BTz" customClass="NewsHeaderTableViewCell" customModule="Sixdegrees_Ios_V2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JTg-Wi-BTz" id="Nsf-6a-MV3">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="083-JH-cBi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="083-JH-cBi" secondAttribute="height" multiplier="15:8" id="etv-eo-3DW"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r89-gK-FHw">
+                        <rect key="frame" x="0.0" y="126" width="375" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻内容新闻内容新闻内容新闻内容新闻内容新闻…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCt-KH-mfw">
+                                <rect key="frame" x="15" y="8" width="345" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jam-3F-GTm">
+                                <rect key="frame" x="15" y="35" width="74" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <state key="normal" title="新聞來源新聞來源">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="688-eL-8le">
+                                <rect key="frame" x="99" y="41.5" width="60" height="10"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="GZ2-Z1-Pkc"/>
+                                    <constraint firstAttribute="width" constant="60" id="g3k-d1-vIr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="5小时前" image="clock_update">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSz-A4-rY0">
+                                <rect key="frame" x="159" y="42" width="60" height="10"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="AUV-c8-MFh"/>
+                                    <constraint firstAttribute="height" constant="10" id="ztC-px-cw6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="1250" image="eye_gray">
+                                    <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28858411309999998" green="0.3304660022" blue="0.48236924409999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="r89-gK-FHw" secondAttribute="height" multiplier="375:74" id="39T-za-PdO"/>
+                            <constraint firstItem="jam-3F-GTm" firstAttribute="top" secondItem="CCt-KH-mfw" secondAttribute="bottom" constant="10" id="6be-N3-nz0"/>
+                            <constraint firstAttribute="trailing" secondItem="CCt-KH-mfw" secondAttribute="trailing" constant="15" id="8iZ-WS-mQj"/>
+                            <constraint firstItem="hSz-A4-rY0" firstAttribute="top" secondItem="CCt-KH-mfw" secondAttribute="bottom" constant="17" id="IiN-g3-cL7"/>
+                            <constraint firstItem="jam-3F-GTm" firstAttribute="leading" secondItem="r89-gK-FHw" secondAttribute="leading" constant="15" id="MBr-c1-LzP"/>
+                            <constraint firstItem="688-eL-8le" firstAttribute="leading" secondItem="jam-3F-GTm" secondAttribute="trailing" constant="10" id="O4p-Ua-Xxt"/>
+                            <constraint firstItem="hSz-A4-rY0" firstAttribute="leading" secondItem="688-eL-8le" secondAttribute="trailing" id="Tas-oz-Z8u"/>
+                            <constraint firstItem="688-eL-8le" firstAttribute="top" secondItem="CCt-KH-mfw" secondAttribute="bottom" constant="16.5" id="bcP-6X-DkS"/>
+                            <constraint firstItem="CCt-KH-mfw" firstAttribute="top" secondItem="r89-gK-FHw" secondAttribute="top" constant="8" id="eni-Fc-zFk"/>
+                            <constraint firstItem="CCt-KH-mfw" firstAttribute="leading" secondItem="r89-gK-FHw" secondAttribute="leading" constant="15" id="jEZ-WZ-BPx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="r89-gK-FHw" secondAttribute="trailing" id="GYM-fE-9vK"/>
+                    <constraint firstItem="r89-gK-FHw" firstAttribute="leading" secondItem="Nsf-6a-MV3" secondAttribute="leading" id="Zb5-0t-3an"/>
+                    <constraint firstItem="083-JH-cBi" firstAttribute="top" secondItem="Nsf-6a-MV3" secondAttribute="top" id="d3y-zz-Sdm"/>
+                    <constraint firstItem="083-JH-cBi" firstAttribute="leading" secondItem="Nsf-6a-MV3" secondAttribute="leading" id="kLh-pZ-otp"/>
+                    <constraint firstAttribute="trailing" secondItem="083-JH-cBi" secondAttribute="trailing" id="mZU-lF-h3b"/>
+                    <constraint firstAttribute="bottom" secondItem="r89-gK-FHw" secondAttribute="bottom" constant="-0.5" id="nAG-M2-IY5"/>
+                    <constraint firstAttribute="bottom" secondItem="083-JH-cBi" secondAttribute="bottom" constant="-0.5" id="u6B-v5-9aM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mRecommendCellImageView" destination="083-JH-cBi" id="zZA-8N-ZwB"/>
+                <outlet property="mRecommendCellSourceButton" destination="jam-3F-GTm" id="nRG-Yw-hgy"/>
+                <outlet property="mRecommendCellTimeButton" destination="688-eL-8le" id="6cA-17-lia"/>
+                <outlet property="mRecommendCellTitleLabel" destination="CCt-KH-mfw" id="fC3-r4-PO2"/>
+                <outlet property="mRecommendViewButton" destination="hSz-A4-rY0" id="Ks7-y2-w1a"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock_update" width="10" height="10"/>
+        <image name="eye_gray" width="12" height="12"/>
+    </resources>
+</document>

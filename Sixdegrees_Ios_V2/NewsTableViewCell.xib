@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="118" id="EXA-i1-awE" customClass="NewsTableViewCell" customModule="Sixdegrees_Ios_V2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EXA-i1-awE" id="11B-W0-oDh">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNS-4R-KdJ">
+                        <rect key="frame" x="15" y="63" width="74" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <state key="normal" title="新聞來源新聞來源">
+                            <color key="titleColor" red="0.64146775010000001" green="0.69329142570000002" blue="0.74510604140000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxy-Mf-paF">
+                        <rect key="frame" x="99" y="76" width="60" height="10"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="MyH-ai-byZ"/>
+                            <constraint firstAttribute="height" constant="10" id="xtU-OV-mpp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                        <state key="normal" title="5小时前" image="clock_update">
+                            <color key="titleColor" red="0.64146775010000001" green="0.69329142570000002" blue="0.74510604140000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgz-nP-mmh">
+                        <rect key="frame" x="159" y="76" width="60" height="10"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Xl1-5d-wR8"/>
+                            <constraint firstAttribute="height" constant="10" id="vwC-Fb-4ih"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                        <state key="normal" title="1250" image="eye_gray">
+                            <color key="titleColor" red="0.64146775010000001" green="0.69329142570000002" blue="0.74510604140000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻内容新闻内容新闻内容新闻内容新闻内容新闻…新闻内容新闻内容新闻内容新闻内容新闻内容新闻…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-vb-sXy">
+                        <rect key="frame" x="15" y="15" width="205" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="gdc-vb-sXy" secondAttribute="height" multiplier="41:8" id="1N4-2G-2jQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cAA-k8-M92">
+                        <rect key="frame" x="244" y="23" width="115" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="cAA-k8-M92" secondAttribute="height" multiplier="23:14" id="xNh-IF-TTG"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krb-UX-q8c">
+                        <rect key="frame" x="15" y="116" width="344" height="1.5"/>
+                        <color key="backgroundColor" red="0.92120569944381714" green="0.93314015865325928" blue="0.94510048627853394" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cAA-k8-M92" firstAttribute="top" secondItem="11B-W0-oDh" secondAttribute="topMargin" constant="12" id="2TA-4J-rhk"/>
+                    <constraint firstAttribute="bottom" secondItem="krb-UX-q8c" secondAttribute="bottom" id="5fA-yk-uUW"/>
+                    <constraint firstItem="Oxy-Mf-paF" firstAttribute="leading" secondItem="yNS-4R-KdJ" secondAttribute="trailing" constant="10" id="Dyk-oD-oON"/>
+                    <constraint firstItem="cAA-k8-M92" firstAttribute="trailing" secondItem="11B-W0-oDh" secondAttribute="trailingMargin" id="EZK-vv-meg"/>
+                    <constraint firstItem="yNS-4R-KdJ" firstAttribute="top" secondItem="gdc-vb-sXy" secondAttribute="bottom" constant="8" id="ITz-I7-Uss"/>
+                    <constraint firstItem="pgz-nP-mmh" firstAttribute="leading" secondItem="Oxy-Mf-paF" secondAttribute="trailing" id="IhP-mR-0ZC"/>
+                    <constraint firstItem="cAA-k8-M92" firstAttribute="leading" secondItem="gdc-vb-sXy" secondAttribute="trailing" constant="24" id="JtM-xL-Q2p"/>
+                    <constraint firstItem="pgz-nP-mmh" firstAttribute="top" secondItem="gdc-vb-sXy" secondAttribute="bottom" constant="21" id="TtD-lG-Ssz"/>
+                    <constraint firstItem="krb-UX-q8c" firstAttribute="leading" secondItem="11B-W0-oDh" secondAttribute="leading" constant="15" id="VbJ-fP-xz3"/>
+                    <constraint firstItem="gdc-vb-sXy" firstAttribute="top" secondItem="11B-W0-oDh" secondAttribute="top" constant="15" id="Yw8-fX-Gtp"/>
+                    <constraint firstAttribute="trailing" secondItem="krb-UX-q8c" secondAttribute="trailing" constant="16" id="an2-dg-XkZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pgz-nP-mmh" secondAttribute="bottom" constant="21" id="gDV-pc-9Vy"/>
+                    <constraint firstItem="pgz-nP-mmh" firstAttribute="leading" secondItem="Oxy-Mf-paF" secondAttribute="trailing" id="hjt-zX-2iY"/>
+                    <constraint firstItem="krb-UX-q8c" firstAttribute="top" secondItem="yNS-4R-KdJ" secondAttribute="bottom" constant="17" id="iD1-7y-qMS"/>
+                    <constraint firstItem="yNS-4R-KdJ" firstAttribute="leading" secondItem="11B-W0-oDh" secondAttribute="leading" constant="15" id="lFu-Uh-Pkc"/>
+                    <constraint firstItem="gdc-vb-sXy" firstAttribute="leading" secondItem="11B-W0-oDh" secondAttribute="leading" constant="15" id="rFa-Ie-Uuu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cAA-k8-M92" secondAttribute="bottom" constant="14" id="rQX-YD-yNb"/>
+                    <constraint firstItem="Oxy-Mf-paF" firstAttribute="top" secondItem="gdc-vb-sXy" secondAttribute="bottom" constant="21" id="srW-br-4OW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Oxy-Mf-paF" secondAttribute="bottom" constant="21" id="tcg-bA-ykY"/>
+                    <constraint firstAttribute="bottom" secondItem="yNS-4R-KdJ" secondAttribute="bottom" constant="18.5" id="yg0-Bm-UGf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mRecommendCellImageView" destination="cAA-k8-M92" id="YSC-1D-Pog"/>
+                <outlet property="mRecommendCellPageView" destination="pgz-nP-mmh" id="JGk-BI-nsv"/>
+                <outlet property="mRecommendCellSource" destination="yNS-4R-KdJ" id="Hbz-Yz-ErH"/>
+                <outlet property="mRecommendCellTime" destination="Oxy-Mf-paF" id="dOW-Y0-Vak"/>
+                <outlet property="mRecommendCellTitle" destination="gdc-vb-sXy" id="4JX-li-bM9"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock_update" width="10" height="10"/>
+        <image name="eye_gray" width="12" height="12"/>
+    </resources>
+</document>

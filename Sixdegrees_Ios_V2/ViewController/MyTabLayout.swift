@@ -12,10 +12,16 @@ import UIKit
 
 class MyTabLayout: ButtonBarPagerTabStripViewController {
 
-    @IBOutlet weak var aaaaa: ButtonBarView!
+
+    @IBOutlet weak var mButtonBar: UIView!
+    @IBOutlet weak var mSearchBar: UIView!
+    
     override func viewDidLoad() {
 
-        
+        mButtonBar.layer.shadowOpacity = 0.1
+        mButtonBar.layer.shadowOffset = CGSize(width: 4, height: 6)
+        mSearchBar.clipsToBounds = true
+        mSearchBar.layer.cornerRadius = 10
 
         
 
