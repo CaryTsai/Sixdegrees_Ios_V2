@@ -61,8 +61,8 @@ class LoadingVC:BaseUiViewController{
             
             if let error = error{
                 print("網路連線不良",error)
-//                self.dismiss(animated: true, completion: nil)
-                self.setSnackbar(mseeage: "網路連線不良")
+                self.dismiss(animated: true, completion: nil)
+//                self.setSnackbar(mseeage: "網路連線不良")
                 return
             }
             
@@ -72,10 +72,12 @@ class LoadingVC:BaseUiViewController{
                 ModelConfig.mCategory = getCategory
                 print(ModelConfig.mCategory)
                 self.getRecommendArticleList()
+                print("喔喔喔喔喔")
+
             default:
                 print("與伺服器連線中斷")
-//                self.dismiss(animated: true, completion: nil)
-                self.setSnackbar(mseeage: "與伺服器連線中斷")
+                self.dismiss(animated: true, completion: nil)
+//                self.setSnackbar(mseeage: "與伺服器連線中斷")
             }
             
             
@@ -92,8 +94,8 @@ class LoadingVC:BaseUiViewController{
             
             if let error = error{
                 print("網路連線不良",error)
-//                self.dismiss(animated: true, completion: nil)
-                self.setSnackbar(mseeage: "網路連線不良")
+                self.dismiss(animated: true, completion: nil)
+//                self.setSnackbar(mseeage: "網路連線不良")
                 return
             }
             
@@ -105,8 +107,8 @@ class LoadingVC:BaseUiViewController{
                 self.getPopularArticleList()
             default:
                 print("與伺服器連線中斷")
-//                self.dismiss(animated: true, completion: nil)
-                self.setSnackbar(mseeage: "與伺服器連線中斷")
+                self.dismiss(animated: true, completion: nil)
+//                self.setSnackbar(mseeage: "與伺服器連線中斷")
 
             }
             
@@ -122,33 +124,31 @@ class LoadingVC:BaseUiViewController{
         let timeType:String = "24h"
 
         
-        Callback.mSharedInstance.fetchPopularArticleList(accesstoken: mToken,page:1,limit:100,timetype:timeType) { (Article,code,error) in
+        Callback.mSharedInstance.fetchPopularArticleList(accesstoken: mToken,page:1,limit:20,timetype:timeType) { (Article,code,error) in
             
             if let error = error{
                 print("網路連線不良",error)
-//                self.dismiss(animated: true, completion: nil)
-                self.setSnackbar(mseeage: "網路連線不良")
+                self.dismiss(animated: true, completion: nil)
+//                self.setSnackbar(mseeage: "網路連線不良")
                 return
             }
             switch code {
             case 200,201:
-                guard let getArticle = Article else { return }
-                ModelConfig.mPopularArticle = getArticle
-                print(ModelConfig.mPopularArticle)
-                self.StoryBoardInstantiate(withIdentifier: "LoginView")
-//                self.window = UIWindow(frame: UIScreen.main.bounds)
-                let storyboard = UIStoryboard(name: "LoginAfter", bundle: nil)
-                let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginView")
-                self.present(initialViewController, animated: true, completion: nil)
 
-//                self.window?.rootViewController = initialViewController
-//                self.window?.makeKeyAndVisible()
-                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: true))
-                
+                if(Article != nil){
+                    
+                    guard let getArticle = Article else { return }
+                    ModelConfig.mPopularArticle = getArticle
+                    print(ModelConfig.mPopularArticle)
+
+                    
+                }
+           
+                self.StoryBoardInstantiate(withIdentifier: "testVC")
             default:
                 print("與伺服器連線中斷")
-//                self.dismiss(animated: true, completion: nil)
-                self.setSnackbar(mseeage: "與伺服器連線中斷")
+                self.dismiss(animated: true, completion: nil)
+//                self.setSnackbar(mseeage: "與伺服器連線中斷")
             }
             
             

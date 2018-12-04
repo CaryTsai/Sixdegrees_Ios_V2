@@ -18,6 +18,7 @@ target 'Sixdegrees_Ios_V2' do
   pod 'MaterialComponents/Snackbar'
   pod 'XLPagerTabStrip', '~> 8.1'
   pod 'SDWebImage', '~> 4.0'
+  pod 'YouTubePlayer-Swift', '~> 1.0'
 
 
 end

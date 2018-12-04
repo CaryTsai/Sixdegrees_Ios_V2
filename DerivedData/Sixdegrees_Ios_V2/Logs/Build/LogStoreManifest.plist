@@ -35,6 +35,35 @@
 			<key>uniqueIdentifier</key>
 			<string>26B62515-7CCB-49FC-BB08-8A3291FA8965</string>
 		</dict>
+		<key>F179FC6A-6120-483D-A46A-3C90B41BA458</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F179FC6A-6120-483D-A46A-3C90B41BA458.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Sixdegrees_Ios_V2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Sixdegrees_Ios_V2</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Sixdegrees_Ios_V2</string>
+			<key>timeStartedRecording</key>
+			<real>565608503.132851</real>
+			<key>timeStoppedRecording</key>
+			<real>565608503.37256598</real>
+			<key>title</key>
+			<string>Build Sixdegrees_Ios_V2</string>
+			<key>uniqueIdentifier</key>
+			<string>F179FC6A-6120-483D-A46A-3C90B41BA458</string>
+		</dict>
 	</dict>
 </dict>
 </plist>

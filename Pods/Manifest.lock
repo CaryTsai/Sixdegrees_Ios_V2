@@ -158,6 +158,7 @@ PODS:
   - TwitterKit (3.4.2):
     - TwitterCore (>= 3.2.0)
   - XLPagerTabStrip (8.1.0)
+  - YouTubePlayer-Swift (1.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -172,6 +173,7 @@ DEPENDENCIES:
   - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`, tag `3.0.1`)
   - TwitterKit
   - XLPagerTabStrip (~> 8.1)
+  - YouTubePlayer-Swift (~> 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -205,6 +207,7 @@ SPEC REPOS:
     - TwitterCore
     - TwitterKit
     - XLPagerTabStrip
+    - YouTubePlayer-Swift
 
 EXTERNAL SOURCES:
   SwiftEventBus:
@@ -248,7 +251,8 @@ SPEC CHECKSUMS:
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
   XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
+  YouTubePlayer-Swift: ae82f4bcb504162a872b852596a9dc1fa3828c34
 
-PODFILE CHECKSUM: 6bac3623cc7e82977a30fdd48b53aaac988d2452
+PODFILE CHECKSUM: cbfaf889b017a67bc3f0d87586d66c2d3c7e3bff
 
 COCOAPODS: 1.5.3

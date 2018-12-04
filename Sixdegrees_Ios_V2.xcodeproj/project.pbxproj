@@ -3,13 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1873FD25B13337C5216AE9C0 /* Pods_Sixdegrees_Ios_V2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09419AFDF826EB3A700B0A27 /* Pods_Sixdegrees_Ios_V2.framework */; };
 		1F00B1BA21A3F4D70004FEC7 /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1B921A3F4D70004FEC7 /* Callback.swift */; };
-		1F06654021A6B0CC00773324 /* ModelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F06653F21A6B0CC00773324 /* ModelConfig.swift */; };
+		1F00CA7C21B6854D00D31162 /* VideoViewControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00CA7B21B6854D00D31162 /* VideoViewControllerVC.swift */; };
+		1F29377221B6725700CA7E40 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F29377021B6725700CA7E40 /* VideoTableViewCell.swift */; };
+		1F29377321B6725700CA7E40 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F29377121B6725700CA7E40 /* VideoTableViewCell.xib */; };
 		1F4368C121B145940066A272 /* ModelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4368B121B145940066A272 /* ModelConfig.swift */; };
 		1F4368C221B145940066A272 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4368B221B145940066A272 /* Pagination.swift */; };
 		1F4368C321B145940066A272 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4368B321B145940066A272 /* Comment.swift */; };
@@ -51,14 +53,16 @@
 		1F5DDFEF2195494400E7221A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5DDFEE2195494300E7221A /* LoginVC.swift */; };
 		1F5DDFF121955ED400E7221A /* BaseUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5DDFF021955ED400E7221A /* BaseUiViewController.swift */; };
 		1F6A402E21A7F7E500E95624 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A402D21A7F7E500E95624 /* GoogleService-Info.plist */; };
+		1F7CD14921B501BB00600BF5 /* NewsListTableViewControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CD14821B501BB00600BF5 /* NewsListTableViewControllerVC.swift */; };
+		1F7CD14B21B5066100600BF5 /* NewListEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CD14A21B5066100600BF5 /* NewListEvent.swift */; };
 		1F8A6D3821A40264000F6D0B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8A6D3721A40264000F6D0B /* ApiService.swift */; };
-		1FCB2EF421ABF09C00C2CC69 /* RecommendTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB2EF321ABF09C00C2CC69 /* RecommendTableView.swift */; };
+		1FCB2EF421ABF09C00C2CC69 /* RecommendTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB2EF321ABF09C00C2CC69 /* RecommendTableViewVC.swift */; };
 		1FCB2EF621ABF0EB00C2CC69 /* NewsHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB2EF521ABF0EB00C2CC69 /* NewsHeaderTableViewCell.swift */; };
 		1FD9577021A58D8D00AC9B3C /* LoginEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9576F21A58D8D00AC9B3C /* LoginEvent.swift */; };
 		1FE5D29F21ABCA8700765A09 /* LoginAfter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE5D29E21ABCA8700765A09 /* LoginAfter.storyboard */; };
-		1FE5D2A121ABD53600765A09 /* MyTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE5D2A021ABD53600765A09 /* MyTabLayout.swift */; };
+		1FE5D2A121ABD53600765A09 /* MyTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE5D2A021ABD53600765A09 /* MyTabVC.swift */; };
 		1FF5F61821AE9F3C00BA681A /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5F61721AE9F3C00BA681A /* NewsTableViewCell.swift */; };
-		1FF5F61A21AEBFA500BA681A /* PopularTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5F61921AEBFA500BA681A /* PopularTableViewController.swift */; };
+		1FF5F61A21AEBFA500BA681A /* PopularTableViewControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF5F61921AEBFA500BA681A /* PopularTableViewControllerVC.swift */; };
 		1FF7EB242195B4F600777A1F /* LocalLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF7EB232195B4F600777A1F /* LocalLoginVC.swift */; };
 		1FFEE0B221A50076001CEC25 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEE0B121A50076001CEC25 /* LoadingVC.swift */; };
 		4A2F6FE82194AA8C006F3509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */; };
@@ -74,7 +78,10 @@
 /* Begin PBXFileReference section */
 		09419AFDF826EB3A700B0A27 /* Pods_Sixdegrees_Ios_V2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sixdegrees_Ios_V2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F00B1B921A3F4D70004FEC7 /* Callback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callback.swift; sourceTree = "<group>"; };
+		1F00CA7B21B6854D00D31162 /* VideoViewControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewControllerVC.swift; sourceTree = "<group>"; };
 		1F06653F21A6B0CC00773324 /* ModelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConfig.swift; sourceTree = "<group>"; };
+		1F29377021B6725700CA7E40 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		1F29377121B6725700CA7E40 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		1F4368B121B145940066A272 /* ModelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelConfig.swift; sourceTree = "<group>"; };
 		1F4368B221B145940066A272 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		1F4368B321B145940066A272 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -116,14 +123,16 @@
 		1F5DDFEE2195494300E7221A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1F5DDFF021955ED400E7221A /* BaseUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUiViewController.swift; sourceTree = "<group>"; };
 		1F6A402D21A7F7E500E95624 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F7CD14821B501BB00600BF5 /* NewsListTableViewControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewControllerVC.swift; sourceTree = "<group>"; };
+		1F7CD14A21B5066100600BF5 /* NewListEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListEvent.swift; sourceTree = "<group>"; };
 		1F8A6D3721A40264000F6D0B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		1FCB2EF321ABF09C00C2CC69 /* RecommendTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableView.swift; sourceTree = "<group>"; };
+		1FCB2EF321ABF09C00C2CC69 /* RecommendTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewVC.swift; sourceTree = "<group>"; };
 		1FCB2EF521ABF0EB00C2CC69 /* NewsHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		1FD9576F21A58D8D00AC9B3C /* LoginEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEvent.swift; sourceTree = "<group>"; };
 		1FE5D29E21ABCA8700765A09 /* LoginAfter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginAfter.storyboard; sourceTree = "<group>"; };
-		1FE5D2A021ABD53600765A09 /* MyTabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabLayout.swift; sourceTree = "<group>"; };
+		1FE5D2A021ABD53600765A09 /* MyTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabVC.swift; sourceTree = "<group>"; };
 		1FF5F61721AE9F3C00BA681A /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
-		1FF5F61921AEBFA500BA681A /* PopularTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableViewController.swift; sourceTree = "<group>"; };
+		1FF5F61921AEBFA500BA681A /* PopularTableViewControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableViewControllerVC.swift; sourceTree = "<group>"; };
 		1FF7EB232195B4F600777A1F /* LocalLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLoginVC.swift; sourceTree = "<group>"; };
 		1FFEE0B121A50076001CEC25 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		4A2F6FE42194AA8C006F3509 /* Sixdegrees_Ios_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sixdegrees_Ios_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +197,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1F29376F21B6555600CA7E40 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		1F4368D521B145AB0066A272 /* GetInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				1FD9576F21A58D8D00AC9B3C /* LoginEvent.swift */,
+				1F7CD14A21B5066100600BF5 /* NewListEvent.swift */,
 			);
 			path = EventBus;
 			sourceTree = "<group>";
@@ -262,6 +279,8 @@
 				4A2F6FEB2194AA8C006F3509 /* Main.storyboard */,
 				1FE5D29E21ABCA8700765A09 /* LoginAfter.storyboard */,
 				1F4368F621B1461F0066A272 /* NewsHeaderTableViewCell.xib */,
+				1F29377021B6725700CA7E40 /* VideoTableViewCell.swift */,
+				1F29377121B6725700CA7E40 /* VideoTableViewCell.xib */,
 				1F4368F821B1465C0066A272 /* NewsTableViewCell.xib */,
 			);
 			path = Sixdegrees_Ios_V2;
@@ -280,9 +299,10 @@
 		4ADFDAF121A0E23600181839 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1FE5D2A021ABD53600765A09 /* MyTabLayout.swift */,
-				1FCB2EF321ABF09C00C2CC69 /* RecommendTableView.swift */,
-				1FF5F61921AEBFA500BA681A /* PopularTableViewController.swift */,
+				1F29376F21B6555600CA7E40 /* New Group */,
+				1FE5D2A021ABD53600765A09 /* MyTabVC.swift */,
+				1FCB2EF321ABF09C00C2CC69 /* RecommendTableViewVC.swift */,
+				1FF5F61921AEBFA500BA681A /* PopularTableViewControllerVC.swift */,
 				1FCB2EF521ABF0EB00C2CC69 /* NewsHeaderTableViewCell.swift */,
 				1FF5F61721AE9F3C00BA681A /* NewsTableViewCell.swift */,
 				1F5DDFF021955ED400E7221A /* BaseUiViewController.swift */,
@@ -292,6 +312,8 @@
 				1F4A1F91219ADBE900A642F2 /* ForgetPassword.swift */,
 				1F4A1F93219AFDEA00A642F2 /* RegisterVC.swift */,
 				1FFEE0B121A50076001CEC25 /* LoadingVC.swift */,
+				1F7CD14821B501BB00600BF5 /* NewsListTableViewControllerVC.swift */,
+				1F00CA7B21B6854D00D31162 /* VideoViewControllerVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -335,7 +357,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Tsai Cary";
 				TargetAttributes = {
 					4A2F6FE32194AA8C006F3509 = {
@@ -344,7 +366,7 @@
 				};
 			};
 			buildConfigurationList = 4A2F6FDF2194AA8C006F3509 /* Build configuration list for PBXProject "Sixdegrees_Ios_V2" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -367,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE5D29F21ABCA8700765A09 /* LoginAfter.storyboard in Resources */,
+				1F29377321B6725700CA7E40 /* VideoTableViewCell.xib in Resources */,
 				4A2F6FF22194AA8D006F3509 /* LaunchScreen.storyboard in Resources */,
 				1F4368F721B1461F0066A272 /* NewsHeaderTableViewCell.xib in Resources */,
 				1F6A402E21A7F7E500E95624 /* GoogleService-Info.plist in Resources */,
@@ -407,6 +430,7 @@
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer-Swift/YouTubePlayer_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -432,6 +456,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,8 +520,9 @@
 				1F4368D321B1459E0066A272 /* LikeCounts.swift in Sources */,
 				1F4368C821B145940066A272 /* Article.swift in Sources */,
 				1F4368C521B145940066A272 /* DonateDetail.swift in Sources */,
-				1FCB2EF421ABF09C00C2CC69 /* RecommendTableView.swift in Sources */,
+				1FCB2EF421ABF09C00C2CC69 /* RecommendTableViewVC.swift in Sources */,
 				1F4368CB21B145940066A272 /* UserAvatar.swift in Sources */,
+				1F00CA7C21B6854D00D31162 /* VideoViewControllerVC.swift in Sources */,
 				1F4368C321B145940066A272 /* Comment.swift in Sources */,
 				1F4368CD21B145940066A272 /* MyCategories.swift in Sources */,
 				1F4368CC21B145940066A272 /* ArticleDetail.swift in Sources */,
@@ -526,15 +552,17 @@
 				1F4368E921B145BE0066A272 /* GetToken.swift in Sources */,
 				1FF5F61821AE9F3C00BA681A /* NewsTableViewCell.swift in Sources */,
 				4A2FA6BA21A0A5AB002701C0 /* ConfigUserDefaults.swift in Sources */,
-				1FE5D2A121ABD53600765A09 /* MyTabLayout.swift in Sources */,
+				1FE5D2A121ABD53600765A09 /* MyTabVC.swift in Sources */,
 				1F4368C721B145940066A272 /* ArticleDatasource.swift in Sources */,
 				1FFEE0B221A50076001CEC25 /* LoadingVC.swift in Sources */,
+				1F29377221B6725700CA7E40 /* VideoTableViewCell.swift in Sources */,
+				1F7CD14B21B5066100600BF5 /* NewListEvent.swift in Sources */,
 				1F4368CA21B145940066A272 /* Token.swift in Sources */,
 				1F4368F521B145BE0066A272 /* GetCategoryList.swift in Sources */,
 				1F5DDFEF2195494400E7221A /* LoginVC.swift in Sources */,
 				4A2F6FE82194AA8C006F3509 /* AppDelegate.swift in Sources */,
-				1F06654021A6B0CC00773324 /* ModelConfig.swift in Sources */,
 				1F4368EE21B145BE0066A272 /* GetDatasourceList.swift in Sources */,
+				1F7CD14921B501BB00600BF5 /* NewsListTableViewControllerVC.swift in Sources */,
 				1F4368F021B145BE0066A272 /* GetAddStatus.swift in Sources */,
 				1F4368C421B145940066A272 /* CommentAndArticle.swift in Sources */,
 				1F4368F321B145BE0066A272 /* GetArticle.swift in Sources */,
@@ -543,7 +571,7 @@
 				1F4368F121B145BE0066A272 /* GetMember.swift in Sources */,
 				1F4368ED21B145BE0066A272 /* GetCategory.swift in Sources */,
 				1F4368C921B145940066A272 /* ServerResponse.swift in Sources */,
-				1FF5F61A21AEBFA500BA681A /* PopularTableViewController.swift in Sources */,
+				1FF5F61A21AEBFA500BA681A /* PopularTableViewControllerVC.swift in Sources */,
 				1F8A6D3821A40264000F6D0B /* ApiService.swift in Sources */,
 				1F4368EF21B145BE0066A272 /* GetArticleList.swift in Sources */,
 			);
@@ -693,8 +721,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YZF35WG685;
+				DEVELOPMENT_TEAM = 73KS82VFJ6;
 				INFOPLIST_FILE = Sixdegrees_Ios_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -702,6 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.sixdegrees.appk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -713,8 +743,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YZF35WG685;
+				DEVELOPMENT_TEAM = 73KS82VFJ6;
 				INFOPLIST_FILE = Sixdegrees_Ios_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -722,6 +753,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.sixdegrees.appk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

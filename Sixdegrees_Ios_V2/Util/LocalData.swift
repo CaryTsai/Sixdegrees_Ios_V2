@@ -42,6 +42,14 @@ struct LocalData {
     //Image
     static let CHECK_BOX_ENABLE_IMAGE = "check_checkbox"
     static let CHECK_BOX_DISABLE_IMAGE = "check_checkbox_disable"
+    static let POPULAR_24_HOURS = "popular_24hours"
+    static let POPULAR_24_HOURS_UNCLICK = "popular_24hours_unclick"
+    static let POPULAR_7_DAYS = "popular_7days"
+    static let POPULAR_7_DAYS_UNCLICK = "popular_7days_unclick"
+    static let POPULAR_3_DAYS_UNCLICK = "popular_3days_unclick"
+    static let POPULAR_3_DAYS = "popular_3days"
+
+
     
 
 }

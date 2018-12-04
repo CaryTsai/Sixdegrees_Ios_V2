@@ -11,7 +11,7 @@ import XLPagerTabStrip
 import SDWebImage
 
 
-class RecommendTableView: UITableViewController {
+class RecommendTableViewVC: UITableViewController {
 
     
     override func viewDidLoad() {
@@ -102,11 +102,11 @@ class RecommendTableView: UITableViewController {
     
 }
 
-extension RecommendTableView:IndicatorInfoProvider{
+extension RecommendTableViewVC:IndicatorInfoProvider{
     
     func indicatorInfo(for pagerTabStripViewController:PagerTabStripViewController) ->IndicatorInfo{
         
-        return IndicatorInfo(title: "推薦")
+        return IndicatorInfo(title: ModelConfig.mCategory[0].name)
         
     }
     

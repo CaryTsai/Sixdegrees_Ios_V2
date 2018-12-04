@@ -231,7 +231,7 @@ class LocalLoginVC:BaseUiViewController,GIDSignInUIDelegate{
         Callback.mSharedInstance.fetchMemberToken(useremail:mNumberText,password:mPassworTexr){ (token, code,error) in
   
             if let error = error{
-//                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
+                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
                 print("網路連線不良",error)
                 self.setSnackbar(mseeage: "網路連線不良")
 
@@ -253,13 +253,13 @@ class LocalLoginVC:BaseUiViewController,GIDSignInUIDelegate{
                 SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: true))
                 self.setIndiicatorStyle(ishidden: true)
             case 400:
-//                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
+                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
                 print("帳號密碼錯誤")
                 self.setIndiicatorStyle(ishidden: true)
                 self.setSnackbar(mseeage: "帳號密碼錯誤")
 
             default:
-//                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
+                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
                 print("與伺服器連線中斷")
                 self.setIndiicatorStyle(ishidden: true)
                 self.setSnackbar(mseeage: "與伺服器連線中斷")
@@ -271,15 +271,15 @@ class LocalLoginVC:BaseUiViewController,GIDSignInUIDelegate{
     
     func getFacebookLogin(fbemali:String,fbId:String,fbname:String){
         
-//        if let controller = self.storyboard?.instantiateViewController(withIdentifier: LocalData.LOADING_VC) {
-//            self.present(controller, animated: true, completion: nil)
-//        }
+        if let controller = self.storyboard?.instantiateViewController(withIdentifier: LocalData.LOADING_VC) {
+            self.present(controller, animated: true, completion: nil)
+        }
         self.setIndiicatorStyle(ishidden: false)
         Callback.mSharedInstance.fetchFacebook(email:fbemali, facebookId: fbId, name: fbname)  { (Token,code,error) in
             
             if let error = error{
                 print("網路連線不良",error)
-//                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
+                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
                 self.setSnackbar(mseeage: "網路連線不良")
                 self.setIndiicatorStyle(ishidden: true)
                 return
@@ -301,7 +301,7 @@ class LocalLoginVC:BaseUiViewController,GIDSignInUIDelegate{
                 SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: true))
             default:
                 print("與伺服器連線中斷")
-//                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
+                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
                 self.setIndiicatorStyle(ishidden: true)
                 self.setSnackbar(mseeage: "與伺服器連線中斷")
 
@@ -317,7 +317,7 @@ class LocalLoginVC:BaseUiViewController,GIDSignInUIDelegate{
             
             if let error = error{
                 print("網路連線不良",error)
-//                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
+                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
                 self.setIndiicatorStyle(ishidden: true)
                 self.setSnackbar(mseeage: "網路連線不良")
                 return
@@ -338,7 +338,7 @@ class LocalLoginVC:BaseUiViewController,GIDSignInUIDelegate{
                 SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: true))
             default:
                 print("與伺服器連線中斷")
-//                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
+                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: false))
                 self.setIndiicatorStyle(ishidden: true)
                 self.setSnackbar(mseeage: "與伺服器連線中斷")
             }

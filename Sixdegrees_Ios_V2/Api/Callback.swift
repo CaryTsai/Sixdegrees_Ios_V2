@@ -318,6 +318,7 @@ struct Callback {
                 let result = try JSONDecoder().decode(GetArticleList.self, from: data)
                 completion(result.data,response.response?.statusCode,nil)
             }catch{
+
                 completion(nil,response.response?.statusCode,nil)
             }
 
@@ -354,17 +355,34 @@ struct Callback {
     }
 //
 //    //取得視頻文章 OK
-//    func fetchVideoList(page:Int,limit:Int, completion: @escaping([Article]?,String?) -> ()){
-//        var headers : [String:String] = [:]
-//        var parameters: [String: Any] = [:]
-//        headers["Accept"] = ApiService.accept
-//        headers["Content-Type"] = ApiService.contentType
+    func fetchVideoList(page:Int,limit:Int,accesstoken:String, completion: @escaping([Article]?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
+        headers["Content-Type"] = ApiService.contentType
 //        parameters["grant_type"] = ApiService.grant_type
 //        parameters["client_secret"] = ApiService.client_secret
-//        parameters["page"] = page
-//        parameters["limit"] = limit
-//        headers["Authorization"] = "Bearer " + getAccessToken()
-//        Alamofire.request(api + "/article/video",method: .get,parameters: parameters,headers: headers).responseData { (response) in
+        parameters["page"] = page
+        parameters["limit"] = limit
+        headers["Authorization"] = accesstoken
+        Alamofire.request(ApiService.api + ApiService.YoutubeVideo ,method: .get,parameters: parameters,headers: headers).responseData { (response) in
+            
+            
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetArticleList.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                completion(nil,response.response?.statusCode,nil)
+            }
+            
+            
+            
 //            if let error = response.error{
 //                completion(nil,error.localizedDescription)
 //                return
@@ -386,9 +404,9 @@ struct Callback {
 //                    completion(nil,error.localizedDescription)
 //                }
 //            }
-//
-//        }
-//    }
+
+        }
+    }
 //
 //    //收藏文章 OK
 //    func fetchKeepArticle(articleId:String, completion: @escaping(ServerResponse?,String?) -> ()){
@@ -719,17 +737,37 @@ struct Callback {
 //        }
 //    }
 //    //取得標籤文章列表
-//    func fetchTagArticleList(tagId:String,page:Int,limit:Int, completion: @escaping([Article]?,String?) -> ()){
-//        var headers : [String:String] = [:]
-//        var parameters: [String: Any] = [:]
-//        headers["Accept"] = ApiService.accept
-//        headers["Content-Type"] = ApiService.contentType
-//        parameters["grant_type"] = ApiService.grant_type
-//        parameters["client_secret"] = ApiService.client_secret
-//        parameters["page"] = page
-//        parameters["limit"] = limit
-//        headers["Authorization"] = "Bearer " + getAccessToken()
-//        Alamofire.request(api + "/tag" + tagId + "/article",method: .get,parameters: parameters,headers: headers).responseData { (response) in
+    func fetchTagArticleList(tagId:String,page:Int,limit:Int,accesstoken:String, completion: @escaping([Article]?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
+        headers["Content-Type"] = ApiService.contentType
+        parameters["grant_type"] = ApiService.grant_type
+        parameters["client_secret"] = ApiService.client_secret
+        parameters["page"] = page
+        parameters["limit"] = limit
+        headers["Authorization"] = accesstoken
+        Alamofire.request(ApiService.api + "/tag/" + tagId + "/article",method: .get,parameters: parameters,headers: headers).responseData { (response) in
+            
+            
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetArticleList.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                
+                completion(nil,response.response?.statusCode,nil)
+            }
+            
+            
+            
+            
+            
 //            if let error = response.error{
 //                completion(nil,error.localizedDescription)
 //                return
@@ -751,9 +789,9 @@ struct Callback {
 //                    completion(nil,error.localizedDescription)
 //                }
 //            }
-//
-//        }
-//    }
+
+        }
+    }
 //    //取得按讚文章列表  OK
 //    func fetchLikedArticleList(type:Int,userId:Int?,page:Int,limit:Int, completion: @escaping([Article]?,String?) -> ()){
 //        var headers : [String:String] = [:]

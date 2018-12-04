@@ -10,6 +10,10 @@ extension UIColor{
         return UIColor(red: 0.29, green: 0.56, blue: 0.89, alpha: 1.0)
     }
     
+    static func ColorLightBlue() -> UIColor{
+        return UIColor(red:219/255, green: 233/255, blue: 249/255, alpha: 1.0)
+    }
+    
     static func colorGray() -> UIColor{
         // #024ba0
         return UIColor(red: 0.75, green: 0.77, blue: 0.81,alpha:1.0)

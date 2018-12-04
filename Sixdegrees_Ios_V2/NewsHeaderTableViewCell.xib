@@ -98,6 +98,7 @@
                 <outlet property="mRecommendCellTitleLabel" destination="CCt-KH-mfw" id="fC3-r4-PO2"/>
                 <outlet property="mRecommendViewButton" destination="hSz-A4-rY0" id="Ks7-y2-w1a"/>
             </connections>
+            <point key="canvasLocation" x="-207" y="103"/>
         </tableViewCell>
     </objects>
     <resources>
