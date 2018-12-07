@@ -10,6 +10,7 @@
 		1873FD25B13337C5216AE9C0 /* Pods_Sixdegrees_Ios_V2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09419AFDF826EB3A700B0A27 /* Pods_Sixdegrees_Ios_V2.framework */; };
 		1F00B1BA21A3F4D70004FEC7 /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00B1B921A3F4D70004FEC7 /* Callback.swift */; };
 		1F00CA7C21B6854D00D31162 /* VideoViewControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00CA7B21B6854D00D31162 /* VideoViewControllerVC.swift */; };
+		1F0EEE5A21BA6981002B551B /* MyKeepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EEE5921BA6981002B551B /* MyKeepVC.swift */; };
 		1F29377221B6725700CA7E40 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F29377021B6725700CA7E40 /* VideoTableViewCell.swift */; };
 		1F29377321B6725700CA7E40 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F29377121B6725700CA7E40 /* VideoTableViewCell.xib */; };
 		1F4368C121B145940066A272 /* ModelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4368B121B145940066A272 /* ModelConfig.swift */; };
@@ -80,6 +81,7 @@
 		1F00B1B921A3F4D70004FEC7 /* Callback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callback.swift; sourceTree = "<group>"; };
 		1F00CA7B21B6854D00D31162 /* VideoViewControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewControllerVC.swift; sourceTree = "<group>"; };
 		1F06653F21A6B0CC00773324 /* ModelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConfig.swift; sourceTree = "<group>"; };
+		1F0EEE5921BA6981002B551B /* MyKeepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKeepVC.swift; sourceTree = "<group>"; };
 		1F29377021B6725700CA7E40 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		1F29377121B6725700CA7E40 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		1F4368B121B145940066A272 /* ModelConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelConfig.swift; sourceTree = "<group>"; };
@@ -197,11 +199,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1F29376F21B6555600CA7E40 /* New Group */ = {
+		1F0EEE5821BA68CD002B551B /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				4A2F6FF02194AA8D006F3509 /* LaunchScreen.storyboard */,
+				4A2F6FEB2194AA8C006F3509 /* Main.storyboard */,
+				1FE5D29E21ABCA8700765A09 /* LoginAfter.storyboard */,
+				1F4368F621B1461F0066A272 /* NewsHeaderTableViewCell.xib */,
+				1F29377121B6725700CA7E40 /* VideoTableViewCell.xib */,
+				1F4368F821B1465C0066A272 /* NewsTableViewCell.xib */,
 			);
-			path = "New Group";
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		1F29376F21B6555600CA7E40 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1FF5F61721AE9F3C00BA681A /* NewsTableViewCell.swift */,
+				1FCB2EF521ABF0EB00C2CC69 /* NewsHeaderTableViewCell.swift */,
+				1F29377021B6725700CA7E40 /* VideoTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1F4368D521B145AB0066A272 /* GetInfo */ = {
@@ -266,22 +284,16 @@
 		4A2F6FE62194AA8C006F3509 /* Sixdegrees_Ios_V2 */ = {
 			isa = PBXGroup;
 			children = (
-				1F6A402D21A7F7E500E95624 /* GoogleService-Info.plist */,
+				1F0EEE5821BA68CD002B551B /* Layout */,
 				1FD9576E21A58D6000AC9B3C /* EventBus */,
 				1F00B19621A3F40B0004FEC7 /* Model */,
 				1F00B19421A3F3C00004FEC7 /* Api */,
 				4ADFDAF121A0E23600181839 /* ViewController */,
 				4ADFDAEE21A0E1ED00181839 /* Util */,
 				4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */,
+				1F6A402D21A7F7E500E95624 /* GoogleService-Info.plist */,
 				4A2F6FF32194AA8D006F3509 /* Info.plist */,
 				4A2F6FEE2194AA8D006F3509 /* Assets.xcassets */,
-				4A2F6FF02194AA8D006F3509 /* LaunchScreen.storyboard */,
-				4A2F6FEB2194AA8C006F3509 /* Main.storyboard */,
-				1FE5D29E21ABCA8700765A09 /* LoginAfter.storyboard */,
-				1F4368F621B1461F0066A272 /* NewsHeaderTableViewCell.xib */,
-				1F29377021B6725700CA7E40 /* VideoTableViewCell.swift */,
-				1F29377121B6725700CA7E40 /* VideoTableViewCell.xib */,
-				1F4368F821B1465C0066A272 /* NewsTableViewCell.xib */,
 			);
 			path = Sixdegrees_Ios_V2;
 			sourceTree = "<group>";
@@ -299,12 +311,10 @@
 		4ADFDAF121A0E23600181839 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1F29376F21B6555600CA7E40 /* New Group */,
+				1F29376F21B6555600CA7E40 /* Cell */,
 				1FE5D2A021ABD53600765A09 /* MyTabVC.swift */,
 				1FCB2EF321ABF09C00C2CC69 /* RecommendTableViewVC.swift */,
 				1FF5F61921AEBFA500BA681A /* PopularTableViewControllerVC.swift */,
-				1FCB2EF521ABF0EB00C2CC69 /* NewsHeaderTableViewCell.swift */,
-				1FF5F61721AE9F3C00BA681A /* NewsTableViewCell.swift */,
 				1F5DDFF021955ED400E7221A /* BaseUiViewController.swift */,
 				1F5DDFEE2195494300E7221A /* LoginVC.swift */,
 				4A2F6FE92194AA8C006F3509 /* LanguageVC.swift */,
@@ -314,6 +324,7 @@
 				1FFEE0B121A50076001CEC25 /* LoadingVC.swift */,
 				1F7CD14821B501BB00600BF5 /* NewsListTableViewControllerVC.swift */,
 				1F00CA7B21B6854D00D31162 /* VideoViewControllerVC.swift */,
+				1F0EEE5921BA6981002B551B /* MyKeepVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -532,6 +543,7 @@
 				1FCB2EF621ABF0EB00C2CC69 /* NewsHeaderTableViewCell.swift in Sources */,
 				1F4A1F94219AFDEA00A642F2 /* RegisterVC.swift in Sources */,
 				1F4368EB21B145BE0066A272 /* GetDatasource.swift in Sources */,
+				1F0EEE5A21BA6981002B551B /* MyKeepVC.swift in Sources */,
 				4A2F6FEA2194AA8C006F3509 /* LanguageVC.swift in Sources */,
 				1FF7EB242195B4F600777A1F /* LocalLoginVC.swift in Sources */,
 				1F4368CF21B145940066A272 /* User.swift in Sources */,

@@ -144,7 +144,7 @@ class LoadingVC:BaseUiViewController{
                     
                 }
            
-                self.StoryBoardInstantiate(withIdentifier: "testVC")
+                self.StoryBoardInstantiate(withIdentifier: LocalData.LOGIN_AFTERVC)
             default:
                 print("與伺服器連線中斷")
                 self.dismiss(animated: true, completion: nil)

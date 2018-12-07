@@ -14,6 +14,11 @@ class VideoTableViewCell: UITableViewCell {
 
 
     @IBOutlet weak var mYoutubePlayer: YouTubePlayerView!
+    @IBOutlet weak var mVideoTitle: UILabel!
+    @IBOutlet weak var mVideoSoucs: UIButton!
+    @IBOutlet weak var mVideoTIme: UIButton!
+    @IBOutlet weak var mVIdeoPageVIew: UIButton!
+    @IBOutlet weak var mMessageQuantity: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

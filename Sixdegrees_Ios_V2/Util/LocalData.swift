@@ -29,12 +29,29 @@ struct LocalData {
     
     //Storyboard
     
+    
+    //Main
     static let LOGIN_VC = "Login"
     static let LANGUAGE_VC = "Language"
     static let LOCAL_LOGIN_VC = "LocalLogin"
     static let FORGET_PASSWORD_VC = "ForgetPassword"
     static let REGISTER_VC = "Register"
     static let LOADING_VC = "Loading"
+    
+    //LoginAfter
+    static let LOGIN_AFTER = "LoginAfter"
+    static let RECOMMEND_TABLEVIEW_VC = "RecommendTableViewVC"
+    static let POPULAR_TABLEVIEW_VC = "PopularTableViewControllerVC"
+    static let NEWLIST_TABLEVIEW_VC = "NewsListTableViewControllerVC"
+    static let LOGIN_AFTERVC = "LoginAfterVC"
+    static let MYKEEP_VC = "MyKeepVC"
+    
+    
+    
+    //Cell
+    static let NEWS_HEADER_TABLEVIEW_CELL = "NewsHeaderTableViewCell"
+    static let NEWS_TABLEVIEW_CELL = "NewsTableViewCell"
+    static let VIDEO_TABLEVIEW_CELL = "VideoTableViewCell"
     
     
     
@@ -48,6 +65,7 @@ struct LocalData {
     static let POPULAR_7_DAYS_UNCLICK = "popular_7days_unclick"
     static let POPULAR_3_DAYS_UNCLICK = "popular_3days_unclick"
     static let POPULAR_3_DAYS = "popular_3days"
+    static let IMAGE_NULL_TW = "image_null_tw"
 
 
     

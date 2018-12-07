@@ -15,7 +15,7 @@ struct Article : Decodable{
     let partial: Int?
     let report_time: Double
     let share_url: String?
-    let comment_total: Int?
+    let comment_total: Int
     let like_total: Int?
     let is_liked: Bool?
     let is_keeped: Bool?

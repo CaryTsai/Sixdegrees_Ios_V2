@@ -973,10 +973,10 @@
             </objects>
             <point key="canvasLocation" x="3128.8000000000002" y="-197.45127436281859"/>
         </scene>
-        <!--testVC-->
+        <!--LoginAfterVC-->
         <scene sceneID="mpN-ID-1q6">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="testVC" storyboardName="LoginAfter" referencedIdentifier="testVC" id="SFp-kY-Flo" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="LoginAfterVC" storyboardName="LoginAfter" referencedIdentifier="LoginAfterVC" id="SFp-kY-Flo" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cgg-LM-ajY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3709" y="-316"/>

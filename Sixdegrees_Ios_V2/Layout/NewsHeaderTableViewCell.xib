@@ -53,11 +53,11 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSz-A4-rY0">
-                                <rect key="frame" x="159" y="42" width="60" height="10"/>
+                                <rect key="frame" x="165" y="41" width="45" height="10"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="AUV-c8-MFh"/>
-                                    <constraint firstAttribute="height" constant="10" id="ztC-px-cw6"/>
+                                    <constraint firstAttribute="width" constant="45" id="Q0B-Kh-V2B"/>
+                                    <constraint firstAttribute="height" constant="10" id="mQi-z1-X7p"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
@@ -69,15 +69,16 @@
                         <color key="backgroundColor" red="0.28858411309999998" green="0.3304660022" blue="0.48236924409999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="r89-gK-FHw" secondAttribute="height" multiplier="375:74" id="39T-za-PdO"/>
+                            <constraint firstItem="hSz-A4-rY0" firstAttribute="leading" secondItem="688-eL-8le" secondAttribute="trailing" constant="6" id="4pI-xr-MVT"/>
                             <constraint firstItem="jam-3F-GTm" firstAttribute="top" secondItem="CCt-KH-mfw" secondAttribute="bottom" constant="10" id="6be-N3-nz0"/>
                             <constraint firstAttribute="trailing" secondItem="CCt-KH-mfw" secondAttribute="trailing" constant="15" id="8iZ-WS-mQj"/>
-                            <constraint firstItem="hSz-A4-rY0" firstAttribute="top" secondItem="CCt-KH-mfw" secondAttribute="bottom" constant="17" id="IiN-g3-cL7"/>
+                            <constraint firstAttribute="bottom" secondItem="hSz-A4-rY0" secondAttribute="bottom" constant="23" id="LMq-0S-fWp"/>
                             <constraint firstItem="jam-3F-GTm" firstAttribute="leading" secondItem="r89-gK-FHw" secondAttribute="leading" constant="15" id="MBr-c1-LzP"/>
                             <constraint firstItem="688-eL-8le" firstAttribute="leading" secondItem="jam-3F-GTm" secondAttribute="trailing" constant="10" id="O4p-Ua-Xxt"/>
-                            <constraint firstItem="hSz-A4-rY0" firstAttribute="leading" secondItem="688-eL-8le" secondAttribute="trailing" id="Tas-oz-Z8u"/>
                             <constraint firstItem="688-eL-8le" firstAttribute="top" secondItem="CCt-KH-mfw" secondAttribute="bottom" constant="16.5" id="bcP-6X-DkS"/>
                             <constraint firstItem="CCt-KH-mfw" firstAttribute="top" secondItem="r89-gK-FHw" secondAttribute="top" constant="8" id="eni-Fc-zFk"/>
                             <constraint firstItem="CCt-KH-mfw" firstAttribute="leading" secondItem="r89-gK-FHw" secondAttribute="leading" constant="15" id="jEZ-WZ-BPx"/>
+                            <constraint firstItem="hSz-A4-rY0" firstAttribute="top" secondItem="CCt-KH-mfw" secondAttribute="bottom" constant="16" id="lrY-W4-sDf"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -98,7 +99,7 @@
                 <outlet property="mRecommendCellTitleLabel" destination="CCt-KH-mfw" id="fC3-r4-PO2"/>
                 <outlet property="mRecommendViewButton" destination="hSz-A4-rY0" id="Ks7-y2-w1a"/>
             </connections>
-            <point key="canvasLocation" x="-207" y="103"/>
+            <point key="canvasLocation" x="-207.19999999999999" y="102.54872563718142"/>
         </tableViewCell>
     </objects>
     <resources>

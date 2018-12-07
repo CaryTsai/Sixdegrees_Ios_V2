@@ -1467,40 +1467,36 @@ struct Callback {
 //        }
 //    }
 //    //取得個人收藏列表 OK
-//    func fetchUserKeepList(userId:Int?,page:Int,limit:Int, completion:@escaping([Article]?,String?) -> ()){
-//        var headers : [String:String] = [:]
-//        var parameters: [String: Any] = [:]
-//        headers["Accept"] = ApiService.accept
-//        headers["Content-Type"] = ApiService.contentType
-//        parameters["user_id"] = userId
-//        parameters["page"] = page
-//        parameters["limit"] = limit
-//        headers["Authorization"] = "Bearer " + getAccessToken()
-//        Alamofire.request(api + "/user/keeped",method: .get,parameters: parameters,headers: headers).responseData { (response) in
-//            if let error = response.error{
-//                completion(nil,error.localizedDescription)
-//                return
-//            }
-//            guard let data = response.data else { return }
-//            if response.response?.statusCode == 200 || response.response?.statusCode == 201{
-//                do{
-//                    let result = try JSONDecoder().decode(GetArticleList.self, from: data)
-//                    completion(result.data,nil)
-//
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }else{
-//                do{
-//                    let result = try JSONDecoder().decode(GetError.self, from: data)
-//                    completion(nil,result.error.message)
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }
-//
-//        }
-//    }
+    func fetchUserKeepList(accessToken:String,userId:Int?,page:Int,limit:Int, completion:@escaping([Article]?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
+        headers["Content-Type"] = ApiService.contentType
+        parameters["user_id"] = userId
+        parameters["page"] = page
+        parameters["limit"] = limit
+        headers["Authorization"] = accessToken
+        Alamofire.request(ApiService.api + ApiService.userKeepUrl,method: .get,parameters: parameters,headers: headers).responseData { (response) in
+            
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetArticleList.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                
+                completion(nil,response.response?.statusCode,nil)
+            }
+            
+            
+        }
+
+        
+    }
 //    //取得個人留言列表 OK
 //    func fetchUserCommentList(userId:Int?,page:Int,limit:Int, completion: @escaping([CommentAndArticle]?,String?) -> ()){
 //        var headers : [String:String] = [:]

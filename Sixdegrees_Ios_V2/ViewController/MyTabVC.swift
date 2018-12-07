@@ -58,9 +58,9 @@ class MyTabVC: ButtonBarPagerTabStripViewController {
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
     
         
-        let tab1 = UIStoryboard(name: "LoginAfter", bundle: nil).instantiateViewController(withIdentifier: "RecommendTableViewVC") as! RecommendTableViewVC
+        let tab1 = UIStoryboard(name: LocalData.LOGIN_AFTER, bundle: nil).instantiateViewController(withIdentifier: LocalData.RECOMMEND_TABLEVIEW_VC) as! RecommendTableViewVC
         
-        let tab2 = UIStoryboard(name: "LoginAfter", bundle: nil).instantiateViewController(withIdentifier: "PopularTableViewControllerVC")  as! PopularTableViewControllerVC
+        let tab2 = UIStoryboard(name: LocalData.LOGIN_AFTER, bundle: nil).instantiateViewController(withIdentifier: LocalData.POPULAR_TABLEVIEW_VC)  as! PopularTableViewControllerVC
 
         var List = [tab2,tab1]
         
@@ -68,7 +68,7 @@ class MyTabVC: ButtonBarPagerTabStripViewController {
 
         for i in 2...ModelConfig.mCategory.count - 1 {
             
-            let newsList = UIStoryboard(name: "LoginAfter", bundle: nil).instantiateViewController(withIdentifier: "NewsListTableViewControllerVC") as! NewsListTableViewControllerVC
+            let newsList = UIStoryboard(name: LocalData.LOGIN_AFTER, bundle: nil).instantiateViewController(withIdentifier: LocalData.NEWLIST_TABLEVIEW_VC) as! NewsListTableViewControllerVC
             
             newsList.mTabName.title = ModelConfig.mCategory[i].name
             newsList.mTabId = ModelConfig.mCategory[i].id ?? 0

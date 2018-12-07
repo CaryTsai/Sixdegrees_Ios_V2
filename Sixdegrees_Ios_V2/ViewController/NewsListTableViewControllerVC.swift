@@ -53,12 +53,12 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
         mActivityBar.startAnimating()
         
 
-        let nibHeader = UINib(nibName: "NewsHeaderTableViewCell", bundle: nil)
-        mTableView.register(nibHeader, forCellReuseIdentifier: "NewsHeaderTableViewCell")
+        let nibHeader = UINib(nibName:LocalData.NEWS_HEADER_TABLEVIEW_CELL, bundle: nil)
+        mTableView.register(nibHeader, forCellReuseIdentifier: LocalData.NEWS_HEADER_TABLEVIEW_CELL)
         mTableView.tableFooterView = UIView()
         
-        let nib = UINib(nibName: "NewsTableViewCell", bundle: nil)
-        mTableView.register(nib, forCellReuseIdentifier: "NewsTableViewCell")
+        let nib = UINib(nibName: LocalData.NEWS_TABLEVIEW_CELL, bundle: nil)
+        mTableView.register(nib, forCellReuseIdentifier: LocalData.NEWS_TABLEVIEW_CELL)
         mTableView.tableFooterView = UIView()
         mTableView.separatorColor = UIColor.clear
     
@@ -127,7 +127,7 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
         
         if(indexPath.item % 4 == 0){
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NewsHeaderTableViewCell", for: indexPath) as! NewsHeaderTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier:LocalData.NEWS_HEADER_TABLEVIEW_CELL, for: indexPath) as! NewsHeaderTableViewCell
             
             
             if (Time <= 0) {
@@ -142,7 +142,7 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
                 cell.mRecommendCellTimeButton.setTitle(String(lroundf(Float(timehr)))+"天前",for: .normal)
                 
             }
-            cell.mRecommendCellImageView.sd_setImage(with: URL(string: (mArticle[indexPath.row].media?.small ?? "")),placeholderImage: UIImage(named: "image_null_tw"))
+            cell.mRecommendCellImageView.sd_setImage(with: URL(string: (mArticle[indexPath.row].media?.small ?? "")),placeholderImage: UIImage(named: LocalData.IMAGE_NULL_TW))
             
             
             cell.mRecommendCellTitleLabel.text = mArticle[indexPath.row].title
@@ -152,7 +152,7 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
             
         }else{
             
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as! NewsTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: LocalData.NEWS_TABLEVIEW_CELL, for: indexPath) as! NewsTableViewCell
             //                let cell = Bundle.main.loadNibNamed("RecommendCell", owner: self, options: nil)?.first as! RecommendCell
             
             if (Time <= 0) {
@@ -166,7 +166,7 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
                 let timehr = Time/24
                 cell.mRecommendCellTime.setTitle(String(lroundf(Float(timehr)))+"天前",for: .normal)
             }
-            cell.mRecommendCellImageView.sd_setImage(with: URL(string: mArticle[indexPath.row].media?.small ?? ""), placeholderImage: UIImage(named: "image_null_tw"))
+            cell.mRecommendCellImageView.sd_setImage(with: URL(string: mArticle[indexPath.row].media?.small ?? ""), placeholderImage: UIImage(named: LocalData.IMAGE_NULL_TW))
             cell.mRecommendCellTitle.text = mArticle[indexPath.row].title
             cell.mRecommendCellSource.setTitle(mArticle[indexPath.row].datasource_name, for: .normal)
             cell.mRecommendCellPageView.setTitle(String(mArticle[indexPath.row].pageview), for: .normal)

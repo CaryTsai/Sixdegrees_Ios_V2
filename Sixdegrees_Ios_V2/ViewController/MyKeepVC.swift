@@ -1,70 +1,69 @@
 //
-//  VideoViewController.swift
+//  MyKeepVC.swift
 //  Sixdegrees_Ios_V2
 //
-//  Created by 蔡纘書 on 2018/12/4.
+//  Created by 蔡纘書 on 2018/12/7.
 //  Copyright © 2018 Tsai Cary. All rights reserved.
 //
 
 import UIKit
+import XLPagerTabStrip
+import SDWebImage
 
-class VideoViewControllerVC: BaseUiViewController,UITableViewDataSource,UITableViewDelegate {
-
-    var mToken = ""
-    var mArticle = [Article]()
+class MyKeepVC: BaseUiViewController,UITableViewDataSource,UITableViewDelegate {
 
     @IBOutlet weak var mTableView: UITableView!
     @IBOutlet weak var mActivityBar: UIActivityIndicatorView!
-    
+    var mToken  = ""
+    var mUserID = 0
+    var mArticle = [Article]()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if(getString(key: LocalData.ACCESS_TOKEN) == ""){
-            
-            mToken = ApiService.bearer+getString(key: LocalData.CLIENT_TOKEN)
-            
-        }else{
+        if(getString(key: LocalData.ACCESS_TOKEN) != ""){
             
             mToken = ApiService.bearer+getString(key: LocalData.ACCESS_TOKEN)
+//            mUserID = getInt(key: LocalData.USER_ID)
+            getUserKeepList()
             
         }
         initView()
 
-
     }
+    
     
     func initView(){
         
         mTableView.dataSource = self
         mTableView.delegate = self
         
-        let nibHeader = UINib(nibName: LocalData.VIDEO_TABLEVIEW_CELL, bundle: nil)
-        mTableView.register(nibHeader, forCellReuseIdentifier: LocalData.VIDEO_TABLEVIEW_CELL)
+        let nibHeader = UINib(nibName: LocalData.NEWS_TABLEVIEW_CELL, bundle: nil)
+        mTableView.register(nibHeader, forCellReuseIdentifier: LocalData.NEWS_TABLEVIEW_CELL)
         mTableView.tableFooterView = UIView()
         mTableView.separatorColor = UIColor.clear
-        getPopularArticleList()
-
+        
+        
         
     }
     
     
-    
-    
-    
-    func getPopularArticleList(){
+    func getUserKeepList(){
         
-
+        
+        print("mToken",mToken)
+        print("UserId",mUserID)
         
         mActivityBar.isHidden = false
         mActivityBar.startAnimating()
         mTableView.isHidden = true
-        Callback.mSharedInstance.fetchVideoList(page:1,limit: 100,accesstoken: mToken) { (Article,code,error) in
+        Callback.mSharedInstance.fetchUserKeepList(accessToken:mToken,userId:nil,page:1,limit: 100) { (Article,code,error) in
             
             if let error = error{
                 print("網路連線不良",error)
                 self.mActivityBar.isHidden = true
-               self.mTableView.isHidden = true
-
+                self.mTableView.isHidden = true
+                
                 
                 //                self.dismiss(animated: true, completion: nil)
                 //                self.setSnackbar(mseeage: "網路連線不良")
@@ -81,7 +80,7 @@ class VideoViewControllerVC: BaseUiViewController,UITableViewDataSource,UITableV
                     self.mTableView.reloadData()
                     self.mActivityBar.isHidden = true
                     self.mTableView.isHidden = false
-
+                    
                     
                     
                 }
@@ -90,7 +89,7 @@ class VideoViewControllerVC: BaseUiViewController,UITableViewDataSource,UITableV
                 print("與伺服器連線中斷")
                 self.mActivityBar.isHidden = true
                 self.mTableView.isHidden = true
-
+                
                 //                self.dismiss(animated: true, completion: nil)
                 //                self.setSnackbar(mseeage: "與伺服器連線中斷")
             }
@@ -100,46 +99,34 @@ class VideoViewControllerVC: BaseUiViewController,UITableViewDataSource,UITableV
         
         
     }
-    
-    
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return mArticle.count
+
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let Time = (getNowTimestamp() - mArticle[indexPath.row].report_time) / 60 / 60
-        let videoUrl:String = mArticle[indexPath.row].news_url
-        let videoId = videoUrl.replacingOccurrences(of: "https://www.youtube.com/watch?v=", with: "")
+        let cell = tableView.dequeueReusableCell(withIdentifier: LocalData.NEWS_TABLEVIEW_CELL, for: indexPath) as! NewsTableViewCell
+        //                let cell = Bundle.main.loadNibNamed("RecommendCell", owner: self, options: nil)?.first as! RecommendCell
         
-        
-        print("videoUrl",videoId)
-        let cell = tableView.dequeueReusableCell(withIdentifier: LocalData.VIDEO_TABLEVIEW_CELL, for: indexPath) as! VideoTableViewCell
-        
-        cell.mYoutubePlayer.loadVideoID(videoId)
         if (Time <= 0) {
-            cell.mVideoTIme.setTitle("剛剛", for: .normal)
+            cell.mRecommendCellTime.setTitle("剛剛", for: .normal)
         } else {
-            cell.mVideoTIme.setTitle(String(lroundf(Float(Time)))+"小時前",for: .normal)
+            cell.mRecommendCellTime.setTitle(String(lroundf(Float(Time)))+"小時前",for: .normal)
         }
         
         if (Time >= 24) {
             
             let timehr = Time/24
-            cell.mVideoTIme.setTitle(String(lroundf(Float(timehr)))+"天前",for: .normal)
-            
+            cell.mRecommendCellTime.setTitle(String(lroundf(Float(timehr)))+"天前",for: .normal)
         }
-
-
-        cell.mMessageQuantity.text = String(mArticle[indexPath.row].comment_total)
-        cell.mVideoTitle.text = mArticle[indexPath.row].title
-        cell.mVideoSoucs.setTitle(mArticle[indexPath.row].datasource_name, for: .normal)
-        cell.mVIdeoPageVIew.setTitle(String(mArticle[indexPath.row].pageview), for: .normal)
-        
-
-        
+        cell.mRecommendCellImageView.sd_setImage(with: URL(string: mArticle[indexPath.row].media?.small ?? ""), placeholderImage: UIImage(named: LocalData.IMAGE_NULL_TW))
+        cell.mRecommendCellTitle.text = mArticle[indexPath.row].title
+        cell.mRecommendCellSource.setTitle(mArticle[indexPath.row].datasource_name, for: .normal)
+        cell.mRecommendCellPageView.setTitle(String(mArticle[indexPath.row].pageview), for: .normal)
         return cell
         
     }
