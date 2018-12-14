@@ -100,6 +100,14 @@ class RecommendTableViewVC: UITableViewController {
         return Double(Date().timeIntervalSince1970)
     }
     
+    
+override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("dsdsds")
+    let storyboard = UIStoryboard(name: "SingleNews", bundle: nil)
+    let initialViewController = storyboard.instantiateViewController(withIdentifier: "SingleNews")
+    present(initialViewController, animated: true, completion: nil)
+    }
+    
 }
 
 extension RecommendTableViewVC:IndicatorInfoProvider{

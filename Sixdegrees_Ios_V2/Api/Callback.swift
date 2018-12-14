@@ -294,7 +294,7 @@ struct Callback {
 //        }
 //    }
     //取得熱門文章 OK
-    func fetchPopularArticleList(accesstoken:String,page:Int,limit:Int,timetype:String, completion: @escaping([Article]?,Int?,String?) -> ()){
+    func fetchPopularArticleList(accesstoken:String,page:Int,timetype:String, completion: @escaping([Article]?,Int?,String?) -> ()){
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
@@ -302,7 +302,7 @@ struct Callback {
 //        parameters["grant_type"] = ApiService.grant_type
 //        parameters["client_secret"] = ApiService.client_secret
         parameters["page"] = page
-        parameters["limit"] = limit
+        parameters["limit"] = ApiService.Limt
         parameters["timetype"] = timetype
         headers["Authorization"] = accesstoken
         Alamofire.request(ApiService.api + ApiService.PopularArticleList,method: .get,parameters: parameters,headers: headers).responseData{ (response) in
@@ -326,13 +326,13 @@ struct Callback {
     }
 //
 //    //取得推薦文章 OK
-    func fetchRecommendArticleList(accesstoken:String,page:Int,limit:Int, completion: @escaping([Article]?,Int?,String?) -> ()){
+    func fetchRecommendArticleList(accesstoken:String,page:Int, completion: @escaping([Article]?,Int?,String?) -> ()){
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
         headers["Content-Type"] = ApiService.contentType
         parameters["page"] = page
-        parameters["limit"] = limit
+        parameters["limit"] = ApiService.Limt
         headers["Authorization"] = accesstoken
         Alamofire.request(ApiService.api + ApiService.RecommendArticleList,method: .get,parameters: parameters,headers: headers).responseData { (response) in
             
@@ -363,7 +363,7 @@ struct Callback {
 //        parameters["grant_type"] = ApiService.grant_type
 //        parameters["client_secret"] = ApiService.client_secret
         parameters["page"] = page
-        parameters["limit"] = limit
+        parameters["limit"] = ApiService.Limt
         headers["Authorization"] = accesstoken
         Alamofire.request(ApiService.api + ApiService.YoutubeVideo ,method: .get,parameters: parameters,headers: headers).responseData { (response) in
             
@@ -737,7 +737,7 @@ struct Callback {
 //        }
 //    }
 //    //取得標籤文章列表
-    func fetchTagArticleList(tagId:String,page:Int,limit:Int,accesstoken:String, completion: @escaping([Article]?,Int?,String?) -> ()){
+    func fetchTagArticleList(tagId:String,page:Int,accesstoken:String, completion: @escaping([Article]?,Int?,String?) -> ()){
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
@@ -745,7 +745,7 @@ struct Callback {
         parameters["grant_type"] = ApiService.grant_type
         parameters["client_secret"] = ApiService.client_secret
         parameters["page"] = page
-        parameters["limit"] = limit
+        parameters["limit"] = ApiService.Limt
         headers["Authorization"] = accesstoken
         Alamofire.request(ApiService.api + "/tag/" + tagId + "/article",method: .get,parameters: parameters,headers: headers).responseData { (response) in
             
@@ -1257,39 +1257,33 @@ struct Callback {
     }
 //
 //    //取得自己的會員資料 OK
-//    func fetchMemberInfo( completion: @escaping(User?,String?) -> ()){
-//        var headers : [String:String] = [:]
-//        //        var parameters: [String: Any] = [:]
-//        headers["Accept"] = ApiService.accept
-//        headers["Content-Type"] = ApiService.contentType
-//        //        parameters["grant_type"] = Service.grant_type
-//        //        parameters["client_secret"] = Service.client_secret
-//        headers["Authorization"] = "Bearer " + getAccessToken()
-//        Alamofire.request(api + "/user/info",method: .get,headers: headers).responseString { (response) in
-//            if let error = response.error{
-//                completion(nil,error.localizedDescription)
-//                return
-//            }
-//            guard let data = response.data else { return }
-//            if response.response?.statusCode == 200 || response.response?.statusCode == 201{
-//                do{
-//                    let result = try JSONDecoder().decode(GetMember.self, from: data)
-//                    completion(result.data,nil)
-//
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }else{
-//                do{
-//                    let result = try JSONDecoder().decode(GetError.self, from: data)
-//                    completion(nil,result.error.message)
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }
-//
-//        }
-//    }
+    func fetchMemberInfo(AccessToken:String, completion: @escaping(User?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        //        var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
+        headers["Content-Type"] = ApiService.contentType
+        //        parameters["grant_type"] = Service.grant_type
+        //        parameters["client_secret"] = Service.client_secret
+        headers["Authorization"] = AccessToken
+        Alamofire.request(ApiService.api + ApiService.userInfo,method: .get,headers: headers).responseString { (response) in
+            
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetMember.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                completion(nil,response.response?.statusCode,nil)
+            }
+        
+        }
+
+    }
+
 //
 //    //更新會員資料 OK
 //    func fetchUpdateMemberInfo(email:String,password:String?,name:String,gender:Int,birthday:String?,description:String? , completion: @escaping(ServerResponse?,String?) -> ()){
@@ -1467,14 +1461,14 @@ struct Callback {
 //        }
 //    }
 //    //取得個人收藏列表 OK
-    func fetchUserKeepList(accessToken:String,userId:Int?,page:Int,limit:Int, completion:@escaping([Article]?,Int?,String?) -> ()){
+    func fetchUserKeepList(accessToken:String,userId:Int?,page:Int, completion:@escaping([Article]?,Int?,String?) -> ()){
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
         headers["Content-Type"] = ApiService.contentType
         parameters["user_id"] = userId
         parameters["page"] = page
-        parameters["limit"] = limit
+        parameters["limit"] = ApiService.Limt
         headers["Authorization"] = accessToken
         Alamofire.request(ApiService.api + ApiService.userKeepUrl,method: .get,parameters: parameters,headers: headers).responseData { (response) in
             

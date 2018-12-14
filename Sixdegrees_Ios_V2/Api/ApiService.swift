@@ -21,7 +21,7 @@ struct ApiService {
         static let client_secret = "zSVE2Bd64icnRyo7VSo997rriPLDPMbY9LmmIurv"
         static let client_member_secret = "yGdNcZJlry89WWJ13cLBOmr0ExPWpmrKv2ap9Crx"
     
-    //Api
+    //Api Url
     static let client_token = "/oauth/token"
     static let password_token = "/oauth/token/login"
     static let refresh_token = "/oauth/token/refresh"
@@ -35,6 +35,16 @@ struct ApiService {
     static let twitterLogin = "/user/twitter"
     static let YoutubeVideo = "/article/video"
     static let userKeepUrl = "/user/keeped"
+    static let userInfo = "/user/info"
+    
+    
+    
+    
+    
+    
+    
+    //APi參數
+    static let Limt = 50
 
     
 }

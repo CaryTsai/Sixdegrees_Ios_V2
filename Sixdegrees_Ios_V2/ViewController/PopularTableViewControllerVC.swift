@@ -95,7 +95,7 @@ class PopularTableViewControllerVC: BaseUiViewController,UITableViewDataSource,U
         
         
      mActivityBar.isHidden = false
-     Callback.mSharedInstance.fetchPopularArticleList(accesstoken: mToken,page:1,limit:20,timetype:timetype) { (Article,code,error) in
+     Callback.mSharedInstance.fetchPopularArticleList(accesstoken: mToken,page:1,timetype:timetype) { (Article,code,error) in
             
             if let error = error{
                 print("網路連線不良",error)

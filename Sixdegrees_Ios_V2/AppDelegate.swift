@@ -35,7 +35,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
-        Thread.sleep(forTimeInterval: 1.0)
+//        GADMobileAds.configure(withApplicationID: "ca-app-pub-6428195540030903/5353930239")
+        
+        
+
 
 
         
@@ -117,6 +120,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         }
 
     func applicationWillResignActive(_ application: UIApplication) {
+        
+
+        
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
     }
@@ -131,6 +137,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
+        
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 

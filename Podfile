@@ -19,6 +19,8 @@ target 'Sixdegrees_Ios_V2' do
   pod 'XLPagerTabStrip', '~> 8.1'
   pod 'SDWebImage', '~> 4.0'
   pod 'YouTubePlayer-Swift', '~> 1.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
 
 
 end

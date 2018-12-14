@@ -69,7 +69,7 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
         let tabid = String(mTabId)
         print(tabid)
         mActivityBar.isHidden = false
-        Callback.mSharedInstance.fetchTagArticleList(tagId:tabid,page:1,limit:100,accesstoken:mToken) { (Article,code,error) in
+        Callback.mSharedInstance.fetchTagArticleList(tagId:tabid,page:1,accesstoken:mToken) { (Article,code,error) in
             
             if let error = error{
                 print("網路連線不良",error)

@@ -68,11 +68,22 @@ class LoadingVC:BaseUiViewController{
             
             switch code {
             case 200,201:
-                guard let getCategory = Category else { return }
-                ModelConfig.mCategory = getCategory
-                print(ModelConfig.mCategory)
-                self.getRecommendArticleList()
-                print("喔喔喔喔喔")
+                
+                
+                if Category != nil {
+                    
+                    guard let getCategory = Category else { return }
+                    ModelConfig.mCategory = getCategory
+                    print(ModelConfig.mCategory)
+                    self.getRecommendArticleList()
+                    
+                }else{
+                    
+                    print("與伺服器連線中斷")
+
+                    
+                }
+      
 
             default:
                 print("與伺服器連線中斷")
@@ -90,7 +101,7 @@ class LoadingVC:BaseUiViewController{
     func getRecommendArticleList(){
         
         
-        Callback.mSharedInstance.fetchRecommendArticleList(accesstoken: mToken,page:1,limit:100) { (Article,code,error) in
+        Callback.mSharedInstance.fetchRecommendArticleList(accesstoken: mToken,page:1) { (Article,code,error) in
             
             if let error = error{
                 print("網路連線不良",error)
@@ -101,10 +112,22 @@ class LoadingVC:BaseUiViewController{
             
             switch code {
             case 200,201:
-                guard let getArticle = Article else { return }
-                ModelConfig.mArticle = getArticle
-                print(ModelConfig.mArticle)
-                self.getPopularArticleList()
+                
+                
+                if(Article != nil){
+                    
+                    guard let getArticle = Article else { return }
+                    ModelConfig.mArticle = getArticle
+                    print(ModelConfig.mArticle)
+                    self.getPopularArticleList()
+                }else{
+                    
+                    print("與伺服器連線中斷")
+
+                    
+                }
+  
+   
             default:
                 print("與伺服器連線中斷")
                 self.dismiss(animated: true, completion: nil)
@@ -124,8 +147,9 @@ class LoadingVC:BaseUiViewController{
         let timeType:String = "24h"
 
         
-        Callback.mSharedInstance.fetchPopularArticleList(accesstoken: mToken,page:1,limit:20,timetype:timeType) { (Article,code,error) in
+        Callback.mSharedInstance.fetchPopularArticleList(accesstoken: mToken,page:1,timetype:timeType) { (Article,code,error) in
             
+
             if let error = error{
                 print("網路連線不良",error)
                 self.dismiss(animated: true, completion: nil)
@@ -141,14 +165,81 @@ class LoadingVC:BaseUiViewController{
                     ModelConfig.mPopularArticle = getArticle
                     print(ModelConfig.mPopularArticle)
 
+                }else{
+                    
+                    print("與伺服器連線中斷")
+
+                }
+                
+                
+                let userId = getInt(key: LocalData.USER_ID)
+
+                if userId != 0 {
+                    
+                    self.getFetchMemberInfo()
+                    
+                    
+                }else{
+                    
+                    self.StoryBoardInstantiate(withIdentifier: LocalData.LOGIN_AFTERVC)
+                    
+                }
+
+
+           
+            default:
+                self.dismiss(animated: true, completion: nil)
+                print("與伺服器連線中斷")
+
+//                self.setSnackbar(mseeage: "與伺服器連線中斷")
+            }
+            
+            
+        }
+        
+        
+    }
+    
+    
+    
+    func getFetchMemberInfo(){
+        
+        
+        Callback.mSharedInstance.fetchMemberInfo(AccessToken: mToken) { (User,code,error) in
+            
+            if let error = error{
+                print("網路連線不良",error)
+                self.dismiss(animated: true, completion: nil)
+                //                self.setSnackbar(mseeage: "網路連線不良")
+                return
+            }
+            switch code {
+            case 200,201:
+                
+                
+                
+                if User != nil {
+                    
+                    guard let getUser = User else { return }
+                    ModelConfig.mUserInfo = [getUser]
+                    print("UserInfo",ModelConfig.mUserInfo)
+                    self.StoryBoardInstantiate(withIdentifier: LocalData.LOGIN_AFTERVC)
+                    
+                    
+                }else{
+                    
+                    
+                    print("與伺服器連線中斷")
+
                     
                 }
            
-                self.StoryBoardInstantiate(withIdentifier: LocalData.LOGIN_AFTERVC)
+
             default:
-                print("與伺服器連線中斷")
                 self.dismiss(animated: true, completion: nil)
-//                self.setSnackbar(mseeage: "與伺服器連線中斷")
+                print("與伺服器連線中斷")
+
+                //                self.setSnackbar(mseeage: "與伺服器連線中斷")
             }
             
             

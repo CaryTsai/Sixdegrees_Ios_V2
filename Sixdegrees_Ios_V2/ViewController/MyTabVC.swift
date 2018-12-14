@@ -23,11 +23,20 @@ class MyTabVC: ButtonBarPagerTabStripViewController {
     
     override func viewDidLoad() {
         setButtonBarStyle()
-    
+        initView()
         super.viewDidLoad()
             
 
         
+    }
+    
+    func initView(){
+        
+        
+        mSearchBar.layer.cornerRadius = 15
+        mButtonBar.layer.shadowOpacity = 0.2
+        mButtonBar.layer.shadowOffset = CGSize.init(width: 0, height: 5)
+
     }
     
     

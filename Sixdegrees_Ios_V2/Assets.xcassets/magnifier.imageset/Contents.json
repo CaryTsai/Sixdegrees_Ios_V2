@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "round_search_black_18dp.png",
+      "filename" : "magnifier.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "round_search_black_18dp-1.png",
+      "filename" : "magnifier@2x.png",
       "scale" : "2x"
     },
     {

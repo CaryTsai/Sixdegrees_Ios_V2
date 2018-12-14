@@ -66,6 +66,8 @@ struct LocalData {
     static let POPULAR_3_DAYS_UNCLICK = "popular_3days_unclick"
     static let POPULAR_3_DAYS = "popular_3days"
     static let IMAGE_NULL_TW = "image_null_tw"
+    
+    
 
 
     

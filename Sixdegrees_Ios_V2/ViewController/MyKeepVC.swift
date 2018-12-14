@@ -24,7 +24,6 @@ class MyKeepVC: BaseUiViewController,UITableViewDataSource,UITableViewDelegate {
         if(getString(key: LocalData.ACCESS_TOKEN) != ""){
             
             mToken = ApiService.bearer+getString(key: LocalData.ACCESS_TOKEN)
-//            mUserID = getInt(key: LocalData.USER_ID)
             getUserKeepList()
             
         }
@@ -57,7 +56,7 @@ class MyKeepVC: BaseUiViewController,UITableViewDataSource,UITableViewDelegate {
         mActivityBar.isHidden = false
         mActivityBar.startAnimating()
         mTableView.isHidden = true
-        Callback.mSharedInstance.fetchUserKeepList(accessToken:mToken,userId:nil,page:1,limit: 100) { (Article,code,error) in
+        Callback.mSharedInstance.fetchUserKeepList(accessToken:mToken,userId:nil,page:1) { (Article,code,error) in
             
             if let error = error{
                 print("網路連線不良",error)
@@ -82,6 +81,11 @@ class MyKeepVC: BaseUiViewController,UITableViewDataSource,UITableViewDelegate {
                     self.mTableView.isHidden = false
                     
                     
+                    
+                }else{
+                    
+                    self.mActivityBar.isHidden = true
+
                     
                 }
                 
