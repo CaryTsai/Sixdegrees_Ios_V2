@@ -12,7 +12,6 @@ import SDWebImage
 
 
 class RecommendTableViewVC: UITableViewController {
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -104,7 +103,8 @@ class RecommendTableViewVC: UITableViewController {
 override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("dsdsds")
     let storyboard = UIStoryboard(name: "SingleNews", bundle: nil)
-    let initialViewController = storyboard.instantiateViewController(withIdentifier: "SingleNews")
+    let initialViewController = storyboard.instantiateViewController(withIdentifier: "SingleNews") as! SingleNewsVC
+    initialViewController.mNewsId = ModelConfig.mArticle[indexPath.row].id
     present(initialViewController, animated: true, completion: nil)
     }
     

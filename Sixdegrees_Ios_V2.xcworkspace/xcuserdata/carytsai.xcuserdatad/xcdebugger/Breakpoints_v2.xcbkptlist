@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sixdegrees_Ios_V2/AppDelegate.swift"
-            timestampString = "566487785.830308"
+            timestampString = "566740290.197961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sixdegrees_Ios_V2/AppDelegate.swift"
-            timestampString = "566487785.830451"
+            timestampString = "566740290.1980669"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "133"
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sixdegrees_Ios_V2/AppDelegate.swift"
-            timestampString = "566487785.830537"
+            timestampString = "566740290.19811"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "129"
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
-            timestampString = "566395449.126606"
+            timestampString = "566750961.425702"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "getFetchMemberInfo()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,55 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
-            timestampString = "566395449.126664"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
-            landmarkName = "getFetchMemberInfo()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
-            timestampString = "566395449.126707"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "getRecommendArticleList()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
-            timestampString = "566395449.1267461"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "getCategoryList()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
-            timestampString = "566395449.126786"
+            timestampString = "566750961.4257571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "233"
@@ -186,11 +138,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
-            timestampString = "566395449.1268229"
+            timestampString = "566750961.4257981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "getRecommendArticleList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
+            timestampString = "566750961.425835"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "getCategoryList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
+            timestampString = "566750961.4258699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "getFetchMemberInfo()"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +186,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
-            timestampString = "566395449.12686"
+            timestampString = "566750961.425905"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "getFetchMemberInfo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
+            timestampString = "566750961.426003"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "getRecommendArticleList()"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,12 +218,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sixdegrees_Ios_V2/ViewController/LoadingVC.swift"
-            timestampString = "566395449.126896"
+            timestampString = "566750961.426057"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
             landmarkName = "getPopularArticleList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sixdegrees_Ios_V2/Api/Callback.swift"
+            timestampString = "566750961.426182"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "348"
+            endingLineNumber = "348"
+            landmarkName = "fetchRecommendArticleList(accesstoken:page:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sixdegrees_Ios_V2/Api/Callback.swift"
+            timestampString = "566750961.426224"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
+            landmarkName = "fetchRecommendArticleList(accesstoken:page:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

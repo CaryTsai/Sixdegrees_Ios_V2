@@ -29,8 +29,8 @@ class MyProfileViewController: BaseUiViewController,UITableViewDataSource,UITabl
     
     @IBAction func mUserLoginAction(_ sender: UIButton) {
         
-        let storyboard = UIStoryboard(name: "News", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "NewsVC")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "LocalLoginVC")
         present(initialViewController, animated: true, completion: nil)
         
     }

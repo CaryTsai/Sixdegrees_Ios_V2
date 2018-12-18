@@ -113,7 +113,8 @@ class LoadingVC:BaseUiViewController{
             switch code {
             case 200,201:
                 
-                
+                print("與伺服器連線中斷",Article)
+
                 if(Article != nil){
                     
                     guard let getArticle = Article else { return }

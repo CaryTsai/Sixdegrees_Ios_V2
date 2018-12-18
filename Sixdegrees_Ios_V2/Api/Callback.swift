@@ -334,7 +334,7 @@ struct Callback {
         parameters["page"] = page
         parameters["limit"] = ApiService.Limt
         headers["Authorization"] = accesstoken
-        Alamofire.request(ApiService.api + ApiService.RecommendArticleList,method: .get,parameters: parameters,headers: headers).responseData { (response) in
+        Alamofire.request(ApiService.api + ApiService.RecommendArticleList,method: .get,parameters: parameters,headers: headers).responseString { (response) in
             
             
             if let error = response.error{
@@ -343,8 +343,10 @@ struct Callback {
             }
             
             do{
+
                 guard let data = response.data else { return }
                 let result = try JSONDecoder().decode(GetArticleList.self, from: data)
+
                 completion(result.data,response.response?.statusCode,nil)
             }catch{
                 completion(nil,response.response?.statusCode,nil)
@@ -481,15 +483,32 @@ struct Callback {
 //    }
 //
 //    //取得單一文章 OK
-//    func fetchArticle(articleId:String, completion: @escaping(ArticleDetail?,String?) -> ()){
-//        var headers : [String:String] = [:]
-//        var parameters: [String: Any] = [:]
-//        headers["Accept"] = ApiService.accept
-//        headers["Content-Type"] = ApiService.contentType
-//        parameters["grant_type"] = ApiService.grant_type
-//        parameters["client_secret"] = ApiService.client_secret
-//        headers["Authorization"] = "Bearer " + getAccessToken()
-//        Alamofire.request(api + "/article/" + articleId ,method: .get,parameters: parameters,headers: headers).responseString { (response) in
+    func fetchArticle(accesstoken:String,articleId:String, completion: @escaping(ArticleDetail?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
+        headers["Content-Type"] = ApiService.contentType
+        parameters["grant_type"] = ApiService.grant_type
+        parameters["client_secret"] = ApiService.client_secret
+        headers["Authorization"] = accesstoken
+        Alamofire.request(ApiService.api + ApiService.artucke + articleId ,method: .get,parameters: parameters,headers: headers).responseString { (response) in
+            
+            
+            
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetArticle.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                completion(nil,response.response?.statusCode,nil)
+            }
+            
+            
 //            if let error = response.error{
 //                completion(nil,error.localizedDescription)
 //                return
@@ -511,9 +530,9 @@ struct Callback {
 //                    completion(nil,error.localizedDescription)
 //                }
 //            }
-//
-//        }
-//    }
+
+        }
+    }
 //
 //    //取得新聞留言列表
 //    func fetchCommentList(articleId:Int,parentId:Int?,page: Int?,limit:Int, completion: @escaping([Comment]?,String?) -> ()){

@@ -36,6 +36,7 @@ struct ApiService {
     static let YoutubeVideo = "/article/video"
     static let userKeepUrl = "/user/keeped"
     static let userInfo = "/user/info"
+    static let artucke = "/article/"
     
     
     
