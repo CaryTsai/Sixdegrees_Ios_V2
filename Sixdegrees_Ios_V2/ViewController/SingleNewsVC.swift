@@ -18,6 +18,7 @@ class SingleNewsVC: BaseUiViewController,UITableViewDataSource,UITableViewDelega
     var mToken:String = ""
     var mNewsId=Int()
     var mNewsData = [ArticleDetail]()
+    var abc = ""
 
     
     override func viewDidLoad() {
@@ -113,7 +114,7 @@ class SingleNewsVC: BaseUiViewController,UITableViewDataSource,UITableViewDelega
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return mNewsData[0].comment_total+7
+        return (mNewsData[0].comment?.data?.count)!+(mNewsData[0].latest?.count)! + 3
     }
     
     
@@ -123,7 +124,7 @@ class SingleNewsVC: BaseUiViewController,UITableViewDataSource,UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let Time = (getNowTimestamp() - ModelConfig.mArticle[indexPath.row].report_time) / 60 / 60
+        let Time = (getNowTimestamp() - mNewsData[0].report_time) / 60 / 60
 
         
         switch indexPath.item {
@@ -165,44 +166,57 @@ class SingleNewsVC: BaseUiViewController,UITableViewDataSource,UITableViewDelega
             for i in 0...5 {
                 
                 if indexPath.item == i+2{
-                    
+           
+
                     cell.mHotLb.text = mNewsData[0].latest?[i].title
                     cell.mHotIv.sd_setImage(with: URL(string: (mNewsData[0].latest?[i].media?.small ?? "")),placeholderImage: UIImage(named: "image_null_tw"))
-
-
-                    
                 }
             }
-            
-//            if(indexPath.item == 2){
-//
-//                cell.mHotLb.text = mNewsData[0].latest?[0].title
-//
-//
-//            }else if indexPath.item == 3{
-//
-//                cell.mHotLb.text = mNewsData[0].latest?[1].title
-//
-//            }else if indexPath.item == 4{
-//
-//                cell.mHotLb.text = mNewsData[0].latest?[2].title
-//
-//
-//            }else if indexPath.item == 5{
-//
-//                cell.mHotLb.text = mNewsData[0].latest?[3].title
-//
-//            }else if indexPath.item == 6{
-//
-//                cell.mHotLb.text = mNewsData[0].latest?[4].title
-//
-//
-//            }
+
             
             return cell
             
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "SingNewsMessage", for: indexPath) as! SingNewsMessage
+            
+            for i in 0...(mNewsData[0].comment?.data?.count)! - 1 {
+                
+                if indexPath.item == i+8{
+                    let Time = (getNowTimestamp() - (mNewsData[0].comment?.data?[i].create_time)!) / 60 / 60
+                    
+                    if (Time <= 0) {
+                        cell.mMessageTime.text = "剛剛"
+                    } else {
+                        cell.mMessageTime.text = (String(lroundf(Float(Time)))+"小時前")
+                    }
+                    
+                    if (Time >= 24) {
+                        
+                        let timehr = Time/24
+                        cell.mMessageTime.text = (String(lroundf(Float(timehr)))+"天前")
+                        
+                    }
+                    cell.mMessageBt.tag = i
+                    cell.mMessageNameLb.text = mNewsData[0].comment?.data?[i].user_name
+                    cell.mMessageLb.text = mNewsData[0].comment?.data?[i].text
+                    cell.mMessageLinkLb.text = String(mNewsData[0].comment?.data?[i].like_total ?? 0)
+                    cell.mMessageBt.setTitle("回覆 " + String(mNewsData[0].comment?.data?[i].comment_total ?? 0), for: .normal)
+                    cell.mMessagePhotoIV.sd_setImage(with: URL(string: (mNewsData[0].comment?.data?[i].user_avatar ?? "")),placeholderImage: UIImage(named: "avatar_initial"))
+                    cell.mMessageBt.addTarget(self, action: #selector(MessageBt(_:)), for: .touchDown)
+
+
+                    
+                }
+                
+
+
+                
+            }
+            
+            
+            
+            
+            
             return cell
             
         }
@@ -215,7 +229,14 @@ class SingleNewsVC: BaseUiViewController,UITableViewDataSource,UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("dsdsds")
+ 
+    }
+    
+    
+    @objc func MessageBt(_ messageBt:UIButton) {
+
+        print("喔喔喔",(mNewsData[0].comment?.data?[messageBt.tag].comment_url) ?? "")
+  
     }
 
 
