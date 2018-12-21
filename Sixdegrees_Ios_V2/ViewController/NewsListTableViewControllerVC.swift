@@ -18,6 +18,7 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
     var mTabName:IndicatorInfo = ""
     var mToken = ""
     var mArticle = [Article]()
+    var mAdsCount = 0
 
     @IBOutlet weak var mTableView: UITableView!
     @IBOutlet weak var mActivityBar: UIActivityIndicatorView!
@@ -47,11 +48,14 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
     
     func initView(){
         
+
+
+
         mTableView.dataSource = self
         mTableView.delegate = self
         mTableView.isHidden = true
         mActivityBar.startAnimating()
-        
+   
 
         let nibHeader = UINib(nibName:LocalData.NEWS_HEADER_TABLEVIEW_CELL, bundle: nil)
         mTableView.register(nibHeader, forCellReuseIdentifier: LocalData.NEWS_HEADER_TABLEVIEW_CELL)
@@ -59,6 +63,7 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
         
         let nib = UINib(nibName: LocalData.NEWS_TABLEVIEW_CELL, bundle: nil)
         mTableView.register(nib, forCellReuseIdentifier: LocalData.NEWS_TABLEVIEW_CELL)
+        mTableView.register(UINib(nibName: "GoogleAdsTVC", bundle: nil), forCellReuseIdentifier: "GoogleAdsTVC")
         mTableView.tableFooterView = UIView()
         mTableView.separatorColor = UIColor.clear
     
@@ -90,6 +95,8 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
                     self.mTableView.reloadData()
                     self.mTableView.isHidden = false
                     self.mActivityBar.isHidden = false
+                    self.mAdsCount = self.mArticle.count/5
+                    print("mAdsCount",self.mAdsCount)
 
                     
                     
@@ -116,6 +123,8 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print( "一一一一",mArticle.count )
+
         return mArticle.count
     }
     
@@ -124,8 +133,9 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
         
         let Time = (getNowTimestamp() - mArticle[indexPath.row].report_time) / 60 / 60
         print(Time)
+
         
-        if(indexPath.item % 4 == 0){
+        if(indexPath.item % 5 == 0 ){
             
             let cell = tableView.dequeueReusableCell(withIdentifier:LocalData.NEWS_HEADER_TABLEVIEW_CELL, for: indexPath) as! NewsHeaderTableViewCell
             
@@ -148,6 +158,12 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
             cell.mRecommendCellTitleLabel.text = mArticle[indexPath.row].title
             cell.mRecommendCellSourceButton.setTitle(mArticle[indexPath.row].datasource_name, for: .normal)
             cell.mRecommendViewButton.setTitle(String(mArticle[indexPath.row].pageview), for: .normal)
+            return cell
+            
+        }else if indexPath.item % 5 == 4{
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "GoogleAdsTVC", for: indexPath) as! GoogleAdsTVC
+            cell.mGoogleAdsView.rootViewController = self
             return cell
             
         }else{
@@ -177,11 +193,14 @@ class NewsListTableViewControllerVC: BaseUiViewController,UITableViewDataSource,
         
     }
     
-
-    
-//    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-//        return mTabName
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "SingleNews", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "SingleNews") as! SingleNewsVC
+        initialViewController.mNewsId = mArticle[indexPath.row].id
+        present(initialViewController, animated: true, completion: nil)
+        
+    }
     
 }
 

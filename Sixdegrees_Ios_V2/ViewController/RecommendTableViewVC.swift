@@ -11,19 +11,27 @@ import XLPagerTabStrip
 import SDWebImage
 
 
-class RecommendTableViewVC: UITableViewController {
+class RecommendTableViewVC: BaseUiViewController,UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet weak var mTableView: UITableView!
+    
+    var mAdsCount = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let nibHeader = UINib(nibName: "NewsHeaderTableViewCell", bundle: nil)
-        tableView.register(nibHeader, forCellReuseIdentifier: "NewsHeaderTableViewCell")
-        tableView.tableFooterView = UIView()
+        mTableView.register(UINib(nibName: "NewsHeaderTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsHeaderTableViewCell")
+        mTableView.register(UINib(nibName: "GoogleAdsTVC", bundle: nil), forCellReuseIdentifier: "GoogleAdsTVC")
+
+        mAdsCount = ModelConfig.mArticle.count/5
+        mTableView.tableFooterView = UIView()
         
         let nib = UINib(nibName: "NewsTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "NewsTableViewCell")
-        tableView.tableFooterView = UIView()
-        tableView.separatorColor = UIColor.clear
+        mTableView.register(nib, forCellReuseIdentifier: "NewsTableViewCell")
+        mTableView.dataSource = self
+        mTableView.delegate = self
+        mTableView.tableFooterView = UIView()
+        mTableView.separatorColor = UIColor.clear
 
 
 
@@ -31,22 +39,23 @@ class RecommendTableViewVC: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+
+        print( "一一一一",ModelConfig.mArticle.count + mAdsCount)
         return ModelConfig.mArticle.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let Time = (getNowTimestamp() - ModelConfig.mArticle[indexPath.row].report_time) / 60 / 60
         print(Time)
 
-            if(indexPath.item % 4 == 0){
+            if(indexPath.item % 5 == 0){
                 
                 let cell = tableView.dequeueReusableCell(withIdentifier: "NewsHeaderTableViewCell", for: indexPath) as! NewsHeaderTableViewCell
                 
-//                let cell = Bundle.main.loadNibNamed("NewsHeaderTableViewCell", owner: self, options: nil)?.first as! RecommendHeaderCell
                 
                 if (Time <= 0) {
                     cell.mRecommendCellTimeButton.setTitle("剛剛", for: .normal)
@@ -68,11 +77,18 @@ class RecommendTableViewVC: UITableViewController {
                 cell.mRecommendViewButton.setTitle(String(ModelConfig.mArticle[indexPath.row].pageview), for: .normal)
                 return cell
 
+            }else if indexPath.item % 5 == 4{
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "GoogleAdsTVC", for: indexPath) as! GoogleAdsTVC
+                cell.mGoogleAdsView.rootViewController = self
+                return cell
+          
+                
             }else{
                 
+                
                 let cell = tableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as! NewsTableViewCell
-//                let cell = Bundle.main.loadNibNamed("RecommendCell", owner: self, options: nil)?.first as! RecommendCell
-
+                
                 if (Time <= 0) {
                     cell.mRecommendCellTime.setTitle("剛剛", for: .normal)
                 } else {
@@ -90,18 +106,14 @@ class RecommendTableViewVC: UITableViewController {
                 cell.mRecommendCellPageView.setTitle(String(ModelConfig.mArticle[indexPath.row].pageview), for: .normal)
                 return cell
                 
-            }
+        }
 
 
     }
     
-    func getNowTimestamp() -> Double{
-        return Double(Date().timeIntervalSince1970)
-    }
     
     
-override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("dsdsds")
+ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let storyboard = UIStoryboard(name: "SingleNews", bundle: nil)
     let initialViewController = storyboard.instantiateViewController(withIdentifier: "SingleNews") as! SingleNewsVC
     initialViewController.mNewsId = ModelConfig.mArticle[indexPath.row].id

@@ -12,9 +12,9 @@ struct Callback {
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
-        headers["Content-Type"] = ApiService.contentType
+//        headers["Content-Type"] = ApiService.contentType
         parameters["grant_type"] = ApiService.grant_type
-        parameters["client_id"] = 1
+        parameters["client_id"] = 11
         parameters["client_secret"] = ApiService.client_secret
         Alamofire.request(ApiService.api + ApiService.client_token,method: .post,parameters: parameters,headers: headers).responseData { (response) in
             if let error = response.error{
@@ -47,9 +47,9 @@ struct Callback {
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
-        headers["Content-Type"] = ApiService.contentType
+//        headers["Content-Type"] = ApiService.contentType
         parameters["grant_type"] = ApiService.password
-        parameters["client_id"] = 2
+        parameters["client_id"] = 12
         parameters["client_secret"] = ApiService.client_member_secret
         parameters["username"] = useremail
         parameters["password"] = password
@@ -77,7 +77,7 @@ struct Callback {
         headers["Accept"] = ApiService.accept
         headers["Content-Type"] = ApiService.contentType
         parameters["grant_type"] = LocalData.REFRESH_TOKEN
-        parameters["client_id"] = 2
+        parameters["client_id"] = 12
         parameters["client_secret"] = ApiService.client_member_secret
         parameters["refresh_token"] = getString(key: LocalData.REFRESH_TOKEN)
         headers["Authorization"] = ApiService.mClientToken
@@ -108,7 +108,7 @@ struct Callback {
     func fetchDefaultCategoryList( accesstoken:String,completion: @escaping([Category]?,Int?,String?) -> ()){
         var headers : [String:String] = [:]
         headers["Accept"] = ApiService.accept
-        headers["Content-Type"] = ApiService.contentType
+//        headers["Content-Type"] = ApiService.contentType
         headers["Authorization"] = accesstoken
         Alamofire.request(ApiService.api + ApiService.category_list,method: .get,headers: headers).responseData { (response) in
             
@@ -298,12 +298,12 @@ struct Callback {
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
-        headers["Content-Type"] = ApiService.contentType
+//        headers["Content-Type"] = ApiService.contentType
 //        parameters["grant_type"] = ApiService.grant_type
 //        parameters["client_secret"] = ApiService.client_secret
         parameters["page"] = page
         parameters["limit"] = ApiService.Limt
-        parameters["timetype"] = timetype
+        parameters["time_type"] = timetype
         headers["Authorization"] = accesstoken
         Alamofire.request(ApiService.api + ApiService.PopularArticleList,method: .get,parameters: parameters,headers: headers).responseData{ (response) in
             
@@ -330,7 +330,7 @@ struct Callback {
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
-        headers["Content-Type"] = ApiService.contentType
+//        headers["Content-Type"] = ApiService.contentType
         parameters["page"] = page
         parameters["limit"] = ApiService.Limt
         headers["Authorization"] = accesstoken
@@ -361,7 +361,7 @@ struct Callback {
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
-        headers["Content-Type"] = ApiService.contentType
+//        headers["Content-Type"] = ApiService.contentType
 //        parameters["grant_type"] = ApiService.grant_type
 //        parameters["client_secret"] = ApiService.client_secret
         parameters["page"] = page
@@ -382,114 +382,73 @@ struct Callback {
             }catch{
                 completion(nil,response.response?.statusCode,nil)
             }
-            
-            
-            
-//            if let error = response.error{
-//                completion(nil,error.localizedDescription)
-//                return
-//            }
-//            guard let data = response.data else { return }
-//            if response.response?.statusCode == 200 || response.response?.statusCode == 201{
-//                do{
-//                    let result = try JSONDecoder().decode(GetArticleList.self, from: data)
-//                    completion(result.data,nil)
-//
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }else{
-//                do{
-//                    let result = try JSONDecoder().decode(GetError.self, from: data)
-//                    completion(nil,result.error.message)
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }
 
         }
     }
 //
 //    //收藏文章 OK
-//    func fetchKeepArticle(articleId:String, completion: @escaping(ServerResponse?,String?) -> ()){
-//        var headers : [String:String] = [:]
-//        var parameters: [String: Any] = [:]
+    func fetchKeepArticle(accesstoken:String,articleId:String, completion: @escaping(ServerResponse?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        var parameters: [String: Any] = [:]
 //        headers["Accept"] = ApiService.accept
 //        headers["Content-Type"] = ApiService.contentType
 //        parameters["grant_type"] = ApiService.grant_type
 //        parameters["client_secret"] = ApiService.client_secret
-//        parameters["article_id"] = articleId
-//        headers["Authorization"] = "Bearer " + getAccessToken()
-//        Alamofire.request(api + "/article/keep",method: .post,parameters: parameters,headers: headers).responseData { (response) in
-//            if let error = response.error{
-//                completion(nil,error.localizedDescription)
-//                return
-//            }
-//            guard let data = response.data else { return }
-//            if response.response?.statusCode == 200 || response.response?.statusCode == 201{
-//                do{
-//                    let result = try JSONDecoder().decode(GetStatus.self, from: data)
-//                    completion(result.data,nil)
+        parameters["article_id"] = articleId
+        headers["Authorization"] = accesstoken
+        Alamofire.request(ApiService.api + ApiService.artickeep,method: .post,parameters: parameters,headers: headers).responseData { (response) in
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetStatus.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                completion(nil,response.response?.statusCode,nil)
+            }
+
+        }
+    }
 //
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }else{
-//                do{
-//                    let result = try JSONDecoder().decode(GetError.self, from: data)
-//                    completion(nil,result.error.message)
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }
-//
-//        }
-//    }
-//
-//    //按讚文章  OK
-//    func fetchLikeArticle(articleId:String, completion: @escaping(ServerResponse?,String?) -> ()){
-//        var headers : [String:String] = [:]
-//        var parameters: [String: Any] = [:]
-//        headers["Accept"] = ApiService.accept
+    //按讚文章  OK
+    func fetchLikeArticle(accesstoken:String,articleId:String, completion: @escaping(ServerResponse?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
 //        headers["Content-Type"] = ApiService.contentType
 //        parameters["grant_type"] = ApiService.grant_type
 //        parameters["client_secret"] = ApiService.client_secret
-//        parameters["article_id"] = articleId
-//        headers["Authorization"] = "Bearer " + getAccessToken()
-//        Alamofire.request(api + "/article/like",method: .post,parameters: parameters,headers: headers).responseString { (response) in
-//            if let error = response.error{
-//                completion(nil,error.localizedDescription)
-//                return
-//            }
-//            guard let data = response.data else { return }
-//            if response.response?.statusCode == 200 || response.response?.statusCode == 201{
-//                do{
-//                    let result = try JSONDecoder().decode(GetStatus.self, from: data)
-//                    completion(result.data,nil)
-//
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }else{
-//                do{
-//                    let result = try JSONDecoder().decode(GetError.self, from: data)
-//                    completion(nil,result.error.message)
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }
-//
-//        }
-//    }
+        parameters["article_id"] = articleId
+        headers["Authorization"] = accesstoken
+        Alamofire.request(ApiService.api + ApiService.articleLike,method: .post,parameters: parameters,headers: headers).responseString { (response) in
+            
+            
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetStatus.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                completion(nil,response.response?.statusCode,nil)
+            }
+        }
+    }
 //
 //    //取得單一文章 OK
     func fetchArticle(accesstoken:String,articleId:String, completion: @escaping(ArticleDetail?,Int?,String?) -> ()){
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
-        headers["Content-Type"] = ApiService.contentType
-        parameters["grant_type"] = ApiService.grant_type
-        parameters["client_secret"] = ApiService.client_secret
+//        headers["Content-Type"] = ApiService.contentType
+//        parameters["grant_type"] = ApiService.grant_type
+//        parameters["client_secret"] = ApiService.client_secret
         headers["Authorization"] = accesstoken
         Alamofire.request(ApiService.api + ApiService.artucke + articleId ,method: .get,parameters: parameters,headers: headers).responseString { (response) in
             
@@ -507,38 +466,49 @@ struct Callback {
             }catch{
                 completion(nil,response.response?.statusCode,nil)
             }
-            
-            
-//            if let error = response.error{
-//                completion(nil,error.localizedDescription)
-//                return
-//            }
-//            guard let data = response.data else { return }
-//            if response.response?.statusCode == 200 || response.response?.statusCode == 201{
-//                do{
-//                    let result = try JSONDecoder().decode(GetArticle.self, from: data)
-//                    completion(result.data,nil)
-//
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }else{
-//                do{
-//                    let result = try JSONDecoder().decode(GetError.self, from: data)
-//                    completion(nil,result.error.message)
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }
 
         }
     }
 //
-//    //取得新聞留言列表
-//    func fetchCommentList(articleId:Int,parentId:Int?,page: Int?,limit:Int, completion: @escaping([Comment]?,String?) -> ()){
-//        var headers : [String:String] = [:]
-//        var parameters: [String: Any] = [:]
-//        headers["Accept"] = ApiService.accept
+    //新增留言
+    func fetchCommentList(accesstoken:String,articleId:Int,parentId:Int,page: Int?,text:String, completion: @escaping(ServerResponse?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
+//        headers["Content-Type"] = ApiService.contentType
+//        parameters["grant_type"] = ApiService.grant_type
+//        parameters["client_secret"] = ApiService.client_secret
+        parameters["article_id"] = articleId
+        parameters["parent_id"] = parentId
+        parameters["page"] = page
+        parameters["limit"] = ApiService.Limt
+        parameters["text"] = text
+        headers["Authorization"] = accesstoken
+        Alamofire.request(ApiService.api + ApiService.comment,method: .post,parameters: parameters,headers: headers).responseData { (response) in
+            
+            
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetStatus.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                completion(nil,response.response?.statusCode,nil)
+            }
+        }
+    }
+    
+    
+    
+    //根據Url取得新聞留言列表
+    func fetchUrlCommentList(accesstoken:String,CommentUrl:String, completion: @escaping([Comment]?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
 //        headers["Content-Type"] = ApiService.contentType
 //        parameters["grant_type"] = ApiService.grant_type
 //        parameters["client_secret"] = ApiService.client_secret
@@ -546,32 +516,25 @@ struct Callback {
 //        parameters["parent_id"] = parentId
 //        parameters["page"] = page
 //        parameters["limit"] = limit
-//        headers["Authorization"] = "Bearer " + getAccessToken()
-//        Alamofire.request(api + "/article/comment",method: .get,parameters: parameters,headers: headers).responseData { (response) in
-//            if let error = response.error{
-//                completion(nil,error.localizedDescription)
-//                return
-//            }
-//            guard let data = response.data else { return }
-//            if response.response?.statusCode == 200 || response.response?.statusCode == 201{
-//                do{
-//                    let result = try JSONDecoder().decode(GetComments.self, from: data)
-//                    completion(result.data,nil)
-//
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }else{
-//                do{
-//                    let result = try JSONDecoder().decode(GetError.self, from: data)
-//                    completion(nil,result.error.message)
-//                }catch let error{
-//                    completion(nil,error.localizedDescription)
-//                }
-//            }
-//
-//        }
-//    }
+        headers["Authorization"] = accesstoken
+        Alamofire.request(CommentUrl,method: .get,parameters: parameters,headers: headers).responseData { (response) in
+            
+            
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetComments.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                completion(nil,response.response?.statusCode,nil)
+            }
+        }
+    }
+    
 //
 //    //新增留言 OK
 //    func fetchAddComment(articleId:String,parentId:Int?,text:String, completion: @escaping(ServerResponse?,String?) -> ()){
@@ -649,17 +612,36 @@ struct Callback {
 //    }
 //
 //
-//    //按讚留言 OK
-//    func fetchLikeComment(commentId:Int, completion: @escaping(ServerResponse?,String?) -> ()){
-//        var headers : [String:String] = [:]
-//        var parameters: [String: Any] = [:]
-//        headers["Accept"] = ApiService.accept
+    //按讚留言 OK
+    func fetchLikeComment(accesstoken:String,commentId:Int, completion: @escaping(ServerResponse?,Int?,String?) -> ()){
+        var headers : [String:String] = [:]
+        var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
 //        headers["Content-Type"] = ApiService.contentType
 //        parameters["grant_type"] = ApiService.grant_type
 //        parameters["client_secret"] = ApiService.client_secret
-//        parameters["comment_id"] = commentId
-//        headers["Authorization"] = "Bearer " + getAccessToken()
-//        Alamofire.request(api + "/article/comment/like",method: .post,parameters: parameters,headers: headers).responseData { (response) in
+        parameters["comment_id"] = commentId
+        headers["Authorization"] = accesstoken
+        
+        
+        
+        Alamofire.request(ApiService.api + ApiService.commentlink,method: .post,parameters: parameters,headers: headers).responseData { (response) in
+            
+            
+            if let error = response.error{
+                completion(nil,nil,error.localizedDescription)
+                return
+            }
+            
+            do{
+                guard let data = response.data else { return }
+                let result = try JSONDecoder().decode(GetStatus.self, from: data)
+                completion(result.data,response.response?.statusCode,nil)
+            }catch{
+                completion(nil,response.response?.statusCode,nil)
+            }
+            
+            
 //            if let error = response.error{
 //                completion(nil,error.localizedDescription)
 //                return
@@ -681,9 +663,9 @@ struct Callback {
 //                    completion(nil,error.localizedDescription)
 //                }
 //            }
-//
-//        }
-//    }
+
+        }
+    }
 //
 //    //取得全部標籤
 //    func fetchTagList( completion: @escaping([Category]?,String?) -> ()){
@@ -760,9 +742,9 @@ struct Callback {
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
-        headers["Content-Type"] = ApiService.contentType
-        parameters["grant_type"] = ApiService.grant_type
-        parameters["client_secret"] = ApiService.client_secret
+//        headers["Content-Type"] = ApiService.contentType
+//        parameters["grant_type"] = ApiService.grant_type
+//        parameters["client_secret"] = ApiService.client_secret
         parameters["page"] = page
         parameters["limit"] = ApiService.Limt
         headers["Authorization"] = accesstoken
@@ -1095,9 +1077,9 @@ struct Callback {
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
         headers["Accept"] = ApiService.accept
-        headers["Content-Type"] = ApiService.contentType
-        parameters["grant_type"] = ApiService.grant_type
-        parameters["client_secret"] = ApiService.client_secret
+//        headers["Content-Type"] = ApiService.contentType
+//        parameters["grant_type"] = ApiService.grant_type
+//        parameters["client_secret"] = ApiService.client_secret
         parameters["email"] = email
         parameters["password"] = password
         parameters["name"] = name
@@ -1124,7 +1106,8 @@ struct Callback {
     func fetchFacebook(email:String,facebookId:String,name:String, completion: @escaping(Token?,Int?,String?) -> ()){
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
-        headers["Content-Type"] = ApiService.contentType
+        headers["Accept"] = ApiService.accept
+//        headers["Content-Type"] = ApiService.contentType
         parameters["email"] = email
         parameters["facebook_id"] = facebookId
         parameters["name"] = name
@@ -1149,6 +1132,8 @@ struct Callback {
     func fetchGoogle(email:String,googleId:String,name:String, completion: @escaping(Token?,Int?,String?) -> ()){
         var headers : [String:String] = [:]
         var parameters: [String: Any] = [:]
+        headers["Accept"] = ApiService.accept
+
         headers["Content-Type"] = ApiService.contentType
         parameters["email"] = email
         parameters["google_id"] = googleId

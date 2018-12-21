@@ -117,7 +117,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="clock_update" width="10" height="10"/>
+        <image name="clock_update" width="12" height="12"/>
         <image name="eye_gray" width="12" height="12"/>
     </resources>
 </document>

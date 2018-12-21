@@ -15,7 +15,6 @@ class SingNewsMessage: UITableViewCell {
     @IBOutlet weak var mMessageLb: UILabel!
     @IBOutlet weak var mMessageTime: UILabel!
     @IBOutlet weak var mMessageBt: UIButton!
-    @IBOutlet weak var mMessageLinkLb: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

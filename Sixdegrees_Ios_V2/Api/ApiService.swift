@@ -7,19 +7,20 @@ struct ApiService {
     //Api
     
     static let grant_type = "client_credentials"
-//    static let client_secret = "ibuM2Bld0rWWz40t8GxpNnI9mhOCQCJy8DJS0il2"
-//    static let client_member_secret = "6QlUqYoOSsQ6KbVggH3e30GMaworInyycZGzVq0X"
+    static let client_secret = "rxcN99eP02wdzZNdUscFvD8QVxkkAZSw9TVZJO67"
+    static let client_member_secret = "u3rsUTsHSh9Zz189lQyDDDqn72LMkYT35A4kZBfY"
+    let api = "https://api.six-degrees.io"
     static let accept = "application/vnd.sixdegree.v1_1+json"
     static let contentType = "application/x-www-form-urlencoded"
-//    static let api = "https://api.six-degrees.io"
+    static let api = "https://api.six-degrees.io"
     static let bearer = "Bearer "
     static let password = "password"
     static let mClientToken = ApiService.bearer+getString(key: LocalData.CLIENT_TOKEN)
     
     //    測試機
-      static  let api = "https://api.dev.sixdegreeworld.com"
-        static let client_secret = "zSVE2Bd64icnRyo7VSo997rriPLDPMbY9LmmIurv"
-        static let client_member_secret = "yGdNcZJlry89WWJ13cLBOmr0ExPWpmrKv2ap9Crx"
+//      static  let api = "https://api.dev.sixdegreeworld.com"
+//        static let client_secret = "zSVE2Bd64icnRyo7VSo997rriPLDPMbY9LmmIurv"
+//        static let client_member_secret = "yGdNcZJlry89WWJ13cLBOmr0ExPWpmrKv2ap9Crx"
     
     //Api Url
     static let client_token = "/oauth/token"
@@ -37,6 +38,10 @@ struct ApiService {
     static let userKeepUrl = "/user/keeped"
     static let userInfo = "/user/info"
     static let artucke = "/article/"
+    static let comment = "/comment"
+    static let articleLike = "/article/like"
+    static let artickeep = "/article/keep"
+    static let commentlink = "/comment/like"
     
     
     

@@ -190,6 +190,7 @@ class PopularTableViewControllerVC: BaseUiViewController,UITableViewDataSource,U
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
         return ModelConfig.mPopularArticle.count
     }
     
@@ -221,7 +222,21 @@ class PopularTableViewControllerVC: BaseUiViewController,UITableViewDataSource,U
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "SingleNews", bundle: nil)
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "SingleNews") as! SingleNewsVC
+        initialViewController.mNewsId = ModelConfig.mPopularArticle[indexPath.row].id
+        present(initialViewController, animated: true, completion: nil)
+        
+    }
+    
 }
+
+
+
+
+
 
 extension PopularTableViewControllerVC:IndicatorInfoProvider{
     
