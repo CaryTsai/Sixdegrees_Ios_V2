@@ -1,0 +1,815 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LoadingVC"
+provides-nominal:
+- "17Sixdegrees_Ios_V29LoadingVCC"
+provides-member:
+- ["17Sixdegrees_Ios_V29LoadingVCC", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+- "viewWillDisappear"
+depends-top-level:
+- !private "!="
+- "Array"
+- "AssignmentPrecedence"
+- "BaseUiViewController"
+- "Bool"
+- "BooleanLiteralType"
+- !private "Callback"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "LoadingVC"
+- !private "LocalData"
+- !private "MDCSnackbarManager"
+- !private "MDCSnackbarMessage"
+- !private "MDCSnackbarMessageAction"
+- !private "ModelConfig"
+- "String"
+- "StringLiteralType"
+- !private "SwiftEventBus"
+- !private "getInt"
+- !private "print"
+- !private "~="
+depends-member:
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "Bool"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "Callback"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "LocalData"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "MDCSnackbarManager"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "MDCSnackbarMessage"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "MDCSnackbarMessageAction"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "ModelConfig"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "StoryBoardInstantiate"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "String"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "SwiftEventBus"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", ""]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "deinit"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "dismiss"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "getCategoryList"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "getFetchMemberInfo"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "getInt"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "getPopularArticleList"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "getRecommendArticleList"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "init"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "init"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "mToken"]
+- !private ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "print"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "setSnackbarLoading"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "viewDidLoad"]
+- ["17Sixdegrees_Ios_V220BaseUiViewControllerC", "viewWillDisappear"]
+- ["SK", "init"]
+- ["SK", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "Callback"]
+- !private ["s7CVarArgP", "LocalData"]
+- !private ["s7CVarArgP", "MDCSnackbarManager"]
+- !private ["s7CVarArgP", "MDCSnackbarMessage"]
+- !private ["s7CVarArgP", "MDCSnackbarMessageAction"]
+- !private ["s7CVarArgP", "ModelConfig"]
+- !private ["s7CVarArgP", "StoryBoardInstantiate"]
+- !private ["s7CVarArgP", "SwiftEventBus"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "getCategoryList"]
+- !private ["s7CVarArgP", "getFetchMemberInfo"]
+- !private ["s7CVarArgP", "getInt"]
+- !private ["s7CVarArgP", "getPopularArticleList"]
+- !private ["s7CVarArgP", "getRecommendArticleList"]
+- ["s7CVarArgP", "init"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "mToken"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "viewWillDisappear"]
+- !private ["17Sixdegrees_Ios_V28CallbackV", "fetchDefaultCategoryList"]
+- !private ["17Sixdegrees_Ios_V28CallbackV", "fetchMemberInfo"]
+- !private ["17Sixdegrees_Ios_V28CallbackV", "fetchPopularArticleList"]
+- !private ["17Sixdegrees_Ios_V28CallbackV", "fetchRecommendArticleList"]
+- !private ["17Sixdegrees_Ios_V28CallbackV", "mSharedInstance"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "init"]
+- ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Callback"]
+- !private ["s28CustomDebugStringConvertibleP", "LocalData"]
+- !private ["s28CustomDebugStringConvertibleP", "MDCSnackbarManager"]
+- !private ["s28CustomDebugStringConvertibleP", "MDCSnackbarMessage"]
+- !private ["s28CustomDebugStringConvertibleP", "MDCSnackbarMessageAction"]
+- !private ["s28CustomDebugStringConvertibleP", "ModelConfig"]
+- !private ["s28CustomDebugStringConvertibleP", "StoryBoardInstantiate"]
+- !private ["s28CustomDebugStringConvertibleP", "SwiftEventBus"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "getCategoryList"]
+- !private ["s28CustomDebugStringConvertibleP", "getFetchMemberInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "getInt"]
+- !private ["s28CustomDebugStringConvertibleP", "getPopularArticleList"]
+- !private ["s28CustomDebugStringConvertibleP", "getRecommendArticleList"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "mToken"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Callback"]
+- !private ["s23CustomStringConvertibleP", "LocalData"]
+- !private ["s23CustomStringConvertibleP", "MDCSnackbarManager"]
+- !private ["s23CustomStringConvertibleP", "MDCSnackbarMessage"]
+- !private ["s23CustomStringConvertibleP", "MDCSnackbarMessageAction"]
+- !private ["s23CustomStringConvertibleP", "ModelConfig"]
+- !private ["s23CustomStringConvertibleP", "StoryBoardInstantiate"]
+- !private ["s23CustomStringConvertibleP", "SwiftEventBus"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "getCategoryList"]
+- !private ["s23CustomStringConvertibleP", "getFetchMemberInfo"]
+- !private ["s23CustomStringConvertibleP", "getInt"]
+- !private ["s23CustomStringConvertibleP", "getPopularArticleList"]
+- !private ["s23CustomStringConvertibleP", "getRecommendArticleList"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "mToken"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SQ", "Callback"]
+- !private ["SQ", "LocalData"]
+- !private ["SQ", "MDCSnackbarManager"]
+- !private ["SQ", "MDCSnackbarMessage"]
+- !private ["SQ", "MDCSnackbarMessageAction"]
+- !private ["SQ", "ModelConfig"]
+- !private ["SQ", "StoryBoardInstantiate"]
+- !private ["SQ", "SwiftEventBus"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "dismiss"]
+- !private ["SQ", "getCategoryList"]
+- !private ["SQ", "getFetchMemberInfo"]
+- !private ["SQ", "getInt"]
+- !private ["SQ", "getPopularArticleList"]
+- !private ["SQ", "getRecommendArticleList"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "mToken"]
+- !private ["SQ", "print"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "viewWillDisappear"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "Callback"]
+- !private ["SH", "LocalData"]
+- !private ["SH", "MDCSnackbarManager"]
+- !private ["SH", "MDCSnackbarMessage"]
+- !private ["SH", "MDCSnackbarMessageAction"]
+- !private ["SH", "ModelConfig"]
+- !private ["SH", "StoryBoardInstantiate"]
+- !private ["SH", "SwiftEventBus"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "dismiss"]
+- !private ["SH", "getCategoryList"]
+- !private ["SH", "getFetchMemberInfo"]
+- !private ["SH", "getInt"]
+- !private ["SH", "getPopularArticleList"]
+- !private ["SH", "getRecommendArticleList"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "mToken"]
+- !private ["SH", "print"]
+- !private ["SH", "viewDidLoad"]
+- !private ["SH", "viewWillDisappear"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "Bool"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "Callback"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "LocalData"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "MDCSnackbarManager"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "MDCSnackbarMessage"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "MDCSnackbarMessageAction"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "ModelConfig"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "StoryBoardInstantiate"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "String"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "SwiftEventBus"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "dismiss"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "getCategoryList"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "getFetchMemberInfo"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "getInt"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "getPopularArticleList"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "getRecommendArticleList"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "init"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "mToken"]
+- !private ["17Sixdegrees_Ios_V29LoadingVCC", "print"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "setSnackbarLoading"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "viewDidLoad"]
+- ["17Sixdegrees_Ios_V29LoadingVCC", "viewWillDisappear"]
+- !private ["17Sixdegrees_Ios_V29LocalDataV", "LOGIN_AFTERVC"]
+- !private ["17Sixdegrees_Ios_V29LocalDataV", "USER_ID"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- !private ["17Sixdegrees_Ios_V211ModelConfigV", "mArticle"]
+- !private ["17Sixdegrees_Ios_V211ModelConfigV", "mCategory"]
+- !private ["17Sixdegrees_Ios_V211ModelConfigV", "mPopularArticle"]
+- !private ["17Sixdegrees_Ios_V211ModelConfigV", "mUserInfo"]
+- !private ["So8NSCodingP", "Callback"]
+- !private ["So8NSCodingP", "LocalData"]
+- !private ["So8NSCodingP", "MDCSnackbarManager"]
+- !private ["So8NSCodingP", "MDCSnackbarMessage"]
+- !private ["So8NSCodingP", "MDCSnackbarMessageAction"]
+- !private ["So8NSCodingP", "ModelConfig"]
+- !private ["So8NSCodingP", "StoryBoardInstantiate"]
+- !private ["So8NSCodingP", "SwiftEventBus"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "getCategoryList"]
+- !private ["So8NSCodingP", "getFetchMemberInfo"]
+- !private ["So8NSCodingP", "getInt"]
+- !private ["So8NSCodingP", "getPopularArticleList"]
+- !private ["So8NSCodingP", "getRecommendArticleList"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "mToken"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "viewWillDisappear"]
+- !private ["So26NSExtensionRequestHandlingP", "Callback"]
+- !private ["So26NSExtensionRequestHandlingP", "LocalData"]
+- !private ["So26NSExtensionRequestHandlingP", "MDCSnackbarManager"]
+- !private ["So26NSExtensionRequestHandlingP", "MDCSnackbarMessage"]
+- !private ["So26NSExtensionRequestHandlingP", "MDCSnackbarMessageAction"]
+- !private ["So26NSExtensionRequestHandlingP", "ModelConfig"]
+- !private ["So26NSExtensionRequestHandlingP", "StoryBoardInstantiate"]
+- !private ["So26NSExtensionRequestHandlingP", "SwiftEventBus"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "getCategoryList"]
+- !private ["So26NSExtensionRequestHandlingP", "getFetchMemberInfo"]
+- !private ["So26NSExtensionRequestHandlingP", "getInt"]
+- !private ["So26NSExtensionRequestHandlingP", "getPopularArticleList"]
+- !private ["So26NSExtensionRequestHandlingP", "getRecommendArticleList"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "mToken"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Callback"]
+- !private ["So8NSObjectC", "LocalData"]
+- !private ["So8NSObjectC", "MDCSnackbarManager"]
+- !private ["So8NSObjectC", "MDCSnackbarMessage"]
+- !private ["So8NSObjectC", "MDCSnackbarMessageAction"]
+- !private ["So8NSObjectC", "ModelConfig"]
+- !private ["So8NSObjectC", "StoryBoardInstantiate"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "SwiftEventBus"]
+- !private ["So8NSObjectC", "dismiss"]
+- ["So8NSObjectC", "getCategoryList"]
+- ["So8NSObjectC", "getFetchMemberInfo"]
+- !private ["So8NSObjectC", "getInt"]
+- ["So8NSObjectC", "getPopularArticleList"]
+- ["So8NSObjectC", "getRecommendArticleList"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "mToken"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "setSnackbarLoading"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectC", "viewWillDisappear"]
+- !private ["So8NSObjectP", "Callback"]
+- !private ["So8NSObjectP", "LocalData"]
+- !private ["So8NSObjectP", "MDCSnackbarManager"]
+- !private ["So8NSObjectP", "MDCSnackbarMessage"]
+- !private ["So8NSObjectP", "MDCSnackbarMessageAction"]
+- !private ["So8NSObjectP", "ModelConfig"]
+- !private ["So8NSObjectP", "StoryBoardInstantiate"]
+- !private ["So8NSObjectP", "SwiftEventBus"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "dismiss"]
+- !private ["So8NSObjectP", "getCategoryList"]
+- !private ["So8NSObjectP", "getFetchMemberInfo"]
+- !private ["So8NSObjectP", "getInt"]
+- !private ["So8NSObjectP", "getPopularArticleList"]
+- !private ["So8NSObjectP", "getRecommendArticleList"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "mToken"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "viewWillDisappear"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- ["ST", "init"]
+- ["ST", "init"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["So21UIAppearanceContainerP", "Callback"]
+- !private ["So21UIAppearanceContainerP", "LocalData"]
+- !private ["So21UIAppearanceContainerP", "MDCSnackbarManager"]
+- !private ["So21UIAppearanceContainerP", "MDCSnackbarMessage"]
+- !private ["So21UIAppearanceContainerP", "MDCSnackbarMessageAction"]
+- !private ["So21UIAppearanceContainerP", "ModelConfig"]
+- !private ["So21UIAppearanceContainerP", "StoryBoardInstantiate"]
+- !private ["So21UIAppearanceContainerP", "SwiftEventBus"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "getCategoryList"]
+- !private ["So21UIAppearanceContainerP", "getFetchMemberInfo"]
+- !private ["So21UIAppearanceContainerP", "getInt"]
+- !private ["So21UIAppearanceContainerP", "getPopularArticleList"]
+- !private ["So21UIAppearanceContainerP", "getRecommendArticleList"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "mToken"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
+- !private ["So18UIContentContainerP", "Callback"]
+- !private ["So18UIContentContainerP", "LocalData"]
+- !private ["So18UIContentContainerP", "MDCSnackbarManager"]
+- !private ["So18UIContentContainerP", "MDCSnackbarMessage"]
+- !private ["So18UIContentContainerP", "MDCSnackbarMessageAction"]
+- !private ["So18UIContentContainerP", "ModelConfig"]
+- !private ["So18UIContentContainerP", "StoryBoardInstantiate"]
+- !private ["So18UIContentContainerP", "SwiftEventBus"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "getCategoryList"]
+- !private ["So18UIContentContainerP", "getFetchMemberInfo"]
+- !private ["So18UIContentContainerP", "getInt"]
+- !private ["So18UIContentContainerP", "getPopularArticleList"]
+- !private ["So18UIContentContainerP", "getRecommendArticleList"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "mToken"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "viewWillDisappear"]
+- !private ["So18UIFocusEnvironmentP", "Callback"]
+- !private ["So18UIFocusEnvironmentP", "LocalData"]
+- !private ["So18UIFocusEnvironmentP", "MDCSnackbarManager"]
+- !private ["So18UIFocusEnvironmentP", "MDCSnackbarMessage"]
+- !private ["So18UIFocusEnvironmentP", "MDCSnackbarMessageAction"]
+- !private ["So18UIFocusEnvironmentP", "ModelConfig"]
+- !private ["So18UIFocusEnvironmentP", "StoryBoardInstantiate"]
+- !private ["So18UIFocusEnvironmentP", "SwiftEventBus"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "getCategoryList"]
+- !private ["So18UIFocusEnvironmentP", "getFetchMemberInfo"]
+- !private ["So18UIFocusEnvironmentP", "getInt"]
+- !private ["So18UIFocusEnvironmentP", "getPopularArticleList"]
+- !private ["So18UIFocusEnvironmentP", "getRecommendArticleList"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "mToken"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So18UIFocusEnvironmentP", "viewWillDisappear"]
+- !private ["So30UIPasteConfigurationSupportingP", "Callback"]
+- !private ["So30UIPasteConfigurationSupportingP", "LocalData"]
+- !private ["So30UIPasteConfigurationSupportingP", "MDCSnackbarManager"]
+- !private ["So30UIPasteConfigurationSupportingP", "MDCSnackbarMessage"]
+- !private ["So30UIPasteConfigurationSupportingP", "MDCSnackbarMessageAction"]
+- !private ["So30UIPasteConfigurationSupportingP", "ModelConfig"]
+- !private ["So30UIPasteConfigurationSupportingP", "StoryBoardInstantiate"]
+- !private ["So30UIPasteConfigurationSupportingP", "SwiftEventBus"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "getCategoryList"]
+- !private ["So30UIPasteConfigurationSupportingP", "getFetchMemberInfo"]
+- !private ["So30UIPasteConfigurationSupportingP", "getInt"]
+- !private ["So30UIPasteConfigurationSupportingP", "getPopularArticleList"]
+- !private ["So30UIPasteConfigurationSupportingP", "getRecommendArticleList"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "mToken"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWillDisappear"]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "Callback"]
+- !private ["So11UIResponderC", "LocalData"]
+- !private ["So11UIResponderC", "MDCSnackbarManager"]
+- !private ["So11UIResponderC", "MDCSnackbarMessage"]
+- !private ["So11UIResponderC", "MDCSnackbarMessageAction"]
+- !private ["So11UIResponderC", "ModelConfig"]
+- !private ["So11UIResponderC", "StoryBoardInstantiate"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "SwiftEventBus"]
+- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "getCategoryList"]
+- ["So11UIResponderC", "getFetchMemberInfo"]
+- !private ["So11UIResponderC", "getInt"]
+- ["So11UIResponderC", "getPopularArticleList"]
+- ["So11UIResponderC", "getRecommendArticleList"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "mToken"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "setSnackbarLoading"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So11UIResponderC", "viewWillDisappear"]
+- !private ["So30UIResponderStandardEditActionsP", "Callback"]
+- !private ["So30UIResponderStandardEditActionsP", "LocalData"]
+- !private ["So30UIResponderStandardEditActionsP", "MDCSnackbarManager"]
+- !private ["So30UIResponderStandardEditActionsP", "MDCSnackbarMessage"]
+- !private ["So30UIResponderStandardEditActionsP", "MDCSnackbarMessageAction"]
+- !private ["So30UIResponderStandardEditActionsP", "ModelConfig"]
+- !private ["So30UIResponderStandardEditActionsP", "StoryBoardInstantiate"]
+- !private ["So30UIResponderStandardEditActionsP", "SwiftEventBus"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "getCategoryList"]
+- !private ["So30UIResponderStandardEditActionsP", "getFetchMemberInfo"]
+- !private ["So30UIResponderStandardEditActionsP", "getInt"]
+- !private ["So30UIResponderStandardEditActionsP", "getPopularArticleList"]
+- !private ["So30UIResponderStandardEditActionsP", "getRecommendArticleList"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "mToken"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
+- !private ["So16UIStateRestoringP", "Callback"]
+- !private ["So16UIStateRestoringP", "LocalData"]
+- !private ["So16UIStateRestoringP", "MDCSnackbarManager"]
+- !private ["So16UIStateRestoringP", "MDCSnackbarMessage"]
+- !private ["So16UIStateRestoringP", "MDCSnackbarMessageAction"]
+- !private ["So16UIStateRestoringP", "ModelConfig"]
+- !private ["So16UIStateRestoringP", "StoryBoardInstantiate"]
+- !private ["So16UIStateRestoringP", "SwiftEventBus"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "getCategoryList"]
+- !private ["So16UIStateRestoringP", "getFetchMemberInfo"]
+- !private ["So16UIStateRestoringP", "getInt"]
+- !private ["So16UIStateRestoringP", "getPopularArticleList"]
+- !private ["So16UIStateRestoringP", "getRecommendArticleList"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "mToken"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "viewWillDisappear"]
+- !private ["So18UITraitEnvironmentP", "Callback"]
+- !private ["So18UITraitEnvironmentP", "LocalData"]
+- !private ["So18UITraitEnvironmentP", "MDCSnackbarManager"]
+- !private ["So18UITraitEnvironmentP", "MDCSnackbarMessage"]
+- !private ["So18UITraitEnvironmentP", "MDCSnackbarMessageAction"]
+- !private ["So18UITraitEnvironmentP", "ModelConfig"]
+- !private ["So18UITraitEnvironmentP", "StoryBoardInstantiate"]
+- !private ["So18UITraitEnvironmentP", "SwiftEventBus"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "getCategoryList"]
+- !private ["So18UITraitEnvironmentP", "getFetchMemberInfo"]
+- !private ["So18UITraitEnvironmentP", "getInt"]
+- !private ["So18UITraitEnvironmentP", "getPopularArticleList"]
+- !private ["So18UITraitEnvironmentP", "getRecommendArticleList"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "mToken"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So18UITraitEnvironmentP", "viewWillDisappear"]
+- !private ["So23UIUserActivityRestoringP", "Callback"]
+- !private ["So23UIUserActivityRestoringP", "LocalData"]
+- !private ["So23UIUserActivityRestoringP", "MDCSnackbarManager"]
+- !private ["So23UIUserActivityRestoringP", "MDCSnackbarMessage"]
+- !private ["So23UIUserActivityRestoringP", "MDCSnackbarMessageAction"]
+- !private ["So23UIUserActivityRestoringP", "ModelConfig"]
+- !private ["So23UIUserActivityRestoringP", "StoryBoardInstantiate"]
+- !private ["So23UIUserActivityRestoringP", "SwiftEventBus"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "dismiss"]
+- !private ["So23UIUserActivityRestoringP", "getCategoryList"]
+- !private ["So23UIUserActivityRestoringP", "getFetchMemberInfo"]
+- !private ["So23UIUserActivityRestoringP", "getInt"]
+- !private ["So23UIUserActivityRestoringP", "getPopularArticleList"]
+- !private ["So23UIUserActivityRestoringP", "getRecommendArticleList"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "mToken"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "viewWillDisappear"]
+- ["So16UIViewControllerC", "Bool"]
+- !private ["So16UIViewControllerC", "Callback"]
+- !private ["So16UIViewControllerC", "LocalData"]
+- !private ["So16UIViewControllerC", "MDCSnackbarManager"]
+- !private ["So16UIViewControllerC", "MDCSnackbarMessage"]
+- !private ["So16UIViewControllerC", "MDCSnackbarMessageAction"]
+- !private ["So16UIViewControllerC", "ModelConfig"]
+- !private ["So16UIViewControllerC", "StoryBoardInstantiate"]
+- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "SwiftEventBus"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "getCategoryList"]
+- ["So16UIViewControllerC", "getFetchMemberInfo"]
+- !private ["So16UIViewControllerC", "getInt"]
+- ["So16UIViewControllerC", "getPopularArticleList"]
+- ["So16UIViewControllerC", "getRecommendArticleList"]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "mToken"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "setSnackbarLoading"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- ["So16UIViewControllerC", "viewWillDisappear"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Callback"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LocalData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MDCSnackbarManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MDCSnackbarMessage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MDCSnackbarMessageAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ModelConfig"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "StoryBoardInstantiate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SwiftEventBus"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getCategoryList"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getFetchMemberInfo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getInt"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getPopularArticleList"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getRecommendArticleList"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mToken"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "17Sixdegrees_Ios_V220BaseUiViewControllerC"
+- "SK"
+- !private "Sb"
+- "s7CVarArgP"
+- !private "17Sixdegrees_Ios_V28CallbackV"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- "SE"
+- "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- "17Sixdegrees_Ios_V29LoadingVCC"
+- !private "17Sixdegrees_Ios_V29LocalDataV"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "17Sixdegrees_Ios_V211ModelConfigV"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "Sm"
+- "ST"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- "So18UIFocusEnvironmentP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRVideoMetaData.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAppInstallAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeContentAd.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineDataSource.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRSearchTimelineDataSource.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRCollectionTimelineDataSource.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRUserTimelineDataSource.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRListTimelineDataSource.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedUnifiedNativeAdNotificationSource.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdNotificationSource.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRAPIErrorCode.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRJSONConvertible.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineType.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TwitterCore.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRSessionStore.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd+CustomClickGesture.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediatedNativeAdDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdUnconfirmedClickDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManagerDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetViewDelegate.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRVideoPlaybackState.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMediaEntitySize.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRAuthConfig.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTROAuthSigning.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRCoreOAuthSigning.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAd+ConfirmationClick.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetTableViewCell.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRSession.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRAuthSession.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRGuestSession.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMoPubAdConfiguration.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestConfiguration.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMuteThisAdReason.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRLogInButton.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAudioVideoManager.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineViewController.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRComposerViewController.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRUser.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRComposer.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineFilter.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTwitter.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTimelineCursor.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAdAssetIDs.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAdAssetIDs.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRDefines.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMultipleAdsAdLoaderOptions.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeMuteThisAdLoaderOptions.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerViewOptions.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADUnifiedNativeAdAssetIdentifiers.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Headers/TWTRConstants.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRNotificationConstants.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweet.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRKit.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRAPIClient.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRMoPubNativeAdContainerView.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetView.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetCashtagEntity.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetHashtagEntity.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetUrlEntity.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetUserMentionEntity.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Headers/TWTRTweetEntity.h"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Modules/module.modulemap"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterKit/iOS/TwitterKit.framework/Modules/module.modulemap"
+- "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Pods/TwitterCore/iOS/TwitterCore.framework/Modules/module.private.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "0801b72da4896448e018f706f9879f61"

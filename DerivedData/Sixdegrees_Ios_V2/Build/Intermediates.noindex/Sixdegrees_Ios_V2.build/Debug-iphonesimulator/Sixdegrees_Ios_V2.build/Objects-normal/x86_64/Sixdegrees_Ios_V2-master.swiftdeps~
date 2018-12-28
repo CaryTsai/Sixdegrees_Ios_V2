@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "d6ff38714ba485055a45e0f0ac1b5177"
-build_time: [1543915699, 277522000]
+build_time: [1543915703, 217096000]
 inputs:
   "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Sixdegrees_Ios_V2/Model/LikeCounts.swift": !dirty [1543572715, 0]
   "/Users/carytsai/Documents/Sixdegrees_Ios_V2/Sixdegrees_Ios_V2/Model/Article.swift": !dirty [1543572715, 0]

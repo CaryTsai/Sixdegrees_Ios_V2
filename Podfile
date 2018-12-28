@@ -21,6 +21,10 @@ target 'Sixdegrees_Ios_V2' do
   pod 'YouTubePlayer-Swift', '~> 1.0'
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
+  pod 'MarkdownView'
+
+
+
 
 
 end

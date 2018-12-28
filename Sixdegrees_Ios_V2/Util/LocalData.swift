@@ -31,6 +31,7 @@ struct LocalData {
     
     
     //Main
+    static let MAIN = "Main"
     static let LOGIN_VC = "Login"
     static let LANGUAGE_VC = "Language"
     static let LOCAL_LOGIN_VC = "LocalLogin"
@@ -46,12 +47,20 @@ struct LocalData {
     static let LOGIN_AFTERVC = "LoginAfterVC"
     static let MYKEEP_VC = "MyKeepVC"
     
+    //SingIeNews
+    static let SINGIE_NEWS = "SingleNews"
+    
     
     
     //Cell
     static let NEWS_HEADER_TABLEVIEW_CELL = "NewsHeaderTableViewCell"
     static let NEWS_TABLEVIEW_CELL = "NewsTableViewCell"
     static let VIDEO_TABLEVIEW_CELL = "VideoTableViewCell"
+    static let GOOGLE_ADS_CELL = "GoogleAdsCell"
+    static let MY_PROFILE_TABLEVIEW_CELL = "MyProfileTableViewCell"
+    static let SINGLE_NEWS_IMAGE_CELL = "SingleNewsImageCell"
+    static let SINGLE_NEWS_MESSAGE_CELL = "SingNewsMessageCell"
+    static let SINGLE_NEWS_HOT_CELL = "SIngNewsHotCell"
     
     
     
