@@ -37,8 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
 //        GADMobileAds.configure(withApplicationID: "ca-app-pub-6428195540030903/5353930239")
         
-        
-
 
 
         
@@ -51,7 +49,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
                 
             }else{
             
-                getLanguage()
+//                getLanguage()
+                self.window = UIWindow(frame: UIScreen.main.bounds)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let initialViewController = storyboard.instantiateViewController(withIdentifier: LocalData.LOADING_VC)
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+                SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.NO_USER_LOGIN, isType: true))
+
                 
             }
             
@@ -64,9 +69,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
             self.window?.makeKeyAndVisible()
             SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.LOCAL_LOGIN_VC, isType: true))
 
-            
-            
-            
         }
   
 
@@ -162,6 +164,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
             saveString(key: LocalData.CLIENT_TOKEN, value:getToken.access_token)
             saveDouble(key: LocalData.CLIENT_EXPIRES, value: clientTokenTime)
             print("fetch client token successfully."+getToken.access_token)
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: LocalData.LOADING_VC)
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+            SwiftEventBus.post("LoadingEvent",sender: LoginEvent(isload: LocalData.NO_USER_LOGIN, isType: true))
         }
         
         

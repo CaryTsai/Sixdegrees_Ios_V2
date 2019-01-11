@@ -1,0 +1,9 @@
+{
+  "commitish" : "v0.2.2",
+  "iOS" : [
+    {
+      "name" : "OpenCC",
+      "hash" : "32cc9bd8c5ca16af1195c11e00f18982923357b1145a58477b5e21ec5e9a1969"
+    }
+  ]
+}

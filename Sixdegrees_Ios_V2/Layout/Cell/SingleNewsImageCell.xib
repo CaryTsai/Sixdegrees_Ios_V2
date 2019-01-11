@@ -106,12 +106,12 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="mSingNewsBt" destination="weN-8B-Qc3" id="WA8-Qn-m23"/>
-                <outlet property="mSingNewsInnerLb" destination="4dD-Km-L3p" id="PbE-An-isv"/>
                 <outlet property="mSingNewsIv" destination="aUg-M0-rkA" id="BrE-Yv-QNH"/>
                 <outlet property="mSingNewsPageViewBt" destination="Rxf-OS-rUn" id="lOR-8z-H26"/>
                 <outlet property="mSingNewsSourceBt" destination="bQp-YX-Id2" id="AcJ-S4-xa2"/>
                 <outlet property="mSingNewsTime" destination="0mk-D1-WvO" id="Bqw-ji-xVr"/>
                 <outlet property="mSingNewsTitleLb" destination="ox3-C3-bAd" id="bEm-N6-ibX"/>
+                <outlet property="mSingNewsdescription" destination="4dD-Km-L3p" id="0XQ-iP-D0Y"/>
             </connections>
             <point key="canvasLocation" x="96.799999999999997" y="350.82458770614693"/>
         </tableViewCell>

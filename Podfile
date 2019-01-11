@@ -22,6 +22,7 @@ target 'Sixdegrees_Ios_V2' do
   pod 'Firebase/Core'
   pod 'Firebase/AdMob'
   pod 'MarkdownView'
+  pod 'SwiftyMarkdown'
 
 
 

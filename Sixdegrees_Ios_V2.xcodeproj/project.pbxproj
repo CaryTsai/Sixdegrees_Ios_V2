@@ -15,13 +15,13 @@
 		1F02C0E221C3E19D00AD069B /* SIngNewsHotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02C0E021C3E19D00AD069B /* SIngNewsHotCell.swift */; };
 		1F02C0E321C3E19D00AD069B /* SIngNewsHotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F02C0E121C3E19D00AD069B /* SIngNewsHotCell.xib */; };
 		1F0EEE5A21BA6981002B551B /* MyKeepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0EEE5921BA6981002B551B /* MyKeepVC.swift */; };
+		1F1D363D21E707130012B0FD /* OpenCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1D363C21E707130012B0FD /* OpenCC.framework */; };
 		1F29377221B6725700CA7E40 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F29377021B6725700CA7E40 /* VideoTableViewCell.swift */; };
 		1F29377321B6725700CA7E40 /* VideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F29377121B6725700CA7E40 /* VideoTableViewCell.xib */; };
 		1F4368F721B1461F0066A272 /* NewsHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4368F621B1461F0066A272 /* NewsHeaderTableViewCell.xib */; };
 		1F4368F921B1465C0066A272 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4368F821B1465C0066A272 /* NewsTableViewCell.xib */; };
 		1F4A1F92219ADBE900A642F2 /* ForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A1F91219ADBE900A642F2 /* ForgetPassword.swift */; };
 		1F4A1F94219AFDEA00A642F2 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A1F93219AFDEA00A642F2 /* RegisterVC.swift */; };
-		1F5DDFEF2195494400E7221A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5DDFEE2195494300E7221A /* LoginVC.swift */; };
 		1F5DDFF121955ED400E7221A /* BaseUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5DDFF021955ED400E7221A /* BaseUiViewController.swift */; };
 		1F7CD14921B501BB00600BF5 /* NewsListTableViewControllerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CD14821B501BB00600BF5 /* NewsListTableViewControllerVC.swift */; };
 		1F7CD14B21B5066100600BF5 /* NewListEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7CD14A21B5066100600BF5 /* NewListEvent.swift */; };
@@ -83,7 +83,6 @@
 		1FFCF7C121C269C0000CC7B5 /* SingleNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFCF7C021C269C0000CC7B5 /* SingleNewsVC.swift */; };
 		1FFEE0B221A50076001CEC25 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFEE0B121A50076001CEC25 /* LoadingVC.swift */; };
 		4A2F6FE82194AA8C006F3509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */; };
-		4A2F6FEA2194AA8C006F3509 /* LanguageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F6FE92194AA8C006F3509 /* LanguageVC.swift */; };
 		4A2F6FED2194AA8C006F3509 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FEB2194AA8C006F3509 /* Main.storyboard */; };
 		4A2F6FEF2194AA8D006F3509 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FEE2194AA8D006F3509 /* Assets.xcassets */; };
 		4A2F6FF22194AA8D006F3509 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F6FF02194AA8D006F3509 /* LaunchScreen.storyboard */; };
@@ -102,13 +101,14 @@
 		1F02C0E021C3E19D00AD069B /* SIngNewsHotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIngNewsHotCell.swift; sourceTree = "<group>"; };
 		1F02C0E121C3E19D00AD069B /* SIngNewsHotCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SIngNewsHotCell.xib; sourceTree = "<group>"; };
 		1F0EEE5921BA6981002B551B /* MyKeepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKeepVC.swift; sourceTree = "<group>"; };
+		1F1D363A21E706C60012B0FD /* SwiftyOpenCC */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftyOpenCC; path = Carthage/Checkouts/SwiftyOpenCC; sourceTree = "<group>"; };
+		1F1D363C21E707130012B0FD /* OpenCC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCC.framework; path = Carthage/Build/iOS/OpenCC.framework; sourceTree = "<group>"; };
 		1F29377021B6725700CA7E40 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		1F29377121B6725700CA7E40 /* VideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoTableViewCell.xib; sourceTree = "<group>"; };
 		1F4368F621B1461F0066A272 /* NewsHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		1F4368F821B1465C0066A272 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		1F4A1F91219ADBE900A642F2 /* ForgetPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPassword.swift; sourceTree = "<group>"; };
 		1F4A1F93219AFDEA00A642F2 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
-		1F5DDFEE2195494300E7221A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		1F5DDFF021955ED400E7221A /* BaseUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUiViewController.swift; sourceTree = "<group>"; };
 		1F7CD14821B501BB00600BF5 /* NewsListTableViewControllerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewControllerVC.swift; sourceTree = "<group>"; };
 		1F7CD14A21B5066100600BF5 /* NewListEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListEvent.swift; sourceTree = "<group>"; };
@@ -171,7 +171,6 @@
 		1FFEE0B121A50076001CEC25 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		4A2F6FE42194AA8C006F3509 /* Sixdegrees_Ios_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sixdegrees_Ios_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2F6FE72194AA8C006F3509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A2F6FE92194AA8C006F3509 /* LanguageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageVC.swift; sourceTree = "<group>"; };
 		4A2F6FEC2194AA8C006F3509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A2F6FEE2194AA8D006F3509 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2F6FF12194AA8D006F3509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -190,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1873FD25B13337C5216AE9C0 /* Pods_Sixdegrees_Ios_V2.framework in Frameworks */,
+				1F1D363D21E707130012B0FD /* OpenCC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,8 +342,6 @@
 		1FF463EA21CE513600B0AF93 /* MainStoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				1F5DDFEE2195494300E7221A /* LoginVC.swift */,
-				4A2F6FE92194AA8C006F3509 /* LanguageVC.swift */,
 				1FF7EB232195B4F600777A1F /* LocalLoginVC.swift */,
 				1F4A1F91219ADBE900A642F2 /* ForgetPassword.swift */,
 				1F4A1F93219AFDEA00A642F2 /* RegisterVC.swift */,
@@ -371,6 +369,8 @@
 		46772C3FBF2AAA4C624351EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F1D363C21E707130012B0FD /* OpenCC.framework */,
+				1F1D363A21E706C60012B0FD /* SwiftyOpenCC */,
 				09419AFDF826EB3A700B0A27 /* Pods_Sixdegrees_Ios_V2.framework */,
 			);
 			name = Frameworks;
@@ -455,6 +455,7 @@
 				4A2F6FE22194AA8C006F3509 /* Resources */,
 				2F34B1EEEAA3CC53328242BE /* [CP] Embed Pods Frameworks */,
 				86A6598EBE5FEF8E11D6CF1D /* [CP] Copy Pods Resources */,
+				1F1D363E21E7077D0012B0FD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -523,6 +524,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F1D363E21E7077D0012B0FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/OpenCC.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
 		2F34B1EEEAA3CC53328242BE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,6 +568,7 @@
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftEventBus/SwiftEventBus.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyMarkdown/SwiftyMarkdown.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
@@ -576,6 +596,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEventBus.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyMarkdown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
@@ -661,7 +682,6 @@
 				1F91F82C21CA012A00644453 /* GetMyCategory.swift in Sources */,
 				1F91F80C21CA010500644453 /* Article.swift in Sources */,
 				1F91F80621CA010500644453 /* MyCategories.swift in Sources */,
-				4A2F6FEA2194AA8C006F3509 /* LanguageVC.swift in Sources */,
 				1FF7EB242195B4F600777A1F /* LocalLoginVC.swift in Sources */,
 				1FFBF24C21C1411500AEA404 /* MyProfileTableViewCell.swift in Sources */,
 				1F91F78E21C7B72300644453 /* SingNewsMessageCell.swift in Sources */,
@@ -693,7 +713,6 @@
 				1F91F80121CA010500644453 /* Category.swift in Sources */,
 				1F7CD14B21B5066100600BF5 /* NewListEvent.swift in Sources */,
 				1F91F80821CA010500644453 /* CommentAndArticle.swift in Sources */,
-				1F5DDFEF2195494400E7221A /* LoginVC.swift in Sources */,
 				1F91F82E21CA012A00644453 /* GetStatus.swift in Sources */,
 				1F91F82321CA012A00644453 /* GetAvatar.swift in Sources */,
 				1F91F80B21CA010500644453 /* MediaImage.swift in Sources */,
@@ -858,6 +877,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73KS82VFJ6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sixdegrees_Ios_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -879,6 +902,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 73KS82VFJ6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Sixdegrees_Ios_V2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -155,6 +155,7 @@ PODS:
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
   - SwiftEventBus (3.0.1)
+  - SwiftyMarkdown (0.6.0)
   - TwitterCore (3.2.0)
   - TwitterKit (3.4.2):
     - TwitterCore (>= 3.2.0)
@@ -173,6 +174,7 @@ DEPENDENCIES:
   - MaterialComponents/Snackbar
   - SDWebImage (~> 4.0)
   - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`, tag `3.0.1`)
+  - SwiftyMarkdown
   - TwitterKit
   - XLPagerTabStrip (~> 8.1)
   - YouTubePlayer-Swift (~> 1.0)
@@ -207,6 +209,7 @@ SPEC REPOS:
     - nanopb
     - Protobuf
     - SDWebImage
+    - SwiftyMarkdown
     - TwitterCore
     - TwitterKit
     - XLPagerTabStrip
@@ -252,11 +255,12 @@ SPEC CHECKSUMS:
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SwiftEventBus: 87ccaeceff91b748775e37751ae3a81ec815b3d5
+  SwiftyMarkdown: 698fe6b283dddac69747f4e08ed0d067c18e0356
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
   XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
   YouTubePlayer-Swift: ae82f4bcb504162a872b852596a9dc1fa3828c34
 
-PODFILE CHECKSUM: 80a085688475cd64d4f9a568e7c45545d3b9991e
+PODFILE CHECKSUM: 221a4331641ad53b60adb52b74d23473f74f3742
 
 COCOAPODS: 1.5.3
